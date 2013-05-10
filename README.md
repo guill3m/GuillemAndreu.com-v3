@@ -14,12 +14,12 @@ The CMS I'm using is Wordpress, but this is not the usual folder structure for a
 - `cms`
 	- `wp-admin`
 	- `wp-includes`
-- `content` *(before `wp-content`)*
+- `content` *(before `cms/wp-content`)*
 	- `mu-plugins`
 	- `plugins`
 	- `themes`
-- `lang` *(before `wp-content/languages`)*
-- `uploads` *(before `wp-content/uploads`)*
+- `lang` *(before `cms/wp-content/languages`)*
+- `uploads` *(before `cms/wp-content/uploads`)*
 
 
 #### wp-config.php
