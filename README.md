@@ -12,27 +12,28 @@ The CMS I'm using is Wordpress, but this is not the usual folder structure for a
 ### Site structure
 
 - `cms`
+	- `lang` *(before `cms/wp-content/languages`)*
 	- `wp-admin`
 	- `wp-includes`
 - `content` *(before `cms/wp-content`)*
 	- `mu-plugins`
 	- `plugins`
 	- `themes`
-- `lang` *(before `cms/wp-content/languages`)*
-- `uploads` *(before `cms/wp-content/uploads`)*
+	- `uploads`
 
 
 #### wp-config.php
 
-These are the lines I use on the `wp-config.php` to achieve that structure (easy):
+These are the lines I use on the `wp-config.php` (it's not on the repo, obviously) to achieve that structure:
 ```PHP
 /**
  * Custom Wordpress folder structure
  */
-define('WP_SITEURL',     'http://guillemandreu.com');
-define('WP_HOME',        'http://guillemandreu.com/cms');
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/content');
-define('WP_PLUGIN_DIR',  $_SERVER['DOCUMENT_ROOT'] . '/content/plugins');
-define('WP_LANG_DIR',    $_SERVER['DOCUMENT_ROOT'] . '/lang');
-define('UPLOADS',        '/uploads');
+define('WP_HOME',                'http://' . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL',             'http://' . $_SERVER['HTTP_HOST'] . '/cms');
+define ('WP_CONTENT_FOLDERNAME', 'content');
+define('WP_CONTENT_DIR',         $_SERVER['DOCUMENT_ROOT'] . WP_CONTENT_FOLDERNAME);
+define('WP_CONTENT_URL',         'http://' . $_SERVER['HTTP_HOST'] . WP_CONTENT_FOLDERNAME);
+define('WP_LANG_DIR',            $_SERVER['DOCUMENT_ROOT'] . '/cms/lang');
+define('WP_LANG_URL',            'http://' . $_SERVER['HTTP_HOST'] . '/cms/lang');
 ```

@@ -4,14 +4,8 @@ content/backups/
 content/cache/
 content/plugins/advanced-custom-fields/
 content/plugins/akismet/
-lang/admin-*.mo
-lang/admin-*.po
-lang/ca.mo
-lang/ca.po
-lang/continents-cities-*.mo
-lang/continents-cities-*.po
-lang/es_ES.mo
-lang/es_ES.po
-uploads/
+content/plugins/codestyling-localization/
+content/themes/twentytwelve/
+content/uploads/
 sitemap.xml
 sitemap.xml.gz
