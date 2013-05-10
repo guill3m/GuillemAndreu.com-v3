@@ -11,12 +11,22 @@ Text Domain: gp3-remove-crap
 
 
 /*
+ * Localization
+ */
+
+function gp3_remove_crap_lang() {
+	load_plugin_textdomain('my-plugin', false, dirname(plugin_basename(__FILE__)) . '/lang/');
+}
+
+add_action('plugins_loaded', 'gp3_remove_crap_lang');
+
+
+
+/*
  * Removing the unwanted crap from the head
  */
 
 remove_action('wp_head', 'wp_generator');
-//remove_action('wp_head', 'feed_links', 2);
-remove_action('wp_head', 'feed_links_extra', 3);
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wlwmanifest_link');
 
@@ -56,7 +66,7 @@ add_filter('the_content_more_link', 'gp3_remove_more_jump_link');
 
 function gp3_add_excerpt_more_link($more) {
 	global $post;
-	return '… <a href="' . get_permalink($post->ID) . '" class="more-link">' . __('Més »', 'gp3-remove-crap') . '</a>';
+	return '… <a href="' . get_permalink($post->ID) . '" class="more-link">' . __('More »', 'gp3-remove-crap') . '</a>';
 }
 
 add_filter('excerpt_more', 'gp3_add_excerpt_more_link');
