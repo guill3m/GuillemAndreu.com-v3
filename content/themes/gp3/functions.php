@@ -1,7 +1,8 @@
 <?php
 /**
  * @package WordPress
- * @subpackage GuillemAndreu.com v3
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
  */
 
 

@@ -15,7 +15,7 @@ Text Domain: gp3-remove-crap
  */
 
 function gp3_remove_crap_lang() {
-	load_plugin_textdomain('my-plugin', false, dirname(plugin_basename(__FILE__)) . '/lang/');
+	load_plugin_textdomain('gp3-remove-crap', false, basename(dirname(__FILE__)) . '/lang');
 }
 
 add_action('plugins_loaded', 'gp3_remove_crap_lang');
@@ -66,7 +66,7 @@ add_filter('the_content_more_link', 'gp3_remove_more_jump_link');
 
 function gp3_add_excerpt_more_link($more) {
 	global $post;
-	return '… <a href="' . get_permalink($post->ID) . '" class="more-link">' . __('More »', 'gp3-remove-crap') . '</a>';
+	return '… <a href="' . get_permalink($post->ID) . '" class="more-link">' . __('More', 'gp3-remove-crap') . ' »</a>';
 }
 
 add_filter('excerpt_more', 'gp3_add_excerpt_more_link');

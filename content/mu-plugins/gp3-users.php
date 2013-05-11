@@ -29,9 +29,9 @@ function gp3_contact_methods($contactmethods) {
 	$contactmethods['vimeo']    = 'Vimeo';
 	$contactmethods['youtube']  = 'YouTube';
 	// Remove unwanted
-	unset($contactmethods['yim']);
 	unset($contactmethods['aim']);
 	unset($contactmethods['jabber']);
+	unset($contactmethods['yim']);
 	// Return the new contact methods
 	return $contactmethods;
 }

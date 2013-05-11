@@ -2,10 +2,14 @@
 cms/
 content/backups/
 content/cache/
+content/plugins/acf-qtranslate/
 content/plugins/advanced-custom-fields/
 content/plugins/akismet/
-content/plugins/codestyling-localization/
-content/themes/twentytwelve/
+content/plugins/mp6/
+content/plugins/qtranslate/
+content/plugins/wordpress-seo/
+content/themes/twentythirteen/
+content/upgrade/
 content/uploads/
 sitemap.xml
 sitemap.xml.gz
