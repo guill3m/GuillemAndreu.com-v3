@@ -1,0 +1,116 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+
+/* TEAM */
+
+  Content, Design, and Development:
+    Guillem Andreu
+      Site: http://guillemandreu.com
+      Contact: hola@guillemandreu.com
+      Twitter: @guill3m
+      Location: Valencia, Spain
+
+
+
+/* THANKS */
+
+  Alberto Blázquez
+    Site: http://albertoblazquez.net
+    Twitter: @albertoblaz
+    Location: Madrid, Spain
+
+  Adrià Lopez
+    Site: http://prealfa.com
+    Twitter: @adlpz
+    Location: Valencia, Spain
+
+
+
+/* SITE */
+
+  Languages:
+    Catalan
+    English
+    Spanish
+
+  Standards:
+    CSS
+    HTML5
+
+  Style:
+    Mobile First
+    Responsive
+
+  CMS:
+    Wordpress
+
+  Components:
+    jQuery
+    SCSS
+
+  Fonts:
+    Open Sans
+
+  Source Code:
+    https://github.com/guill3m/GuillemAndreu.com-v3
+
+
+
+/* DEVELOPMENT */
+
+  Software:
+    Sublime Text
+    CodeKit
+    Pixelmator
+    Illustrator
+    SourceTree
+    Transmit
+    Dropbox
+    iTunes
+
+  Hardware:
+    Development:
+      MacBook Pro Retina
+    Testing:
+      iMac
+      MacBook Pro Retina
+      iPad 2
+      iPhone 4S
+      iPod Touch 2G
+
+
+
+
+************************************************************************************************************************************************
+*****   Guillem Andreu   *****   Graphic & Web Design & Development   *****   http://guillemandreu.com   *****   hola@guillemandreu.com    *****
+************************************************************************************************************************************************
+
+
+                                                   :::-     `:::.
+                                         .osss:    hhhh:    -hhhh.
+                                         /hhhhs    hhhh+    -hhhh-
+                                         `:///.    hhhh+    -hhhh-
+        `-:::-`  `-`   `--.      `---.  `....`     hhhh+    -hhhh-       `.::::-`      `--.   `.--.     .---`
+      -shhhhhhhsyhhh. `hhhhs     ohhhh  ohhhhh+    hhhh+    -hhhh-     .ohhhhhhhhs:    +hhho:shhhhhh/-ohhhhhhs.
+     +hhhho::+yhhhho   shhhh     ohhhh  -+yhhhh.   hhhh+    -hhhh-    :hhhh+--:yhhh+   +hhhhhhsshhhhhhhysyhhhhy
+    :hhhh/    `hhhh/   ohhhh     ohhhh    /hhhh.   hhhh+    -hhhh-   `hhhh/    `hhhh-  +hhhh:   .hhhhs.   ohhhh.
+    ohhhh`    `hhhh/   ohhhh     ohhhh    /hhhh.   hhhh+    -hhhh-   /hhhhsooooohhhh:  +hhhh`    hhhh+    /hhhh.
+    ohhhh`    `hhhh/   ohhhh     ohhhh    /hhhh.   hhhh+    -hhhh-   /hhhhhhhhhhhhhh.  +hhhh`    hhhh+    /hhhh.
+    +hhhh-    `hhhh/   ohhhh     shhhh    /hhhh.   hhhh+    -hhhh-   -hhhh:            +hhhh`    hhhh+    /hhhh.
+    `hhhhy-`.:shhhh/   +hhhho::/shhhhh`   /hhhh.   hhhhs.`  -hhhh+``  yhhhy:`   .-/`   +hhhh`    hhhh+    /hhhh.
+     -yhhhhhhhhhhhh/   `yhhhhhhhhohhhho   /hhhh.   shhhhhh: `hhhhhhh. `ohhhhhhhhhhhs   +hhhh     hhhh+    :hhhh:
+       :+sss+:.hhhh:     :osso+:` `/oo.   -oooo`    :+ooo+-  `/oooo+`   ./osyyyso/-    +hhhh     oooo:    `+oo+:
+              :hhhh`                                                                   +hhhh
+     -o/:---:+hhhh/                                                                    +hhhh
+     yhhhhhhhhhhy:                        `-:+oossso/.     -oo+. .:+oo+/`       ./ooo+/ohhhh   .o+-  `:+oo+   `:+ossso/.    `/oo+-     :++++
+      .-:////:-`                         `hhhhhhhhhhhho`   /hhhhshhhhhhhh-    .shhhhhhhhhhhh   shhhy:hhhhhs  :hhhhhyhhhhs.   shhhh     +hhhh`
+                                          -+/-.``.+hhhh/   /hhhhho/:/hhhhh   -hhhhs.``-shhhh   `yhhhhhs+/+` /hhhh-   :hhhh.  +hhhh`    +hhhh`
+                                              `....hhhho   /hhhh.    +hhhh`  yhhhy     +hhhh    shhhh.     `hhhh/`````yhhh/  +hhhh`    +hhhh`
+                                          `+shhhhhhhhhho   /hhhh`    +hhhh` `hhhho     +hhhh    shhhy      -hhhhhhhhhhhhhh/  +hhhh`    +hhhh`
+                                         -hhhhs/:::hhhho   /hhhh`    +hhhh` `hhhho     +hhhh    shhhy      -hhhhs+++++++++.  +hhhh`    +hhhh`
+                                         shhhs     hhhho   /hhhh`    +hhhh`  yhhhh`    ohhhh    shhhy      `hhhhs            +hhhh.   `shhhh`
+                                         ohhhh/--/yhhhhy   /hhhh`    +hhhh`  -hhhhy/:+yhhhhh-   shhhy       :hhhhs/:::/oy/   -hhhhhssyhhhhhh-
+                                         `ohhhhhhhy/yhhh:  /hhhh`    :hhhh/   -yhhhhhhho+hhho   shhhy        -shhhhhhhhhho    :hhhhhhho-+hhhs
+                                           `-///:.   .-.   `----      .::-      .://:-`  `--    .----          `-:///:-.        -:::.    `--
