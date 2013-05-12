@@ -2,8 +2,8 @@ User-agent: *
 
 Disallow: /cms
 Disallow: /content/cache
-Disallow: /content/upgrade
 Disallow: /content/plugins
+Disallow: /content/upgrade
 
 Allow: /
 

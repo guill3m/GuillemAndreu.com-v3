@@ -1,6 +1,4 @@
-# GuillemAndreu.com
-
-## Version 3
+# GuillemAndreu.com – V3
 
 I’m redesigning my professional website where I showcase my work. So, basically, this is a web portfolio.
 
@@ -51,6 +49,8 @@ All the custom plugins I made for this are on the repo. This is the list of plug
 - [Wordpress SEO](http://yoast.com/wordpress/seo) by [Joost de Valk](http://yoast.com)
 
 
-## Things to consider:
+## Things about this repo to be aware of
 
-**I’m not supporting IE8-**, only IE9+, this is because the target of this website is most likely not going to be using that (in the last year there where 9 visits from IE7 and 51 from IE8). Also, I want to play with some “modern” features and I don’t feel like using polyfills in this project right now. Maybe I’ll add support to IE8 in the future, but right now I’m more interested on keeping it simple.
+- **I’m not supporting IE8-, only IE9+.** This is because the target of this website is most likely not going to be using that (in the last year there where 9 visits from IE7 and 51 from IE8). Also, I want to play with some “modern” features and I don’t feel like using polyfills in this project right now. Maybe I’ll add support to IE8 in the future, but right now I’m more interested on keeping it simple.
+
+- **I’m using Wordpress as a CMS, without the blog “module”.** I don’t need that for the moment. If some day I want to start a blog under this domain and design, then, I’ll develop whatever I need for that (I’m using custom post types for the portfolio, so the blog part is still there untoched).
