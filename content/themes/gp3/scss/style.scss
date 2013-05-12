@@ -11,3 +11,17 @@ Tags: responsive, rwd, mobile first, content first, portfolio, translation ready
 License: Proprietary - © 2013 Guillem Andreu
 Text Domain: gp3
 */
+
+
+// Fonts
+@import "partials/font-face";
+
+// Variables
+@import "partials/variables";
+
+// Mixins
+@import "partials/css3";
+@import "partials/mixins";
+
+// Reset
+@import "partials/reset";
