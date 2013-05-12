@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/**
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+
+
+@mixin appearance($val) {
+	-webkit-appearance: $val;
+	-moz-appearance: $val;
+	appearance: $val;
+}
+
+@mixin box-shadow($val) {
+	-webkit-box-shadow: $val;
+	box-shadow: $val;
+}
+
+@mixin box-sizing($val) {
+	-webkit-box-sizing: $val;
+	-moz-box-sizing: $val;
+	box-sizing: $val;
+}
+
+@mixin hyphens($val: auto, $lines: 2, $chars: 6 3 2) {
+	-webkit-hyphens: $val;
+	-moz-hyphens: $val;
+	-ms-hyphens: $val;
+	hyphens: $val;
+	-webkit-hyphenate-limit-lines: $lines;
+	-ms-hyphenate-limit-lines: $lines;
+	hyphenate-limit-lines: $lines;
+	-ms-hyphenate-limit-chars: $chars;
+	hyphenate-limit-chars: $chars;
+}
+
+@mixin linear-gradient($deg, $color1, $color2, $fallback: false) {
+	@if ($fallback) {
+		background: $fallback;
+	}
+	background: -webkit-linear-gradient($deg + 90deg, $color1, $color2);
+	background: -moz-linear-gradient($deg + 90deg, $color1, $color2);
+	background: -o-linear-gradient($deg + 90deg, $color1, $color2);
+	background: linear-gradient($deg, $color1, $color2);
+}
+
+@mixin transition($args) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
