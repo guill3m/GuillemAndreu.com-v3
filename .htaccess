@@ -1,11 +1,91 @@
 # BEGIN WordPress
+  # The '/gp3' at the begining is for my development environment, the live site will lose it but right now I need this
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /gp3/
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /gp3/index.php [L]
+  RewriteEngine On
+  RewriteBase /gp3/
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /gp3/index.php [L]
 </IfModule>
-
 # END WordPress
+
+
+
+
+# The following rules are from the HTML5 Boilerplate, thanks
+
+
+# BEGIN Gzip compression
+<IfModule mod_deflate.c>
+  # Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+  <IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+    </IfModule>
+  </IfModule>
+</IfModule>
+# END Gzip compression
+
+
+# BEGIN Expires headers
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresDefault                              "access plus 1 month"
+  ExpiresByType text/cache-manifest           "access plus 0 seconds"
+  # Your document html
+  ExpiresByType text/html                     "access plus 0 seconds"
+  # Data
+  ExpiresByType application/json              "access plus 0 seconds"
+  ExpiresByType application/xml               "access plus 0 seconds"
+  ExpiresByType text/xml                      "access plus 0 seconds"
+  # Feed
+  ExpiresByType application/atom+xml          "access plus 1 hour"
+  ExpiresByType application/rss+xml           "access plus 1 hour"
+  # Favicon
+  ExpiresByType image/x-icon                  "access plus 1 week"
+  # Media: images, video, audio
+  ExpiresByType audio/ogg                     "access plus 1 month"
+  ExpiresByType image/gif                     "access plus 1 month"
+  ExpiresByType image/jpeg                    "access plus 1 month"
+  ExpiresByType image/png                     "access plus 1 month"
+  ExpiresByType video/mp4                     "access plus 1 month"
+  ExpiresByType video/ogg                     "access plus 1 month"
+  ExpiresByType video/webm                    "access plus 1 month"
+  # HTC files
+  ExpiresByType text/x-component              "access plus 1 month"
+  # Webfonts
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+  ExpiresByType application/x-font-ttf        "access plus 1 month"
+  ExpiresByType application/x-font-woff       "access plus 1 month"
+  ExpiresByType font/opentype                 "access plus 1 month"
+  ExpiresByType image/svg+xml                 "access plus 1 month"
+  # CSS and JavaScript
+  ExpiresByType application/javascript        "access plus 1 year"
+  ExpiresByType text/css                      "access plus 1 year"
+</IfModule>
+# END Expires headers
+
+
+# BEGIN Some security
+  # Block access to "hidden" directories or files whose names begin with a period. This includes directories used by version control systems
+<IfModule mod_rewrite.c>
+  RewriteCond %{SCRIPT_FILENAME} -d [OR]
+  RewriteCond %{SCRIPT_FILENAME} -f
+  RewriteRule "(^|/)\." - [F]
+</IfModule>
+  # Block access to backup and source files. These files may be left by some text/html editors and pose a great security danger, when anyone can access them.
+<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
+  Order allow,deny
+  Deny from all
+  Satisfy All
+</FilesMatch>
+# END Some security
+
+
+# The following header prevents modification of your code over 3G on some European providers.
+# This is the official 'bypass' suggested by O2 in the UK.
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-transform"
+</IfModule>
