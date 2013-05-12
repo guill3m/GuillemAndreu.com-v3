@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /cms
+Disallow: /content/cache
+Disallow: /content/upgrade
+Disallow: /content/plugins
+
+Allow: /
+
+Sitemap: http://www.guillemandreu.com/sitemap_index.xml
