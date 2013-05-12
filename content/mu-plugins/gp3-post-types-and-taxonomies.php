@@ -43,29 +43,31 @@ function gp3_custom_post_types() {
 		'not_found'          => __('No projects found', 'gp3-ptt'),
 		'not_found_in_trash' => __('No projects found in the trash', 'gp3-ptt')
 	);
-	register_post_type('project', array(
-		'label'           => __('Projects', 'gp3-ptt'),
+	$project_supports = array(
+		'title',
+		'editor',
+		'thumbnail',
+		'trackbacks',
+		'custom-fields'
+	);
+	$project_rewrite = array(
+		'slug'       => __('portfolio', 'gp3-ptt'),
+		'with_front' => false,
+		'feeds'      => false
+	);
+	$project_args = array(
 		'labels'          => $project_labels,
 		'description'     => __('Portfolio items', 'gp3-ptt'),
 		'public'          => true,
 		'menu_icon'       => basename(dirname(__FILE__)) . '/img/projects-icon.png',
 		'capability_type' => 'post',
 		'hierarchical'    => false,
-		'supports'        => array(
-			'title',
-			'editor',
-			'thumbnail',
-			'trackbacks',
-			'custom-fields'
-		),
+		'supports'        => $project_supports,
 		'has_archive'     => true,
-		'rewrite'         => array(
-			'slug'       => __('portfolio', 'gp3-ptt'),
-			'with_front' => false,
-			'feeds'      => false
-		),
+		'rewrite'         => $project_rewrite,
 		'can_export'      => true
-	));
+	);
+	register_post_type('project', $project_args);
 }
 
 add_action('init', 'gp3_custom_post_types');
@@ -98,3 +100,46 @@ function gp3_custom_post_types_messages($messages) {
 }
 
 add_filter( 'post_updated_messages', 'gp3_custom_post_types_messages');
+
+
+
+/*
+ * Custom taxonomies
+ */
+
+function gp3_custom_taxonomies() {
+	$type_labels = array(
+		'name'                  => __('Types', 'gp3-ptt'),
+		'singular_name'         => __('Type', 'gp3-ptt'),
+		'menu_name'             => __('Types', 'gp3-ptt'),
+		'all_items'             => __('All types', 'gp3-ptt'),
+		'edit_item'             => __('Edit type', 'gp3-ptt'),
+		'view_item'             => __('View type', 'gp3-ptt'),
+		'update_item'           => __('Update type', 'gp3-ptt'),
+		'add_new_item'          => __('Add new type', 'gp3-ptt'),
+		'new_item_name'         => __('New type name', 'gp3-ptt'),
+		'parent_item'           => __('Parent type', 'gp3-ptt'),
+		'parent_item_colon'     => __('Parent type:', 'gp3-ptt'),
+		'search_items'          => __('Search types', 'gp3-ptt'),
+		'popular_items'         => __('Popular types', 'gp3-ptt'),
+		'add_or_remove_items'   => __('Add or remove types', 'gp3-ptt'),
+		'choose_from_most_used' => __('Choose from most used types', 'gp3-ptt'),
+		'not_found'             => __('No types found', 'gp3-ptt')
+	);
+	$type_rewrite = array(
+		'slug'         => __('type', 'gp3-ptt'),
+		'with_front'   => false,
+		'hierarchical' => true
+	);
+	$type_args = array(
+		'labels'            => $type_labels,
+		'public'            => true,
+		'show_admin_column' => true,
+		'hierarchical'      => true,
+		'rewrite'           => $type_rewrite,
+		'sort'              => false
+	);
+	register_taxonomy('project-type', 'project', $type_args);
+}
+
+add_action('init', 'gp3_custom_taxonomies');
