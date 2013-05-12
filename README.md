@@ -11,7 +11,7 @@ Feel free to use some bits of the code if it is useful to you, that’s why I pu
 The CMS I’m using is [Wordpress](http://wordpress.org), but this is not the usual folder structure for a Wordpress site, this structure makes more sense to me.
 
 
-### Site structure
+## Site structure
 
 - `cms`
 	- `lang` *(before `cms/wp-content/languages`)*
@@ -49,3 +49,8 @@ All the custom plugins I made for this are on the repo. This is the list of plug
 - [Advanced Custom Fields: qTranslate](http://github.com/funkjedi/acf-qtranslate) by [funkjedi](https://github.com/funkjedi)
 - [qTranslate](http://www.qianqin.de/qtranslate) by [Qian Qin](http://www.qianqin.de)
 - [Wordpress SEO](http://yoast.com/wordpress/seo) by [Joost de Valk](http://yoast.com)
+
+
+## Things to consider:
+
+**I’m not supporting IE8-**, only IE9+, this is because the target of this website is most likely not going to be using that (in the last year there where 9 visits from IE7 and 51 from IE8). Also, I want to play with some “modern” features and I don’t feel like using polyfills in this project right now. Maybe I’ll add support to IE8 in the future, but right now I’m more interested on keeping it simple.
