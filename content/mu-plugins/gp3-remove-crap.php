@@ -45,3 +45,20 @@ function gp3_remove_more_jump_link($link) {
 }
 
 add_filter('the_content_more_link', 'gp3_remove_more_jump_link');
+
+
+
+/*
+ * Hide the default 'post' post type and comments from the menu, as well as the tools
+ *
+ * This just hides the menu item, there are still there if you use the correct url
+ * And this does not remove the posts from the “right now” dashboard widget, I still need to figure out how to do that
+ */
+
+function gp3_remove_from_admin_menu() {
+	remove_menu_page('edit.php');
+	remove_menu_page('edit-comments.php');
+	remove_menu_page('tools.php');
+}
+
+add_action('admin_menu','gp3_remove_from_admin_menu');

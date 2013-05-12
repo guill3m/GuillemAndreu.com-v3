@@ -47,7 +47,6 @@ function gp3_custom_post_types() {
 		'title',
 		'editor',
 		'thumbnail',
-		'trackbacks',
 		'custom-fields'
 	);
 	$project_rewrite = array(
@@ -109,22 +108,22 @@ add_filter( 'post_updated_messages', 'gp3_custom_post_types_messages');
 
 function gp3_custom_taxonomies() {
 	$type_labels = array(
-		'name'                  => __('Types', 'gp3-ptt'),
-		'singular_name'         => __('Type', 'gp3-ptt'),
-		'menu_name'             => __('Types', 'gp3-ptt'),
-		'all_items'             => __('All types', 'gp3-ptt'),
-		'edit_item'             => __('Edit type', 'gp3-ptt'),
-		'view_item'             => __('View type', 'gp3-ptt'),
-		'update_item'           => __('Update type', 'gp3-ptt'),
-		'add_new_item'          => __('Add new type', 'gp3-ptt'),
-		'new_item_name'         => __('New type name', 'gp3-ptt'),
-		'parent_item'           => __('Parent type', 'gp3-ptt'),
-		'parent_item_colon'     => __('Parent type:', 'gp3-ptt'),
-		'search_items'          => __('Search types', 'gp3-ptt'),
-		'popular_items'         => __('Popular types', 'gp3-ptt'),
-		'add_or_remove_items'   => __('Add or remove types', 'gp3-ptt'),
-		'choose_from_most_used' => __('Choose from most used types', 'gp3-ptt'),
-		'not_found'             => __('No types found', 'gp3-ptt')
+		'name'                  => __('Project types', 'gp3-ptt'),
+		'singular_name'         => __('Project type', 'gp3-ptt'),
+		'menu_name'             => __('Project types', 'gp3-ptt'),
+		'all_items'             => __('All project types', 'gp3-ptt'),
+		'edit_item'             => __('Edit project type', 'gp3-ptt'),
+		'view_item'             => __('View project type', 'gp3-ptt'),
+		'update_item'           => __('Update project type', 'gp3-ptt'),
+		'add_new_item'          => __('Add new project type', 'gp3-ptt'),
+		'new_item_name'         => __('New project type name', 'gp3-ptt'),
+		'parent_item'           => __('Parent project type', 'gp3-ptt'),
+		'parent_item_colon'     => __('Parent project type:', 'gp3-ptt'),
+		'search_items'          => __('Search project types', 'gp3-ptt'),
+		'popular_items'         => __('Popular project types', 'gp3-ptt'),
+		'add_or_remove_items'   => __('Add or remove project types', 'gp3-ptt'),
+		'choose_from_most_used' => __('Choose from most used project types', 'gp3-ptt'),
+		'not_found'             => __('No project types found', 'gp3-ptt')
 	);
 	$type_rewrite = array(
 		'slug'         => __('type', 'gp3-ptt'),
@@ -143,3 +142,123 @@ function gp3_custom_taxonomies() {
 }
 
 add_action('init', 'gp3_custom_taxonomies');
+
+
+
+/*
+ * Reorder items on the admin menu
+ */
+
+function gp3_menu_order($menu_ord) {
+	if (!$menu_ord) return true;
+	return array(
+		'index.php',                  // Dashboard Link
+		'separator1',                 // Separator
+		'edit.php?post_type=project', // Projects
+		'edit.php?post_type=page',    // Pages
+		'edit.php',                   // Posts
+		'upload.php',                 // Media
+		'edit-comments.php'           // Comments
+	);
+}
+
+add_filter('custom_menu_order', 'gp3_menu_order');
+add_filter('menu_order', 'gp3_menu_order');
+
+
+
+/*
+ * Add custom post types and custom taxonomies to the “right now” dashboard widget
+ */
+
+function gp3_add_to_right_now_widget() {
+	/* Post Types */
+	$post_types = get_post_types(array('_builtin' => false), 'objects');
+	foreach ($post_types as $post_type) {
+		if ($post_type->name == 'acf') continue; // Don0t show the Advanced Custom Fields plugin’s custom type
+		$num_posts = wp_count_posts($post_type->name);
+		$num = number_format_i18n($num_posts->publish);
+		$text = _n($post_type->labels->singular_name, $post_type->labels->name, $num_posts->publish);
+		if (current_user_can('edit_posts')) {
+			$num = '<a href="edit.php?post_type=' . $post_type->name . '">' . $num . '</a>';
+			$text = '<a href="edit.php?post_type=' . $post_type->name . '">' . $text . '</a>';
+		}
+		echo '<td class="first b b-' . $post_type->name . 's">' . $num . '</td>';
+		echo '<td class="t ' . $post_type->name . 's">' . $text . '</td>';
+		echo '</tr>';
+
+		if ($num_posts->pending > 0) {
+			$num = number_format_i18n($num_posts->pending);
+			$text = _n($post_type->labels->singular_name . ' Pendiente', $post_type->labels->name . ' Pendientes', $num_posts->pending);
+			if (current_user_can('edit_posts')) {
+				$num = '<a href="edit.php?post_status=pending&post_type=' . $post_type->name . '">' . $num . '</a>';
+				$text = '<a href="edit.php?post_status=pending&post_type=' . $post_type->name . '">' . $text . '</a>';
+			}
+			echo '<td class="first b b-' . $post_type->name . 's">' . $num . '</td>';
+			echo '<td class="t ' . $post_type->name . 's">' . $text . '</td>';
+			echo '</tr>';
+		}
+	}
+	/* Taxonomies */
+	$taxonomies = get_taxonomies(array('_builtin' => false), 'objects');
+	foreach ($taxonomies as $taxonomy) {
+		$num_terms = wp_count_terms($taxonomy->name);
+		$num = number_format_i18n($num_terms);
+		$text = _n($taxonomy->labels->singular_name, $taxonomy->labels->name, $num_terms);
+		$associated_post_type = $taxonomy->object_type;
+		if (current_user_can('manage_categories')) {
+			$num = '<a href="edit-tags.php?taxonomy=' . $taxonomy->name . '&post_type=' . $associated_post_type[0] . '">' . $num . '</a>';
+			$text = '<a href="edit-tags.php?taxonomy=' . $taxonomy->name . '&post_type=' . $associated_post_type[0] . '">' . $text . '</a>';
+		}
+		echo '<td class="first b b-' . $taxonomy->name . 's">' . $num . '</td>';
+		echo '<td class="t ' . $taxonomy->name . 's">' . $text . '</td>';
+		echo '</tr><tr>';
+	}
+}
+
+add_action('right_now_content_table_end', 'gp3_add_to_right_now_widget');
+
+
+
+/*
+ * Hability to filter custom post types by custom taxonomies on the “all posts” admin page
+ */
+
+function gp3_taxonomy_filter_restrict_manage_posts() {
+	global $typenow;
+	$post_types = get_post_types(array('_builtin' => false));
+	if (in_array($typenow, $post_types)) {
+		$filters = get_object_taxonomies($typenow);
+		foreach ($filters as $tax_slug) {
+			$tax_obj = get_taxonomy($tax_slug);
+			wp_dropdown_categories(array(
+				'show_option_all' => $tax_obj->label,
+				'taxonomy' => $tax_slug,
+				'name' => $tax_obj->name,
+				'orderby' => 'name',
+				'selected' => $_GET[$tax_slug],
+				'hierarchical' => $tax_obj->hierarchical,
+				'show_count' => false,
+				'hide_empty' => true
+			));
+		}
+	}
+}
+
+add_action('restrict_manage_posts', 'gp3_taxonomy_filter_restrict_manage_posts');
+
+function gp3_taxonomy_filter_post_type_request($query) {
+	global $pagenow, $typenow;
+	if ('edit.php' == $pagenow) {
+		$filters = get_object_taxonomies($typenow);
+		foreach ($filters as $tax_slug) {
+			$var = &$query->query_vars[$tax_slug];
+			if (isset($var)) {
+				$term = get_term_by('id', $var, $tax_slug);
+				$var = $term->slug;
+			}
+		}
+	}
+}
+
+add_filter('parse_query', 'gp3_taxonomy_filter_post_type_request');
