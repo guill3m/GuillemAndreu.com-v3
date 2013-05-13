@@ -86,12 +86,13 @@ add_filter('admin_footer_text', 'gp3_admin_footer_text');
 
 
 /*
- * Removing the WP logo from the admin bar
+ * Removing the WP logo and comments button from the admin bar
  */
 
 function gp3_admin_bar() {
 	global $wp_admin_bar;
 	$wp_admin_bar->remove_node('wp-logo');
+	$wp_admin_bar->remove_node('comments');
 }
 
 add_action('wp_before_admin_bar_render', 'gp3_admin_bar');
