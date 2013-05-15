@@ -1,13 +1,13 @@
 # BEGIN WordPress
-  # The '/gp3' at the begining is for my development environment, the live site will lose it but right now I need this
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /gp3/
-  RewriteRule ^index\.php$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /gp3/index.php [L]
+RewriteEngine On
+RewriteBase /gp3/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /gp3/index.php [L]
 </IfModule>
+
 # END WordPress
 
 

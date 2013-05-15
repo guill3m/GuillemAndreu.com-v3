@@ -4,6 +4,7 @@ Disallow: /cms
 Disallow: /content/cache
 Disallow: /content/plugins
 Disallow: /content/upgrade
+Disallow: /static
 
 Allow: /
 
