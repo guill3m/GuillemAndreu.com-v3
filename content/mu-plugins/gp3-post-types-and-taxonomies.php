@@ -58,7 +58,7 @@ function gp3_custom_post_types() {
 		'labels'          => $project_labels,
 		'description'     => __('Portfolio items', 'gp3-ptt'),
 		'public'          => true,
-		'menu_icon'       => basename(dirname(__FILE__)) . '/img/projects-icon.png',
+		// 'menu_icon'       => basename(dirname(__FILE__)) . '/img/projects-icon.png',
 		'capability_type' => 'post',
 		'hierarchical'    => false,
 		'supports'        => $project_supports,
