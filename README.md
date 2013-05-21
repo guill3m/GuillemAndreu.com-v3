@@ -44,8 +44,7 @@ define('WP_LANG_URL',           'http://' . $_SERVER['HTTP_HOST'] . '/cms/lang')
 All the custom plugins I made for this are on the repo. This is the list of plugins that are not in the repo since I haven’t made, neither modified, them:
 
 - [Advanced Custom Fields](http://www.advancedcustomfields.com) by [Elliot Condon](http://www.elliotcondon.com)
-- [Advanced Custom Fields: qTranslate](http://github.com/funkjedi/acf-qtranslate) by [funkjedi](https://github.com/funkjedi)
-- [qTranslate](http://www.qianqin.de/qtranslate) by [Qian Qin](http://www.qianqin.de)
+- [Polylang](http://polylang.wordpress.com) by Frédéric Demarle
 - [Wordpress SEO](http://yoast.com/wordpress/seo) by [Joost de Valk](http://yoast.com)
 - [WP Retina 2x](http://www.meow.fr/wp-retina-2x-wordpress-plugin/) by [Jordy Meow](http://www.meow.fr/)
 

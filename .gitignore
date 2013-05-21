@@ -2,11 +2,10 @@
 cms/
 content/backups
 content/cache
-content/plugins/acf-qtranslate
 content/plugins/advanced-custom-fields
 content/plugins/akismet
 content/plugins/mp6
-content/plugins/qtranslate
+content/plugins/polylang
 content/plugins/wordpress-seo
 content/plugins/wp-retina-2x
 content/themes/gp3/fonts
