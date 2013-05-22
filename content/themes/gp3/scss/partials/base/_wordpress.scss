@@ -1,0 +1,77 @@
+/**
+ * Wordpress styles
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+a img {
+	&.alignnone {
+		margin: 5px 20px 20px 0;
+	}
+	&.alignleft {
+		float: left;
+		margin: 5px 20px 20px 0;
+	}
+	&.aligncenter {
+		display: block;
+		margin:  {
+			left: auto;
+			right: auto;
+		}
+	}
+	&.alignright {
+		float: right;
+		margin: 5px 0 20px 20px;
+	}
+}
+
+.wp-caption {
+	background: $color-bg2;
+	border: 1px solid $color2;
+	max-width: 100%; // Image does not overflow the content area
+	padding: 5px 3px 10px;
+	text-align: center;
+	&.alignnone {
+		margin: 5px 20px 20px 0;
+	}
+	&.alignleft {
+		margin: 5px 20px 20px 0;
+	}
+	&.alignright {
+		margin: 5px 0 20px 20px;
+	}
+	img {
+		border: 0 none;
+		height: auto;
+		margin: 0;
+		max-width: 100%;
+		padding: 0;
+		width: auto;
+	}
+	.wp-caption-text {
+		font-size: 11px;
+		line-height: 17px;
+		margin: 0;
+		padding: 0 4px 5px;
+	}
+}
