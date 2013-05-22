@@ -5,23 +5,6 @@
  * @since GuillemAndreu.com 3.0.0
  */
 
-.menu-list {
-	clear: both;
-	width: 100%;
-	> li {
-		display: inline-block;
-		margin: 10px 0 0;
-		text-align: center;
-		width: 25%;
-		a {
-			display: block;
-			font-weight: 700;
-			line-height: 35px;
-			text-transform: uppercase;
-		}
-	}
-}
-
 .menu-switch {
 	@include linear-gradient(0, darken($color-bg, 5%), $color-bg);
 	border: 1px solid darken($color-bg2, 10%) {
@@ -31,22 +14,65 @@
 	};
 	display: block;
 	float: right;
-	font: {
-		size: 1.142857143em; // 16/14
-		weight: 700;
-	}
+	font-weight: 700;
 	line-height: 40px;
 	margin: 5px 7% 0 0;
 	text: {
 		align: center;
 		transform: uppercase;
 	}
-	width: 40%;
+	width: 35%;
 	&:hover {
 		color: $color-txt;
 	}
 }
 
+.menu-list {
+	clear: both;
+	display: none;
+	margin-bottom: 5px;
+	width: 100%;
+	> li {
+		display: inline-block;
+		margin: 10px 5% 0;
+		text-align: center;
+		width: 40%;
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-top: 5px;
+		}
+		a {
+			display: block;
+			font-weight: 800;
+			letter-spacing: 1px;
+			line-height: 35px;
+			text-transform: uppercase;
+		}
+	}
+}
+
 .language-submenu {
 	display: none;
+	margin: 5px 5% -5px;
+	width: 90%;
+	> li {
+		display: inline-block;
+		margin: 0 1.6666666667%;
+		text-align: center;
+		width: 30%;
+		a {
+			color: $color-txt;
+			display: block;
+			letter-spacing: 1px;
+			font-weight: 700;
+			line-height: 35px;
+			&:hover,
+			&:focus {
+				color: $color2;
+			}
+			&:active {
+				color: $color;
+			}
+		}
+	}
 }

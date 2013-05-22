@@ -6,10 +6,10 @@
  */
 
 .header {
-	//@extend %clear-fix;
+	@extend %clear-fix;
 	background: $color-bg2;
 	border-bottom: 1px solid darken($color-bg2, 10%);
-	padding: 15px 0 5px;
+	padding: 15px 0;
 }
 
 .logo {

@@ -94,6 +94,12 @@ Text Domain: gp3
  * @subpackage GuillemAndreu.com
  * @since GuillemAndreu.com 3.0.0
  */
+.header:before, .header:after {
+  content: "";
+  display: table; }
+.header:after {
+  clear: both; }
+
 /**
  * Reset & Normalize
  * @package WordPress
@@ -342,7 +348,7 @@ small {
 .header {
   background: #ebebeb;
   border-bottom: 1px solid #d2d2d2;
-  padding: 15px 0 5px; }
+  padding: 15px 0; }
 
 .logo {
   float: left;
@@ -359,20 +365,6 @@ small {
  * @subpackage GuillemAndreu.com
  * @since GuillemAndreu.com 3.0.0
  */
-.menu-list {
-  clear: both;
-  width: 100%; }
-  .menu-list > li {
-    display: inline-block;
-    margin: 10px 0 0;
-    text-align: center;
-    width: 25%; }
-    .menu-list > li a {
-      display: block;
-      font-weight: 700;
-      line-height: 35px;
-      text-transform: uppercase; }
-
 .menu-switch {
   background: -webkit-linear-gradient(90deg, #f2f2f2, white);
   background: -moz-linear-gradient(90deg, #f2f2f2, white);
@@ -384,15 +376,50 @@ small {
     border-left: 0;
   display: block;
   float: right;
-  font-size: 1.142857143em;
   font-weight: 700;
   line-height: 40px;
   margin: 5px 7% 0 0;
   text-align: center;
   text-transform: uppercase;
-  width: 40%; }
+  width: 35%; }
   .menu-switch:hover {
     color: #222222; }
 
+.menu-list {
+  clear: both;
+  display: none;
+  margin-bottom: 5px;
+  width: 100%; }
+  .menu-list > li {
+    display: inline-block;
+    margin: 10px 5% 0;
+    text-align: center;
+    width: 40%; }
+    .menu-list > li:nth-child(3), .menu-list > li:nth-child(4) {
+      margin-top: 5px; }
+    .menu-list > li a {
+      display: block;
+      font-weight: 800;
+      letter-spacing: 1px;
+      line-height: 35px;
+      text-transform: uppercase; }
+
 .language-submenu {
-  display: none; }
+  display: none;
+  margin: 5px 5% -5px;
+  width: 90%; }
+  .language-submenu > li {
+    display: inline-block;
+    margin: 0 1.66667%;
+    text-align: center;
+    width: 30%; }
+    .language-submenu > li a {
+      color: #222222;
+      display: block;
+      letter-spacing: 1px;
+      font-weight: 700;
+      line-height: 35px; }
+      .language-submenu > li a:hover, .language-submenu > li a:focus {
+        color: #bada55; }
+      .language-submenu > li a:active {
+        color: #a0220d; }
