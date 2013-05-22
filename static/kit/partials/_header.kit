@@ -29,22 +29,28 @@
 
 	<body>
 
-		<header id="header" class="header">
-			<a href="#"><img src="<!-- $content -->img/guillem-andreu.svg" alt="Guillem Andreu" id="logo" class="logo" /></a>
-			<nav id="menu" class="menu">
-				<a href="#">Menu</a>
-				<ul class="menu-list">
-					<li><a href="#">Bio</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Contact</a></li>
-					<li class="language-selector">
-						<a href="#">Language</a>
-						<ul class="language-submenu">
-							<li><a href="#">CA</a></li>
-							<li><a href="#">ES</a></li>
-							<li><a href="#">EN</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div class="wrapper">
+
+			<header id="header" class="header">
+				<div class="logo">
+					<a href="#">
+						<img src="<!-- $content -->img/guillem-andreu.svg" alt="Guillem Andreu" id="logo" />
+					</a>
+				</div>
+				<nav id="menu" class="menu">
+					<a href="#" data-icon="menu">Menu</a>
+					<ul class="menu-list">
+						<li><a href="#">Bio</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="language-selector">
+							<a href="#">Language</a>
+							<ul class="language-submenu">
+								<li><a href="#">CA</a></li>
+								<li><a href="#">ES</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>

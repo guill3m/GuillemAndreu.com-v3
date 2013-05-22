@@ -28,25 +28,31 @@
 
 	<body>
 
-		<header id="header" class="header">
-			<a href="#"><img src="../content/themes/gp3/img/guillem-andreu.svg" alt="Guillem Andreu" id="logo" class="logo" /></a>
-			<nav id="menu" class="menu">
-				<a href="#">Menu</a>
-				<ul class="menu-list">
-					<li><a href="#">Bio</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Contact</a></li>
-					<li class="language-selector">
-						<a href="#">Language</a>
-						<ul class="language-submenu">
-							<li><a href="#">CA</a></li>
-							<li><a href="#">ES</a></li>
-							<li><a href="#">EN</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div class="wrapper">
+
+			<header id="header" class="header">
+				<div class="logo">
+					<a href="#">
+						<img src="../content/themes/gp3/img/guillem-andreu.svg" alt="Guillem Andreu" id="logo" />
+					</a>
+				</div>
+				<nav id="menu" class="menu">
+					<a href="#" data-icon="menu">Menu</a>
+					<ul class="menu-list">
+						<li><a href="#">Bio</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="language-selector">
+							<a href="#">Language</a>
+							<ul class="language-submenu">
+								<li><a href="#">CA</a></li>
+								<li><a href="#">ES</a></li>
+								<li><a href="#">EN</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
 <section id="contact-form" class="contact-form">
 	<p><strong>The best way to contact me is by email,</strong> you can do that either at <a href="mailto:hi[at]guillemandreu[dot]com">hi[at]guillemandreu[dot]com</a> or with the contact form following this lines. It’s exactly the same if you send me an email as if you use the contact form, you choose.</p>
 	<form action="#">
@@ -81,9 +87,11 @@
 	</ul>
 </aside>
 
-		<footer id="footer" class="footer">
-			<p><small>© 2013, Guillem Andreu</small></p>
-		</footer>
+			<footer id="footer" class="footer">
+				<p><small>© 2013, Guillem Andreu</small></p>
+			</footer>
+
+		</div><!-- END .wrapper -->
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
