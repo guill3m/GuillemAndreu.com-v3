@@ -238,3 +238,111 @@ table {
 textarea {
   overflow: auto;
   vertical-align: top; }
+
+/**
+ * Wordpress styles
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.wp-caption {
+  background: #ebebeb;
+  border: 1px solid #bada55;
+  max-width: 100%;
+  padding: 5px 3px 10px;
+  text-align: center; }
+  .wp-caption.alignnone {
+    margin: 5px 20px 20px 0; }
+  .wp-caption.alignleft {
+    margin: 5px 20px 20px 0; }
+  .wp-caption.alignright {
+    margin: 5px 0 20px 20px; }
+  .wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: auto; }
+  .wp-caption .wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px; }
+
+/**
+ * Base styles
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+body {
+  background: white;
+  color: #222222;
+  font: 400 14px "Open Sans", sans-serif; }
+
+a {
+  color: #a0220d;
+  text-decoration: none; }
+  a:hover {
+    color: #bada55; }
+  a:active {
+    color: #222222; }
+
+b,
+strong {
+  font-weight: 700; }
+
+i,
+em {
+  font-style: italic; }
+
+small {
+  font-size: .785714286em; }
+
+.wrapper {
+  max-width: 1400px; }
+
+/**
+ * Header
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+.header {
+  background: #ebebeb;
+  padding-top: 15px; }
+
+.logo {
+  text-align: center;
+  width: 50%; }
+  .logo img {
+    width: 80%; }

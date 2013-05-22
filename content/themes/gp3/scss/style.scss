@@ -14,14 +14,21 @@ Text Domain: gp3
 
 
 // Fonts
-@import "partials/font-face";
+@import "partials/base/font-face";
 
 // Variables
-@import "partials/variables";
+@import "partials/base/variables";
 
 // Mixins
-@import "partials/css3";
-@import "partials/mixins";
+@import "partials/base/css3";
+@import "partials/base/mixins";
 
 // Reset
-@import "partials/reset";
+@import "partials/base/reset";
+@import "partials/base/wordpress";
+
+// Base Styles
+@import "partials/base/base";
+
+// Header
+@import "partials/header/header";

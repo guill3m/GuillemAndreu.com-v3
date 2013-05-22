@@ -1,0 +1,19 @@
+/**
+ * Header
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+
+.header {
+	background: $color-bg2;
+	padding-top: 15px;
+}
+
+.logo {
+	text-align: center;
+	width: 50%;
+	img {
+		width: 80%;
+	}
+}
