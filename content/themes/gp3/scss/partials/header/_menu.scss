@@ -1,0 +1,52 @@
+/**
+ * Menu
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+
+.menu-list {
+	clear: both;
+	width: 100%;
+	> li {
+		display: inline-block;
+		margin: 10px 0 0;
+		text-align: center;
+		width: 25%;
+		a {
+			display: block;
+			font-weight: 700;
+			line-height: 35px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.menu-switch {
+	@include linear-gradient(0, darken($color-bg, 5%), $color-bg);
+	border: 1px solid darken($color-bg2, 10%) {
+		radius: 3px;
+		top: 0;
+		left: 0;
+	};
+	display: block;
+	float: right;
+	font: {
+		size: 1.142857143em; // 16/14
+		weight: 700;
+	}
+	line-height: 40px;
+	margin: 5px 7% 0 0;
+	text: {
+		align: center;
+		transform: uppercase;
+	}
+	width: 40%;
+	&:hover {
+		color: $color-txt;
+	}
+}
+
+.language-submenu {
+	display: none;
+}

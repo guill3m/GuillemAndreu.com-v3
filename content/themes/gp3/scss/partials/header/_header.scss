@@ -6,14 +6,19 @@
  */
 
 .header {
+	//@extend %clear-fix;
 	background: $color-bg2;
-	padding-top: 15px;
+	border-bottom: 1px solid darken($color-bg2, 10%);
+	padding: 15px 0 5px;
 }
 
 .logo {
+	float: left;
+	height: 50px;
 	text-align: center;
 	width: 50%;
 	img {
-		width: 80%;
+		max-height: 50px;
+		max-width: 80%;
 	}
 }

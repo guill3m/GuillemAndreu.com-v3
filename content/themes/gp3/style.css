@@ -329,7 +329,9 @@ small {
   font-size: .785714286em; }
 
 .wrapper {
-  max-width: 1400px; }
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%; }
 
 /**
  * Header
@@ -339,10 +341,58 @@ small {
  */
 .header {
   background: #ebebeb;
-  padding-top: 15px; }
+  border-bottom: 1px solid #d2d2d2;
+  padding: 15px 0 5px; }
 
 .logo {
+  float: left;
+  height: 50px;
   text-align: center;
   width: 50%; }
   .logo img {
-    width: 80%; }
+    max-height: 50px;
+    max-width: 80%; }
+
+/**
+ * Menu
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+.menu-list {
+  clear: both;
+  width: 100%; }
+  .menu-list > li {
+    display: inline-block;
+    margin: 10px 0 0;
+    text-align: center;
+    width: 25%; }
+    .menu-list > li a {
+      display: block;
+      font-weight: 700;
+      line-height: 35px;
+      text-transform: uppercase; }
+
+.menu-switch {
+  background: -webkit-linear-gradient(90deg, #f2f2f2, white);
+  background: -moz-linear-gradient(90deg, #f2f2f2, white);
+  background: -o-linear-gradient(90deg, #f2f2f2, white);
+  background: linear-gradient(0, #f2f2f2, white);
+  border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    border-top: 0;
+    border-left: 0;
+  display: block;
+  float: right;
+  font-size: 1.142857143em;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 5px 7% 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40%; }
+  .menu-switch:hover {
+    color: #222222; }
+
+.language-submenu {
+  display: none; }

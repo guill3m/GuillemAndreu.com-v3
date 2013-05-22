@@ -28,31 +28,33 @@
 
 	<body>
 
-		<div class="wrapper">
-
-			<header id="header" class="header">
+		<header id="header" class="header">
+			<div class="wrapper">
 				<div class="logo">
 					<a href="#">
 						<img src="../content/themes/gp3/img/guillem-andreu.svg" alt="Guillem Andreu" id="logo" />
 					</a>
 				</div>
 				<nav id="menu" class="menu">
-					<a href="#" data-icon="menu">Menu</a>
+					<a href="#" data-icon="menu" class="menu-switch">Menu</a>
 					<ul class="menu-list">
-						<li><a href="#">Bio</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Contact</a></li>
-						<li class="language-selector">
-							<a href="#">Language</a>
+						<li data-icon="bio"><a href="#">Bio</a></li><!--
+						--><li data-icon="work"><a href="#">Work</a></li><!--
+						 --><li data-icon="contact"><a href="#">Contact</a></li><!--
+						 --><li data-icon="lang" class="language-selector">
+							<a href="#" title="Language">Lang</a>
 							<ul class="language-submenu">
-								<li><a href="#">CA</a></li>
-								<li><a href="#">ES</a></li>
-								<li><a href="#">EN</a></li>
+								<li><a href="#">CA</a></li><!--
+								 --><li><a href="#">ES</a></li><!--
+								 --><li><a href="#">EN</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
-			</header>
+			</div>
+		</header>
+
+		<div class="wrapper">
 <article id="bio" class="bio">
 	<header id="bio-header" class="bio-header">
 		<h1 class="bio-name">Guillem <span class="bio-lastname">Andreu Muñoz</span></h1>
