@@ -1,0 +1,41 @@
+/**
+ * Base styles
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+
+body {
+	background: $color-bg;
+	color: $color-txt;
+	font: 400 14px $fonts;
+}
+
+a {
+	color: $color;
+	text-decoration: none;
+	&:hover {
+		color: $color2;
+	}
+	&:active {
+		color: $color-txt;
+	}
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+small {
+	font-size: .785714286em; // 11/14
+}
+
+.wrapper {
+	max-width: 1400px;
+}
