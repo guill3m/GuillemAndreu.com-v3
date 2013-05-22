@@ -58,7 +58,6 @@ add_filter('the_content_more_link', 'gp3_remove_more_jump_link');
 function gp3_remove_from_admin_menu() {
 	remove_menu_page('edit.php');
 	remove_menu_page('edit-comments.php');
-	remove_menu_page('tools.php');
 }
 
 add_action('admin_menu','gp3_remove_from_admin_menu');

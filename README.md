@@ -1,42 +1,10 @@
 # GuillemAndreu.com – V3
 
-I’m redesigning my professional website where I showcase my work. So, basically, this is a web portfolio.
+I’m redesigning my professional website where I showcase my work. So, basically, this is a web portfolio. The CMS I’m using is [Wordpress](http://wordpress.org).
 
 As it is also an element of my porfolio I thought it could be interesting to share the code and process.
 
 Feel free to use some bits of the code if it is useful to you, that’s why I put the code here on GitHub. Or use all of it, I don’t really care if you copy it all (shame on you), but it will be best for you if you don’t just copy and try to understand what’s going on with the code, how it works, and make it suit better to your needs.
-
-The CMS I’m using is [Wordpress](http://wordpress.org), but this is not the usual folder structure for a Wordpress site, this structure makes more sense to me.
-
-
-## Site structure
-
-- `cms`
-	- `lang` *(before `cms/wp-content/languages`)*
-	- `wp-admin`
-	- `wp-includes`
-- `content` *(before `cms/wp-content`)*
-	- `mu-plugins`
-	- `plugins`
-	- `themes`
-	- `uploads`
-
-
-#### wp-config.php
-
-These are the lines I use on the `wp-config.php` (it’s not on the repo, obviously) to achieve that structure:
-```PHP
-/**
- * Custom Wordpress folder structure
- */
-define('WP_HOME',               'http://' . $_SERVER['HTTP_HOST']);
-define('WP_SITEURL',            'http://' . $_SERVER['HTTP_HOST'] . '/cms');
-define('WP_CONTENT_FOLDERNAME', 'content');
-define('WP_CONTENT_DIR',        $_SERVER['DOCUMENT_ROOT'] . WP_CONTENT_FOLDERNAME);
-define('WP_CONTENT_URL',        'http://' . $_SERVER['HTTP_HOST'] . WP_CONTENT_FOLDERNAME);
-define('WP_LANG_DIR',           $_SERVER['DOCUMENT_ROOT'] . '/cms/lang');
-define('WP_LANG_URL',           'http://' . $_SERVER['HTTP_HOST'] . '/cms/lang');
-```
 
 
 ## Plugins I’m using
@@ -44,7 +12,7 @@ define('WP_LANG_URL',           'http://' . $_SERVER['HTTP_HOST'] . '/cms/lang')
 All the custom plugins I made for this are on the repo. This is the list of plugins that are not in the repo since I haven’t made, neither modified, them:
 
 - [Advanced Custom Fields](http://www.advancedcustomfields.com) by [Elliot Condon](http://www.elliotcondon.com)
-- [Polylang](http://polylang.wordpress.com) by Frédéric Demarle
+- [Multisite Language Switcher](http://lloc.de/msls) by [Dennis Ploetner](http://lloc.de)
 - [Wordpress SEO](http://yoast.com/wordpress/seo) by [Joost de Valk](http://yoast.com)
 - [WP Retina 2x](http://www.meow.fr/wp-retina-2x-wordpress-plugin/) by [Jordy Meow](http://www.meow.fr/)
 
