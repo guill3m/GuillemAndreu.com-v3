@@ -16,11 +16,15 @@
 		letter-spacing: 1px;
 		line-height: 35px;
 		text-transform: uppercase;
+		white-space: pre;
 	}
-	@media screen and (min-width: 650px) {
+	@media (min-width: 650px) {
 		float: left;
 		margin: 0 5% 0 0;
 		width: 65%;
+	}
+	@media print {
+		display: none;
 	}
 }
 
@@ -39,7 +43,7 @@
 	&:hover {
 		color: $color-txt;
 	}
-	@media screen and (min-width: 650px) {
+	@media (min-width: 650px) {
 		display: none !important;
 	}
 }
@@ -58,7 +62,7 @@
 			margin-top: 5px;
 		}
 	}
-	@media screen and (min-width: 480px) {
+	@media (min-width: 480px) {
 		margin: 0;
 		> li {
 			margin: 0 2.5%;
@@ -72,7 +76,7 @@
 			}
 		}
 	}
-	@media screen and (min-width: 650px) {
+	@media (min-width: 650px) {
 		display: block;
 	}
 }

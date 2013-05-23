@@ -9,6 +9,9 @@ body {
 	background: $color-bg;
 	color: $color-txt;
 	font: 400 14px $fonts;
+	@media print {
+		font-size: 10pt;
+	}
 }
 
 a {

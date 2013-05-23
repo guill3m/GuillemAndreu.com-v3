@@ -10,6 +10,10 @@
 	background: $color-bg2;
 	//border-bottom: 1px solid darken($color-bg2, 10%);
 	padding: 15px 0;
+	@media print {
+		background: $color-bg;
+		padding: 0 0 15px;
+	}
 }
 
 .logo {
@@ -18,8 +22,11 @@
 	height: 50px;
 	text-align: center;
 	width: 50%;
-	@media screen and (min-width: 650px) {
+	@media (min-width: 650px) {
 		width: 30%;
+	}
+	@media print {
+		text-align: left;
 	}
 	img {
 		max-height: 50px;

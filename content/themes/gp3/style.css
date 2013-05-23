@@ -314,6 +314,9 @@ body {
   background: white;
   color: #222222;
   font: 400 14px "Open Sans", sans-serif; }
+  @media print {
+    body {
+      font-size: 10pt; } }
 
 a {
   color: #a0220d;
@@ -348,6 +351,10 @@ small {
 .header {
   background: #ebebeb;
   padding: 15px 0; }
+  @media print {
+    .header {
+      background: white;
+      padding: 0 0 15px; } }
 
 .logo {
   display: block;
@@ -355,9 +362,12 @@ small {
   height: 50px;
   text-align: center;
   width: 50%; }
-  @media screen and (min-width: 650px) {
+  @media (min-width: 650px) {
     .logo {
       width: 30%; } }
+  @media print {
+    .logo {
+      text-align: left; } }
   .logo img {
     max-height: 50px;
     max-width: 80%; }
@@ -376,12 +386,16 @@ small {
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 35px;
-  text-transform: uppercase; }
-@media screen and (min-width: 650px) {
+  text-transform: uppercase;
+  white-space: pre; }
+@media (min-width: 650px) {
   .menu {
     float: left;
     margin: 0 5% 0 0;
     width: 65%; } }
+@media print {
+  .menu {
+    display: none; } }
 
 .menu-switch {
   background: white;
@@ -399,7 +413,7 @@ small {
   width: 35%; }
   .menu-switch:hover {
     color: #222222; }
-  @media screen and (min-width: 650px) {
+  @media (min-width: 650px) {
     .menu-switch {
       display: none !important; } }
 
@@ -414,7 +428,7 @@ small {
     width: 40%; }
     .menu-list > li:nth-child(3), .menu-list > li:nth-child(4) {
       margin-top: 5px; }
-  @media screen and (min-width: 480px) {
+  @media (min-width: 480px) {
     .menu-list {
       margin: 0; }
       .menu-list > li {
@@ -424,7 +438,7 @@ small {
           margin-top: 0; }
         .menu-list > li > a {
           line-height: 50px; } }
-  @media screen and (min-width: 650px) {
+  @media (min-width: 650px) {
     .menu-list {
       display: block; } }
 
