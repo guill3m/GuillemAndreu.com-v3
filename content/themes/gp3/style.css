@@ -312,6 +312,7 @@ a img.alignright {
  */
 body {
   background: white;
+  border-top: 5px solid #a0220d;
   color: #222222;
   font: 400 14px "Open Sans", sans-serif; }
   @media print {
@@ -420,7 +421,7 @@ small {
 .menu-list {
   clear: both;
   display: none;
-  margin-bottom: 5px;
+  padding-top: 5px;
   width: 100%; }
   .menu-list > li {
     margin: 10px 5% 0;
@@ -430,17 +431,18 @@ small {
       margin-top: 5px; }
   @media (min-width: 480px) {
     .menu-list {
-      margin: 0; }
+      padding-top: 15px; }
       .menu-list > li {
         margin: 0 2.5%;
         width: 20%; }
         .menu-list > li:nth-child(3), .menu-list > li:nth-child(4) {
-          margin-top: 0; }
-        .menu-list > li > a {
-          line-height: 50px; } }
+          margin-top: 0; } }
   @media (min-width: 650px) {
     .menu-list {
-      display: block; } }
+      display: block;
+      padding: 0; }
+      .menu-list > li > a {
+        line-height: 50px; } }
 
 .language-submenu {
   display: none;

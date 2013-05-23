@@ -51,7 +51,7 @@
 .menu-list {
 	clear: both;
 	display: none;
-	margin-bottom: 5px;
+	padding-top: 5px;
 	width: 100%;
 	> li {
 		margin: 10px 5% 0;
@@ -63,7 +63,7 @@
 		}
 	}
 	@media (min-width: 480px) {
-		margin: 0;
+		padding-top: 15px;
 		> li {
 			margin: 0 2.5%;
 			width: 20%;
@@ -71,13 +71,14 @@
 			&:nth-child(4) {
 				margin-top: 0;
 			}
-			> a {
-				line-height: 50px;
-			}
 		}
 	}
 	@media (min-width: 650px) {
 		display: block;
+		padding: 0;
+		> li > a {
+			line-height: 50px;
+		}
 	}
 }
 
