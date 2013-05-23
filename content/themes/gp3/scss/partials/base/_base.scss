@@ -7,7 +7,6 @@
 
 body {
 	background: $color-bg;
-	border-top: 5px solid $color;
 	color: $color-txt;
 	font: 400 14px $fonts;
 	@media print {
@@ -44,4 +43,9 @@ small {
 	margin: 0 auto;
 	max-width: 1400px;
 	width: 100%;
+	@media (min-height: 700px) and (min-width: 1200px) {
+		.header + & {
+			padding-top: 85px;
+		}
+	}
 }

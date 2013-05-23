@@ -312,7 +312,6 @@ a img.alignright {
  */
 body {
   background: white;
-  border-top: 5px solid #a0220d;
   color: #222222;
   font: 400 14px "Open Sans", sans-serif; }
   @media print {
@@ -342,6 +341,9 @@ small {
   margin: 0 auto;
   max-width: 1400px;
   width: 100%; }
+  @media (min-height: 700px) and (min-width: 1200px) {
+    .header + .wrapper {
+      padding-top: 85px; } }
 
 /**
  * Header
@@ -351,7 +353,13 @@ small {
  */
 .header {
   background: #ebebeb;
-  padding: 15px 0; }
+  background: rgba(232, 232, 232, 0.9);
+  border-top: 5px solid #a0220d;
+  padding: 15px 0;
+  width: 100%; }
+  @media (min-height: 700px) and (min-width: 1200px) {
+    .header {
+      position: fixed; } }
   @media print {
     .header {
       background: white;

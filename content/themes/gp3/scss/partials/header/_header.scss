@@ -7,9 +7,14 @@
 
 .header {
 	@extend %clear-fix;
-	background: $color-bg2;
-	//border-bottom: 1px solid darken($color-bg2, 10%);
+	background: $color-bg2; // Fallback
+	background: $color-bg2a;
+	border-top: 5px solid $color;
 	padding: 15px 0;
+	width: 100%;
+	@media (min-height: 700px) and (min-width: 1200px) {
+		position: fixed;
+	}
 	@media print {
 		background: $color-bg;
 		padding: 0 0 15px;
