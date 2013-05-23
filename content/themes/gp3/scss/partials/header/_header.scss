@@ -8,15 +8,19 @@
 .header {
 	@extend %clear-fix;
 	background: $color-bg2;
-	border-bottom: 1px solid darken($color-bg2, 10%);
+	//border-bottom: 1px solid darken($color-bg2, 10%);
 	padding: 15px 0;
 }
 
 .logo {
+	display: block;
 	float: left;
 	height: 50px;
 	text-align: center;
 	width: 50%;
+	@media screen and (min-width: 650px) {
+		width: 30%;
+	}
 	img {
 		max-height: 50px;
 		max-width: 80%;

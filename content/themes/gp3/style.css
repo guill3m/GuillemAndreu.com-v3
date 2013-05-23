@@ -299,7 +299,7 @@ a img.alignright {
     padding: 0;
     width: auto; }
   .wp-caption .wp-caption-text {
-    font-size: 11px;
+    font-size: .785714286em;
     line-height: 17px;
     margin: 0;
     padding: 0 4px 5px; }
@@ -347,14 +347,17 @@ small {
  */
 .header {
   background: #ebebeb;
-  border-bottom: 1px solid #d2d2d2;
   padding: 15px 0; }
 
 .logo {
+  display: block;
   float: left;
   height: 50px;
   text-align: center;
   width: 50%; }
+  @media screen and (min-width: 650px) {
+    .logo {
+      width: 30%; } }
   .logo img {
     max-height: 50px;
     max-width: 80%; }
@@ -365,25 +368,40 @@ small {
  * @subpackage GuillemAndreu.com
  * @since GuillemAndreu.com 3.0.0
  */
+.menu li {
+  display: inline-block;
+  text-align: center; }
+.menu a {
+  display: block;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-transform: uppercase; }
+@media screen and (min-width: 650px) {
+  .menu {
+    float: left;
+    margin: 0 5% 0 0;
+    width: 65%; } }
+
 .menu-switch {
+  background: white;
   background: -webkit-linear-gradient(90deg, #f2f2f2, white);
   background: -moz-linear-gradient(90deg, #f2f2f2, white);
   background: -o-linear-gradient(90deg, #f2f2f2, white);
   background: linear-gradient(0, #f2f2f2, white);
-  border: 1px solid #d2d2d2;
-    border-radius: 3px;
-    border-top: 0;
-    border-left: 0;
-  display: block;
+  border-bottom: 1px solid #d2d2d2;
+  border-radius: 3px;
+  border-right: 1px solid #d2d2d2;
   float: right;
-  font-weight: 700;
   line-height: 40px;
   margin: 5px 7% 0 0;
   text-align: center;
-  text-transform: uppercase;
   width: 35%; }
   .menu-switch:hover {
     color: #222222; }
+  @media screen and (min-width: 650px) {
+    .menu-switch {
+      display: none !important; } }
 
 .menu-list {
   clear: both;
@@ -391,35 +409,34 @@ small {
   margin-bottom: 5px;
   width: 100%; }
   .menu-list > li {
-    display: inline-block;
     margin: 10px 5% 0;
-    text-align: center;
+    vertical-align: top;
     width: 40%; }
     .menu-list > li:nth-child(3), .menu-list > li:nth-child(4) {
       margin-top: 5px; }
-    .menu-list > li a {
-      display: block;
-      font-weight: 800;
-      letter-spacing: 1px;
-      line-height: 35px;
-      text-transform: uppercase; }
+  @media screen and (min-width: 480px) {
+    .menu-list {
+      margin: 0; }
+      .menu-list > li {
+        margin: 0 2.5%;
+        width: 20%; }
+        .menu-list > li:nth-child(3), .menu-list > li:nth-child(4) {
+          margin-top: 0; }
+        .menu-list > li > a {
+          line-height: 50px; } }
+  @media screen and (min-width: 650px) {
+    .menu-list {
+      display: block; } }
 
 .language-submenu {
   display: none;
   margin: 5px 5% -5px;
   width: 90%; }
   .language-submenu > li {
-    display: inline-block;
-    margin: 0 1.66667%;
-    text-align: center;
-    width: 30%; }
-    .language-submenu > li a {
-      color: #222222;
-      display: block;
-      letter-spacing: 1px;
-      font-weight: 700;
-      line-height: 35px; }
-      .language-submenu > li a:hover, .language-submenu > li a:focus {
-        color: #bada55; }
-      .language-submenu > li a:active {
-        color: #a0220d; }
+    width: 33.3333333333%; }
+  .language-submenu a {
+    color: #222222; }
+    .language-submenu a:hover, .language-submenu a:focus {
+      color: #bada55; }
+    .language-submenu a:active {
+      color: #a0220d; }

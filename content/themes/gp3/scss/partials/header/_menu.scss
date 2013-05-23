@@ -5,25 +5,42 @@
  * @since GuillemAndreu.com 3.0.0
  */
 
+.menu {
+	li {
+		display: inline-block;
+		text-align: center;
+	}
+	a {
+		display: block;
+		font-weight: 800;
+		letter-spacing: 1px;
+		line-height: 35px;
+		text-transform: uppercase;
+	}
+	@media screen and (min-width: 650px) {
+		float: left;
+		margin: 0 5% 0 0;
+		width: 65%;
+	}
+}
+
 .menu-switch {
-	@include linear-gradient(0, darken($color-bg, 5%), $color-bg);
-	border: 1px solid darken($color-bg2, 10%) {
+	@include linear-gradient(0, darken($color-bg, 5%), $color-bg, $color-bg);
+	border: {
+		bottom: 1px solid darken($color-bg2, 10%);
 		radius: 3px;
-		top: 0;
-		left: 0;
+		right: 1px solid darken($color-bg2, 10%);
 	};
-	display: block;
 	float: right;
-	font-weight: 700;
 	line-height: 40px;
 	margin: 5px 7% 0 0;
-	text: {
-		align: center;
-		transform: uppercase;
-	}
+	text-align: center;
 	width: 35%;
 	&:hover {
 		color: $color-txt;
+	}
+	@media screen and (min-width: 650px) {
+		display: none !important;
 	}
 }
 
@@ -33,21 +50,30 @@
 	margin-bottom: 5px;
 	width: 100%;
 	> li {
-		display: inline-block;
 		margin: 10px 5% 0;
-		text-align: center;
+		vertical-align: top;
 		width: 40%;
 		&:nth-child(3),
 		&:nth-child(4) {
 			margin-top: 5px;
 		}
-		a {
-			display: block;
-			font-weight: 800;
-			letter-spacing: 1px;
-			line-height: 35px;
-			text-transform: uppercase;
+	}
+	@media screen and (min-width: 480px) {
+		margin: 0;
+		> li {
+			margin: 0 2.5%;
+			width: 20%;
+			&:nth-child(3),
+			&:nth-child(4) {
+				margin-top: 0;
+			}
+			> a {
+				line-height: 50px;
+			}
 		}
+	}
+	@media screen and (min-width: 650px) {
+		display: block;
 	}
 }
 
@@ -56,23 +82,16 @@
 	margin: 5px 5% -5px;
 	width: 90%;
 	> li {
-		display: inline-block;
-		margin: 0 1.6666666667%;
-		text-align: center;
-		width: 30%;
-		a {
-			color: $color-txt;
-			display: block;
-			letter-spacing: 1px;
-			font-weight: 700;
-			line-height: 35px;
-			&:hover,
-			&:focus {
-				color: $color2;
-			}
-			&:active {
-				color: $color;
-			}
+		width: 33.3333333333%;
+	}
+	a {
+		color: $color-txt;
+		&:hover,
+		&:focus {
+			color: $color2;
+		}
+		&:active {
+			color: $color;
 		}
 	}
 }
