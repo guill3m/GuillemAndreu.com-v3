@@ -20,16 +20,35 @@ Text Domain: gp3
 @import "partials/base/variables";
 
 // Mixins
-@import "partials/base/css3";
-@import "partials/base/mixins";
+@import "partials/mixins/css3";
+@import "partials/mixins/mixins";
 
 // Reset
 @import "partials/base/reset";
-@import "partials/base/wordpress";
 
 // Base Styles
 @import "partials/base/base";
+@import "partials/base/wordpress";
 
 // Header
 @import "partials/header/header";
 @import "partials/header/menu";
+
+// Home
+@import "partials/home/home";
+@import "partials/home/slider";
+
+// Work
+@import "partials/work/work";
+@import "partials/work/project";
+
+// Bio
+@import "partials/bio/bio";
+
+// Contact
+@import "partials/contact/forms";
+@import "partials/contact/sidebar";
+
+// Footer
+@import "partials/footer/footer";
+@import "partials/footer/breadcrumbs";

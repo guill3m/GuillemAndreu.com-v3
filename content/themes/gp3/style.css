@@ -246,6 +246,80 @@ textarea {
   vertical-align: top; }
 
 /**
+ * Base styles
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+body {
+  background: white;
+  color: #222222;
+  font: 400 14px "Open Sans", sans-serif; }
+  @media print {
+    body {
+      font-size: 10pt; } }
+
+h1 {
+  color: #222222;
+  font-size: 1.571428571em;
+  font-weight: 600; }
+
+h2 {
+  color: #a0220d;
+  font-size: 1.285714286em;
+  font-weight: 700; }
+
+h3 {
+  color: #999999;
+  font-size: 1.142857143em;
+  font-weight: 600; }
+
+h4 {
+  color: #999999;
+  font-size: 1em;
+  font-weight: 800; }
+
+p {
+  line-height: 1.4; }
+
+a {
+  color: #a0220d;
+  text-decoration: none; }
+  a:hover {
+    color: #bada55; }
+  a:active {
+    color: #222222; }
+
+b,
+strong {
+  font-weight: 700; }
+
+i,
+em {
+  font-style: italic; }
+
+small {
+  font-size: .785714286em; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%; }
+  @media (min-height: 700px) and (min-width: 1200px) {
+    .header + .wrapper {
+      padding-top: 85px; } }
+
+::-moz-selection {
+  background: #bada55;
+  color: #222222;
+  text-shadow: none; }
+
+::selection {
+  background: #bada55;
+  color: #222222;
+  text-shadow: none; }
+
+/**
  * Wordpress styles
  * @package WordPress
  * @subpackage GuillemAndreu.com
@@ -303,47 +377,6 @@ a img.alignright {
     line-height: 17px;
     margin: 0;
     padding: 0 4px 5px; }
-
-/**
- * Base styles
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-body {
-  background: white;
-  color: #222222;
-  font: 400 14px "Open Sans", sans-serif; }
-  @media print {
-    body {
-      font-size: 10pt; } }
-
-a {
-  color: #a0220d;
-  text-decoration: none; }
-  a:hover {
-    color: #bada55; }
-  a:active {
-    color: #222222; }
-
-b,
-strong {
-  font-weight: 700; }
-
-i,
-em {
-  font-style: italic; }
-
-small {
-  font-size: .785714286em; }
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1400px;
-  width: 100%; }
-  @media (min-height: 700px) and (min-width: 1200px) {
-    .header + .wrapper {
-      padding-top: 85px; } }
 
 /**
  * Header
@@ -464,3 +497,58 @@ small {
       color: #bada55; }
     .language-submenu a:active {
       color: #a0220d; }
+
+/**
+ * Home
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Home Slider
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Work base styles
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Project
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Bio
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Forms
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Contact sidebar
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Footer
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
+/**
+ * Breadcrumbs
+ * @package WordPress
+ * @subpackage GuillemAndreu.com
+ * @since GuillemAndreu.com 3.0.0
+ */
