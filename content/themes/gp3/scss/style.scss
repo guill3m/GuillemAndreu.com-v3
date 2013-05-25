@@ -28,7 +28,7 @@ Text Domain: gp3
 
 // Base Styles
 @import "partials/base/base";
-@import "partials/base/wordpress";
+// @import "partials/base/wordpress"; // Not needed for the moment
 
 // Header
 @import "partials/header/header";

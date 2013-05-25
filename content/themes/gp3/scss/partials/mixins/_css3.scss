@@ -1,9 +1,7 @@
-/**
- * CSS3 Mixins
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
+// CSS3 Mixins
+// @package WordPress
+// @subpackage GuillemAndreu.com
+// @since GuillemAndreu.com 3.0.0
 
 
 @mixin appearance($val) {
@@ -46,8 +44,8 @@
 }
 
 @mixin transition($args) {
-	-webkit-transition: $args;
-	-moz-transition: $args;
-	-o-transition: $args;
-	transition: $args;
+	-webkit-transition: unquote($args);
+	-moz-transition: unquote($args);
+	-o-transition: unquote($args);
+	transition: unquote($args);
 }

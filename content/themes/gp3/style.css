@@ -10,12 +10,6 @@ Tags: responsive, rwd, mobile first, content first, portfolio, translation ready
 License: Proprietary - © 2013 Guillem Andreu
 Text Domain: gp3
 */
-/**
- * Fonts
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
 @font-face {
   font-family: "Open Sans";
   src: url("fonts/opensans-light.woff") format("woff"), url("fonts/opensans-light.ttf") format("truetype");
@@ -76,36 +70,12 @@ Text Domain: gp3
   font-weight: 800;
   font-style: italic; }
 
-/**
- * Variables
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * CSS3 Mixins
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Mixins
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
 .header:before, .header:after {
   content: "";
   display: table; }
 .header:after {
   clear: both; }
 
-/**
- * Reset & Normalize
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -245,12 +215,6 @@ textarea {
   overflow: auto;
   vertical-align: top; }
 
-/**
- * Base styles
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
 body {
   background: white;
   color: #222222;
@@ -271,20 +235,25 @@ h2 {
 
 h3 {
   color: #999999;
-  font-size: 1.142857143em;
-  font-weight: 600; }
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 h4 {
   color: #999999;
   font-size: 1em;
-  font-weight: 800; }
+  font-weight: 700; }
 
 p {
   line-height: 1.4; }
 
 a {
   color: #a0220d;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
   a:hover {
     color: #bada55; }
   a:active {
@@ -319,71 +288,6 @@ small {
   color: #222222;
   text-shadow: none; }
 
-/**
- * Wordpress styles
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto; }
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-a img.alignnone {
-  margin: 5px 20px 20px 0; }
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-.wp-caption {
-  background: #ebebeb;
-  border: 1px solid #bada55;
-  max-width: 100%;
-  padding: 5px 3px 10px;
-  text-align: center; }
-  .wp-caption.alignnone {
-    margin: 5px 20px 20px 0; }
-  .wp-caption.alignleft {
-    margin: 5px 20px 20px 0; }
-  .wp-caption.alignright {
-    margin: 5px 0 20px 20px; }
-  .wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 100%;
-    padding: 0;
-    width: auto; }
-  .wp-caption .wp-caption-text {
-    font-size: .785714286em;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px; }
-
-/**
- * Header
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
 .header {
   background: #ebebeb;
   background: rgba(232, 232, 232, 0.9);
@@ -414,22 +318,26 @@ a img.alignright {
     max-height: 50px;
     max-width: 80%; }
 
-/**
- * Menu
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
 .menu li {
   display: inline-block;
   text-align: center; }
 .menu a {
+  border-radius: 3px;
   display: block;
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 35px;
   text-transform: uppercase;
+  -webkit-transition: background .3s ease, color .3s ease;
+  -moz-transition: background .3s ease, color .3s ease;
+  -o-transition: background .3s ease, color .3s ease;
+  transition: background .3s ease, color .3s ease;
   white-space: pre; }
+  .menu a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #222222; }
+  .menu a:active {
+    color: #bada55; }
 @media (min-width: 650px) {
   .menu {
     float: left;
@@ -439,25 +347,27 @@ a img.alignright {
   .menu {
     display: none; } }
 
-.menu-switch {
+a.menu-switch {
   background: white;
   background: -webkit-linear-gradient(90deg, #f2f2f2, white);
   background: -moz-linear-gradient(90deg, #f2f2f2, white);
   background: -o-linear-gradient(90deg, #f2f2f2, white);
   background: linear-gradient(0, #f2f2f2, white);
   border-bottom: 1px solid #d2d2d2;
-  border-radius: 3px;
   border-right: 1px solid #d2d2d2;
+  border-radius: 3px;
   float: right;
   line-height: 40px;
   margin: 5px 7% 0 0;
   text-align: center;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   width: 35%; }
-  .menu-switch:hover {
-    color: #222222; }
   @media (min-width: 650px) {
-    .menu-switch {
-      display: none !important; } }
+    a.menu-switch {
+      display: none; } }
 
 .menu-list {
   clear: both;
@@ -494,61 +404,6 @@ a img.alignright {
   .language-submenu a {
     color: #222222; }
     .language-submenu a:hover, .language-submenu a:focus {
-      color: #bada55; }
-    .language-submenu a:active {
       color: #a0220d; }
-
-/**
- * Home
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Home Slider
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Work base styles
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Project
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Bio
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Forms
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Contact sidebar
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Footer
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
-/**
- * Breadcrumbs
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
+    .language-submenu a:active {
+      color: #bada55; }

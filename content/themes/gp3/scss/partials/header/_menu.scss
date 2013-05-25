@@ -1,9 +1,8 @@
-/**
- * Menu
- * @package WordPress
- * @subpackage GuillemAndreu.com
- * @since GuillemAndreu.com 3.0.0
- */
+// Menu
+// @package WordPress
+// @subpackage GuillemAndreu.com
+// @since GuillemAndreu.com 3.0.0
+
 
 .menu {
 	li {
@@ -11,12 +10,21 @@
 		text-align: center;
 	}
 	a {
+		border-radius: 3px;
 		display: block;
 		font-weight: 800;
 		letter-spacing: 1px;
 		line-height: 35px;
 		text-transform: uppercase;
+		@include transition("background .3s ease, color .3s ease");
 		white-space: pre;
+		&:hover {
+			background: rgba(255,255,255,.4);
+			color: $color-txt;
+		}
+		&:active {
+			color: $color2;
+		}
 	}
 	@media (min-width: 650px) {
 		float: left;
@@ -28,23 +36,21 @@
 	}
 }
 
-.menu-switch {
+a.menu-switch {
 	@include linear-gradient(0, darken($color-bg, 5%), $color-bg, $color-bg);
 	border: {
 		bottom: 1px solid darken($color-bg2, 10%);
-		radius: 3px;
 		right: 1px solid darken($color-bg2, 10%);
+		radius: 3px;
 	};
 	float: right;
 	line-height: 40px;
 	margin: 5px 7% 0 0;
 	text-align: center;
+	@include transition(color .3s ease);
 	width: 35%;
-	&:hover {
-		color: $color-txt;
-	}
 	@media (min-width: 650px) {
-		display: none !important;
+		display: none;
 	}
 }
 
@@ -93,10 +99,10 @@
 		color: $color-txt;
 		&:hover,
 		&:focus {
-			color: $color2;
+			color: $color;
 		}
 		&:active {
-			color: $color;
+			color: $color2;
 		}
 	}
 }
