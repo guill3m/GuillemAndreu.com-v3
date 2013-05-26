@@ -13,35 +13,38 @@
 
 .bio-header {
 	@extend %clear-fix;
-	@media (min-width: 900px) {
+	@media (min-width: 650px) {
 		background: url(img/bg-bio-details.svg) 0 100% repeat-x;
-		background-size: 1px 72px;
+		background-size: 1px 40px;
 	}
 }
 
 .bio-name {
 	float: right;
 	font-weight: 700;
-	margin-top: 30px;
+	margin-top: 40px;
 	width: 50%;
-	@media (min-width: 400px) {
+	@media (min-width: 500px) {
 		margin-top: 80px;
 	}
 	@media (min-width: 550px) {
 		width: 60%;
+	}
+	@media (min-width: 650px) {
+		margin-top: 65px;
 	}
 	@media (min-width: 700px) {
 		width: 70%;
 	}
 	@media (min-width: 900px),
 	       print {
-		margin-top: 40px;
 		width: 75%;
 	}
 	@media (min-width: 1150px) {
 		width: 80%;
 	}
 	@media print {
+		margin-top: 65px;
 		padding-left: 30px;
 	}
 }
@@ -77,21 +80,39 @@
 	}
 }
 
-.bio-details,
-.bio-contact {
+.bio-details {
+	background: $color;
+	clear: both;
 	color: $color-bg;
 	list-style: none;
-	padding: 3px 0;
 	li {
 		display: inline-block;
-		line-height: 30px;
+		line-height: 40px;
 		text-align: center;
 		width: 50%;
 	}
-	@media (min-width: 900px),
+	@media (min-width: 650px),
 	       print {
-		background: transparent !important;
+		background: transparent;
+		clear: none;
 		float: right;
+		margin-top: 50px;
+		width: 60%;
+		li {
+			text-align: left;
+			width: 40%;
+		}
+	}
+	@media (min-width: 700px),
+	       print {
+		width: 70%;
+	}
+	@media (min-width: 800px) {
+		li {
+			width: 30%;
+		}
+	}
+	@media (min-width: 900px) {
 		width: 75%;
 	}
 	@media (min-width: 1150px) {
@@ -99,53 +120,15 @@
 	}
 	@media print {
 		color: $color-txt;
+		margin-top: 20px;
 		a {
 			color: $color-txt !important;
 		}
 	}
 }
 
-.bio-details {
-	background: $color-txt2;
-	clear: both;
-	@media (min-width: 900px),
-	       print {
-		clear: none;
-		margin-top: 43px;
-	}
-	@media print {
-		margin-top: 20px;
-	}
-}
-
-.bio-age {
-	display: none;
-	font-weight: 300;
-	@media (min-width: 480px) {
-		display: inline;
-	}
-}
-
 .bio-country {
 	font-weight: 300;
-}
-
-.bio-contact {
-	background: $color;
-	a {
-		color: $color-bg;
-	}
-}
-
-li.bio-email {
-	width: 100%;
-}
-
-@media (min-width: 620px),
-       print {
-	.bio-contact li {
-		width: 33.3333333333%;
-	}
 }
 
 .bio-left,

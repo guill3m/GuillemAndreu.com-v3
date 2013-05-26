@@ -274,7 +274,7 @@ small {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%; }
   @media (min-height: 700px) and (min-width: 1200px) {
     .header + .wrapper {
@@ -414,34 +414,37 @@ a.menu-switch {
 .bio small {
   font-weight: 300; }
 
-@media (min-width: 900px) {
+@media (min-width: 650px) {
   .bio-header {
     background: url(img/bg-bio-details.svg) 0 100% repeat-x;
-    background-size: 1px 72px; } }
+    background-size: 1px 40px; } }
 
 .bio-name {
   float: right;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 40px;
   width: 50%; }
-  @media (min-width: 400px) {
+  @media (min-width: 500px) {
     .bio-name {
       margin-top: 80px; } }
   @media (min-width: 550px) {
     .bio-name {
       width: 60%; } }
+  @media (min-width: 650px) {
+    .bio-name {
+      margin-top: 65px; } }
   @media (min-width: 700px) {
     .bio-name {
       width: 70%; } }
   @media (min-width: 900px), print {
     .bio-name {
-      margin-top: 40px;
       width: 75%; } }
   @media (min-width: 1150px) {
     .bio-name {
       width: 80%; } }
   @media print {
     .bio-name {
+      margin-top: 65px;
       padding-left: 30px; } }
 
 .bio-lastname {
@@ -470,67 +473,48 @@ a.menu-switch {
     .bio-picture {
       width: 20%; } }
 
-.bio-details,
-.bio-contact {
+.bio-details {
+  background: #a0220d;
+  clear: both;
   color: white;
-  list-style: none;
-  padding: 3px 0; }
-  .bio-details li,
-  .bio-contact li {
+  list-style: none; }
+  .bio-details li {
     display: inline-block;
-    line-height: 30px;
+    line-height: 40px;
     text-align: center;
     width: 50%; }
-  @media (min-width: 900px), print {
-    .bio-details,
-    .bio-contact {
-      background: transparent !important;
+  @media (min-width: 650px), print {
+    .bio-details {
+      background: transparent;
+      clear: none;
       float: right;
+      margin-top: 50px;
+      width: 60%; }
+      .bio-details li {
+        text-align: left;
+        width: 40%; } }
+  @media (min-width: 700px), print {
+    .bio-details {
+      width: 70%; } }
+  @media (min-width: 800px) {
+    .bio-details li {
+      width: 30%; } }
+  @media (min-width: 900px) {
+    .bio-details {
       width: 75%; } }
   @media (min-width: 1150px) {
-    .bio-details,
-    .bio-contact {
+    .bio-details {
       width: 80%; } }
   @media print {
-    .bio-details,
-    .bio-contact {
-      color: #222222; }
-      .bio-details a,
-      .bio-contact a {
+    .bio-details {
+      color: #222222;
+      margin-top: 20px; }
+      .bio-details a {
         color: #222222 !important; } }
-
-.bio-details {
-  background: #999999;
-  clear: both; }
-  @media (min-width: 900px), print {
-    .bio-details {
-      clear: none;
-      margin-top: 43px; } }
-  @media print {
-    .bio-details {
-      margin-top: 20px; } }
-
-.bio-age {
-  display: none;
-  font-weight: 300; }
-  @media (min-width: 480px) {
-    .bio-age {
-      display: inline; } }
 
 .bio-country {
   font-weight: 300; }
 
-.bio-contact {
-  background: #a0220d; }
-  .bio-contact a {
-    color: white; }
-
-li.bio-email {
-  width: 100%; }
-
-@media (min-width: 620px), print {
-  .bio-contact li {
-    width: 33.3333333333%; } }
 .bio-left,
 .bio-right {
   padding: 0 15px; }
