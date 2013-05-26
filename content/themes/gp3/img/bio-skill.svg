@@ -1,0 +1,28 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="62px" height="100px" viewBox="0 0 62 100">
+	<circle fill="#A0220D" cx="5" cy="10" r="5"/>
+	<circle fill="#999999" cx="18" cy="10" r="5"/>
+	<circle fill="#999999" cx="31" cy="10" r="5"/>
+	<circle fill="#999999" cx="44" cy="10" r="5"/>
+	<circle fill="#999999" cx="57" cy="10" r="5"/>
+	<circle fill="#A0220D" cx="5" cy="90" r="5"/>
+	<circle fill="#A0220D" cx="18" cy="90" r="5"/>
+	<circle fill="#A0220D" cx="31" cy="90" r="5"/>
+	<circle fill="#A0220D" cx="44" cy="90" r="5"/>
+	<circle fill="#A0220D" cx="57" cy="90" r="5"/>
+	<circle fill="#A0220D" cx="5" cy="70" r="5"/>
+	<circle fill="#A0220D" cx="18" cy="70" r="5"/>
+	<circle fill="#A0220D" cx="31" cy="70" r="5"/>
+	<circle fill="#A0220D" cx="44" cy="70" r="5"/>
+	<circle fill="#999999" cx="57" cy="70" r="5"/>
+	<circle fill="#A0220D" cx="5" cy="50" r="5"/>
+	<circle fill="#A0220D" cx="18" cy="50" r="5"/>
+	<circle fill="#A0220D" cx="31" cy="50" r="5"/>
+	<circle fill="#999999" cx="44" cy="50" r="5"/>
+	<circle fill="#999999" cx="57" cy="50" r="5"/>
+	<circle fill="#A0220D" cx="5" cy="30" r="5"/>
+	<circle fill="#A0220D" cx="18" cy="30" r="5"/>
+	<circle fill="#999999" cx="31" cy="30" r="5"/>
+	<circle fill="#999999" cx="44" cy="30" r="5"/>
+	<circle fill="#999999" cx="57" cy="30" r="5"/>
+</svg>

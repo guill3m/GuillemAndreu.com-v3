@@ -4,3 +4,9 @@
 // @since GuillemAndreu.com 3.0.0
 
 
+.footer {
+	padding: 15px;
+	@media print {
+		display: none;
+	}
+}

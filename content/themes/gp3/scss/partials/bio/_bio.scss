@@ -4,3 +4,297 @@
 // @since GuillemAndreu.com 3.0.0
 
 
+.bio {
+	@extend %clear-fix;
+	small {
+		font-weight: 300;
+	}
+}
+
+.bio-header {
+	@extend %clear-fix;
+	@media (min-width: 900px) {
+		background: url(img/bg-bio-details.svg) 0 100% repeat-x;
+		background-size: 1px 72px;
+	}
+}
+
+.bio-name {
+	float: right;
+	font-weight: 700;
+	margin-top: 30px;
+	width: 50%;
+	@media (min-width: 400px) {
+		margin-top: 80px;
+	}
+	@media (min-width: 550px) {
+		width: 60%;
+	}
+	@media (min-width: 700px) {
+		width: 70%;
+	}
+	@media (min-width: 900px),
+	       print {
+		margin-top: 40px;
+		width: 75%;
+	}
+	@media (min-width: 1150px) {
+		width: 80%;
+	}
+	@media print {
+		padding-left: 30px;
+	}
+}
+
+.bio-lastname {
+	font-weight: 300;
+	&:before {
+		content: "\A";
+		white-space: pre;
+	}
+}
+
+.bio-picture {
+	float: left;
+	padding-top: 15px;
+	width: 50%;
+	img {
+		max-height: 200px;
+		vertical-align: bottom;
+	}
+	@media (min-width: 550px) {
+		width: 40%;
+	}
+	@media (min-width: 700px) {
+		width: 30%;
+	}
+	@media (min-width: 900px),
+	       print {
+		width: 25%;
+	}
+	@media (min-width: 1150px) {
+		width: 20%;
+	}
+}
+
+.bio-details,
+.bio-contact {
+	color: $color-bg;
+	list-style: none;
+	padding: 3px 0;
+	li {
+		display: inline-block;
+		line-height: 30px;
+		text-align: center;
+		width: 50%;
+	}
+	@media (min-width: 900px),
+	       print {
+		background: transparent !important;
+		float: right;
+		width: 75%;
+	}
+	@media (min-width: 1150px) {
+		width: 80%;
+	}
+	@media print {
+		color: $color-txt;
+		a {
+			color: $color-txt !important;
+		}
+	}
+}
+
+.bio-details {
+	background: $color-txt2;
+	clear: both;
+	@media (min-width: 900px),
+	       print {
+		clear: none;
+		margin-top: 43px;
+	}
+	@media print {
+		margin-top: 20px;
+	}
+}
+
+.bio-age {
+	display: none;
+	font-weight: 300;
+	@media (min-width: 480px) {
+		display: inline;
+	}
+}
+
+.bio-country {
+	font-weight: 300;
+}
+
+.bio-contact {
+	background: $color;
+	a {
+		color: $color-bg;
+	}
+}
+
+li.bio-email {
+	width: 100%;
+}
+
+@media (min-width: 620px),
+       print {
+	.bio-contact li {
+		width: 33.3333333333%;
+	}
+}
+
+.bio-left,
+.bio-right {
+	padding: 0 15px;
+	ul {
+		list-style: none;
+	}
+}
+
+@media (min-width: 650px),
+       print {
+	.bio-left,
+	.bio-right {
+		float: left;
+	}
+	.bio-left {
+		padding: 5px 25px 0 15px;
+		width: 65%;
+	}
+	.bio-right {
+		background: $color-bg2;
+		padding: 0 25px 25px;
+		width: 35%;
+	}
+}
+
+@media (min-width: 900px) {
+	.bio-left {
+		width: 70%;
+	}
+	.bio-right {
+		width: 30%;
+	}
+	.bio-left-left,
+	.bio-left-right {
+		float: left;
+	}
+	.bio-left-left {
+		margin-right: 5%;
+		width: 50%;
+	}
+	.bio-left-right {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1100px) {
+	.bio-left {
+		width: 75%;
+	}
+	.bio-right {
+		width: 25%;
+	}
+}
+
+@media print {
+	.bio-right {
+		background: $color-bg;
+	}
+}
+
+.bio-description {
+	color: $color-txt2;
+	font-weight: 600;
+	padding: 15px 0 0;
+	@media (min-width: 900px) {
+		padding: 30px 25px 25px;
+	}
+}
+
+.bio-job,
+.bio-career,
+.bio-course,
+.bio-other {
+	padding-top: 10px;
+}
+
+.bio-job-position {
+	font-weight: 600;
+}
+
+.bio-company,
+.bio-career-name,
+.bio-course-name,
+.bio-other-name {
+	font-weight: 700;
+}
+
+.bio-company,
+.bio-career-center,
+.bio-course-center {
+	a {
+		color: $color-txt;
+		&:hover {
+			color: $color2;
+		}
+		&:active {
+			color: $color-txt;
+		}
+	}
+}
+
+.bio-job-description,
+.bio-job-lenght,
+.bio-course-date,
+.bio-other-description {
+	font-size: .928571429em; //13/14
+}
+
+.bio-job-description {
+	color: $color-txt2;
+	padding: 3px 0;
+}
+
+.bio-job-lenght,
+.bio-career-center,
+.bio-course-center,
+.bio-other-description {
+	&:before {
+		content: "— ";
+	}
+}
+
+.bio-course-date {
+	font-weight: 300;
+}
+
+#bio-languages ul {
+	padding-top: 10px;
+}
+
+.bio-skill {
+	background: url(img/bio-skill.svg) 0 100% no-repeat;
+	background-size: 62px 100px;
+	line-height: 20px;
+	&.level1 {
+		background-position: 100% 0;
+	}
+	&.level2 {
+		background-position: 100% -20px;
+	}
+	&.level3 {
+		background-position: 100% -40px;
+	}
+	&.level4 {
+		background-position: 100% -60px;
+	}
+	&.level5 {
+		background-position: 100% -80px;
+	}
+}
