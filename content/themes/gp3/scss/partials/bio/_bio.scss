@@ -186,8 +186,13 @@
 }
 
 @media print {
+	.bio-left,
+	.bio-right {
+		padding: 0;
+	}
 	.bio-right {
 		background: $color-bg;
+		padding-left: 25px;
 	}
 }
 
