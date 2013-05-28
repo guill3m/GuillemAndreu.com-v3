@@ -43,6 +43,12 @@
 	background: linear-gradient($deg, $color1, $color2);
 }
 
+@mixin font-feature-settings($val) {
+	-webkit-font-feature-settings: unquote($val);
+	-moz-font-feature-settings: unquote($val);
+	text-rendering: unquote($val);
+}
+
 @mixin transition($args) {
 	-webkit-transition: unquote($args);
 	-moz-transition: unquote($args);

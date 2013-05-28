@@ -4,3 +4,56 @@
 // @since GuillemAndreu.com 3.0.0
 
 
+.contact-form {
+	padding: 15px 15px 0;
+	h1 {
+		margin: 0 0 10px;
+	}
+	@media (min-width: 650px),
+	       print {
+		float: right;
+		width: 70%;
+	}
+	@media (min-width: 1000px) {
+		width: 80%;
+	}
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="mail"],
+textarea {
+	border: 1px solid $color-txt2 {
+		radius: 3px;
+	}
+	line-height: 28px;
+	padding: 0 5px;
+	@include transition("border-color .3s ease, box-shadow .3s ease");
+	width: 100%;
+	&:hover {
+		@include box-shadow(0 0 2px $color-txt2);
+	}
+	&:focus,
+	&:active {
+		border-color: $color;
+		@include box-shadow(0 0 2px $color);
+		outline: 0;
+	}
+}
+
+textarea {
+	height: 100px;
+	line-height: 1.4em;
+	padding: 5px;
+}
+
+label {
+	font-weight: 600;
+	line-height: 25px;
+}
+
+.contact-form form {
+	p:nth-child(odd) {
+		padding-top: 10px;
+	}
+}
