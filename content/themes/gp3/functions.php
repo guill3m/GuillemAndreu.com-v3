@@ -16,7 +16,7 @@ function gp3_setup(){
 	load_theme_textdomain('gp3', get_template_directory() . '/lang');
 	// Images
 	add_theme_support('post-thumbnails', 'project');
-	add_image_size('project-frontpage', 1000, 350, true); // Remember to change to the final size when defined !!!
+	add_image_size('project-frontpage', 1440, 500, true);
 	add_image_size('project-thumbnail', 300, 200, true); // Remember to change to the final size when defined !!!
 }
 
