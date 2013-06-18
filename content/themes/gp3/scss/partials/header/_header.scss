@@ -13,6 +13,7 @@
 	width: 100%;
 	@media (min-height: 700px) and (min-width: 1200px) {
 		position: fixed;
+		z-index: 1;
 	}
 	@media print {
 		background: $color-bg;
