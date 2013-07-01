@@ -4,3 +4,29 @@
 // @since GuillemAndreu.com 3.0.0
 
 
+.home-quotes {
+	margin-top: 10px;
+}
+
+.quote {
+	font: {
+		size: 1.285714286em; // 18/14
+		weight: 800;
+	}
+	display: inline-block;
+	padding: 15px;
+	@media (min-width: 650px) {
+		width: 50%;
+	}
+}
+
+.quote-author {
+	color: $color-txt2;
+	font: {
+		size: .777777778em; //14/18
+		weight: 400;
+	}
+	&:before {
+		content: "— "
+	}
+}

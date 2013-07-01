@@ -16,7 +16,7 @@
 		letter-spacing: 1px;
 		line-height: 35px;
 		text-transform: uppercase;
-		@include transition("background .3s ease, color .3s ease");
+		@include transition(background .3s ease, color .3s ease);
 		white-space: pre;
 		&:hover {
 			background: rgba(255,255,255,.4);

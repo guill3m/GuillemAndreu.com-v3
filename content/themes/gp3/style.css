@@ -287,10 +287,10 @@ small {
 [data-icon]:before {
   content: attr(data-icon) " ";
   font-family: "GP3 Icons";
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga", "dlig";
-  -ms-font-feature-settings: "liga", "dlig";
-  text-rendering: "liga", "dlig"; }
+  -webkit-font-feature-settings: '"liga", "dlig"';
+  -moz-font-feature-settings: '"liga", "dlig"';
+  -ms-font-feature-settings: '"liga", "dlig"';
+  text-rendering: '"liga", "dlig"'; }
   .no-icons [data-icon]:before {
     content: ""; }
 
@@ -346,10 +346,10 @@ small {
   letter-spacing: 1px;
   line-height: 35px;
   text-transform: uppercase;
-  -webkit-transition: background .3s ease, color .3s ease;
-  -moz-transition: background .3s ease, color .3s ease;
-  -o-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease;
+  -webkit-transition: background 0.3s ease, color 0.3s ease;
+  -moz-transition: background 0.3s ease, color 0.3s ease;
+  -o-transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
   white-space: pre; }
   .menu a:hover {
     background: rgba(255, 255, 255, 0.4);
@@ -426,9 +426,53 @@ a.menu-switch {
     .language-submenu a:active {
       color: #bada55; }
 
+.home-quotes {
+  margin-top: 10px; }
+
+.quote {
+  font-size: 1.285714286em;
+  font-weight: 800;
+  display: inline-block;
+  padding: 15px; }
+  @media (min-width: 650px) {
+    .quote {
+      width: 50%; } }
+
+.quote-author {
+  color: #999999;
+  font-size: .777777778em;
+  font-weight: 400; }
+  .quote-author:before {
+    content: "— "; }
+
 .slide {
   position: relative;
   overflow: auto; }
+  .slide .dots {
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center; }
+    @media (min-width: 500px) {
+      .slide .dots {
+        bottom: 80px; } }
+  .slide .dot {
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 5px;
+    opacity: .5;
+    text-indent: -999em;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 10px; }
+    .slide .dot.active, .slide .dot:hover {
+      opacity: .9; }
 
 .slide-item {
   display: block;
@@ -444,7 +488,7 @@ a.menu-switch {
 .slide-txt {
   background: rgba(0, 0, 0, 0.75);
   bottom: 0;
-  height: 70px;
+  height: 40px;
   padding: 5px 15px;
   position: absolute;
   width: 100%; }
@@ -453,6 +497,13 @@ a.menu-switch {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
+    .slide-txt p + p {
+      display: none; }
+  @media (min-width: 500px) {
+    .slide-txt {
+      height: 70px; }
+      .slide-txt p + p {
+        display: block; } }
 
 .project-title,
 .project-subtitle {
@@ -477,10 +528,10 @@ a.menu-switch {
   line-height: 35px;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: background .3s ease, color .3s ease;
-  -moz-transition: background .3s ease, color .3s ease;
-  -o-transition: background .3s ease, color .3s ease;
-  transition: background .3s ease, color .3s ease; }
+  -webkit-transition: background 0.3s ease, color 0.3s ease;
+  -moz-transition: background 0.3s ease, color 0.3s ease;
+  -o-transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease; }
   .project-more:hover {
     background: #f1f1f1;
     color: #222222; }
@@ -813,10 +864,10 @@ textarea {
     border-radius: 3px;
   line-height: 28px;
   padding: 0 5px;
-  -webkit-transition: border-color .3s ease, box-shadow .3s ease;
-  -moz-transition: border-color .3s ease, box-shadow .3s ease;
-  -o-transition: border-color .3s ease, box-shadow .3s ease;
-  transition: border-color .3s ease, box-shadow .3s ease;
+  -webkit-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%; }
   input[type="text"]:hover,
   input[type="tel"]:hover,

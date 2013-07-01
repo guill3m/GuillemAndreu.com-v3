@@ -87,7 +87,19 @@
 
 		</div><!-- END .wrapper -->
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="../content/themes/gp3/js/src/unslider.js"></script>
+		<script>
+			$(function() {
+				$('#home-slide').unslider({
+					speed: 500,
+					delay: 3000,
+					keys:  true,
+					dots:  true,
+					fluid: true
+				});
+			});
+		</script>
 
 	</body>
 

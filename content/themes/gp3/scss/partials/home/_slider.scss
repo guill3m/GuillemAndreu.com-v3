@@ -7,6 +7,32 @@
 .slide {
 	position: relative;
 	overflow: auto;
+	.dots {
+		bottom: 50px;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		@media (min-width: 500px) {
+			bottom: 80px;
+		}
+	}
+	.dot {
+		background: #fff;
+		border-radius: 6px;
+		cursor: pointer;
+		display: inline-block;
+		height: 10px;
+		margin: 0 5px;
+		opacity: .5;
+		text-indent: -999em;
+		@include transition(all .3s ease);
+		width: 10px;
+		&.active,
+		&:hover {
+			opacity: .9;
+		}
+	}
 }
 
 .slide-item {
@@ -26,7 +52,7 @@
 .slide-txt {
 	background: rgba(0,0,0,.75);
 	bottom: 0;
-	height: 70px;
+	height: 40px;
 	padding: 5px 15px;
 	position: absolute;
 	width: 100%;
@@ -35,5 +61,14 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+		+ p {
+			display: none;
+		}
+	}
+	@media (min-width: 500px) {
+		height: 70px;
+		p + p {
+			display: block;
+		}
 	}
 }

@@ -28,7 +28,7 @@ textarea {
 	}
 	line-height: 28px;
 	padding: 0 5px;
-	@include transition("border-color .3s ease, box-shadow .3s ease");
+	@include transition(border-color .3s ease, box-shadow .3s ease);
 	width: 100%;
 	&:hover {
 		@include box-shadow(0 0 2px $color-txt2);

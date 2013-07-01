@@ -43,16 +43,16 @@
 	background: linear-gradient($deg, $color1, $color2);
 }
 
-@mixin font-feature-settings($val) {
-	-webkit-font-feature-settings: unquote($val);
-	-moz-font-feature-settings: unquote($val);
-	-ms-font-feature-settings: unquote($val);
-	text-rendering: unquote($val);
+@mixin font-feature-settings($val...) {
+	-webkit-font-feature-settings: $val;
+	-moz-font-feature-settings: $val;
+	-ms-font-feature-settings: $val;
+	text-rendering: $val;
 }
 
-@mixin transition($args) {
-	-webkit-transition: unquote($args);
-	-moz-transition: unquote($args);
-	-o-transition: unquote($args);
-	transition: unquote($args);
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-o-transition: $args;
+	transition: $args;
 }

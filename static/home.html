@@ -59,11 +59,11 @@
 	<ul>
 		<li class="slide-item">
 			<a href="#">
+				<img src="img/slide1.png" alt="Slide1">
 				<div class="slide-txt">
 					<p class="slide-title">Project title 1</p>
 					<p class="slide-subtitle">The project subtitle 1</p>
 				</div>
-				<img src="img/slide1.png" alt="Slide1">
 			</a>
 		</li><!--
 		--><li class="slide-item">
@@ -100,8 +100,8 @@
 	<li class="quote">
 		<p>Lorem ipsum dolor sit amet</p>
 		<p class="quote-author">Someone</p>
-	</li>
-	<li class="quote">
+	</li><!--
+	--><li class="quote">
 		<p>I don't know more lorem text from memory</p>
 		<p class="quote-author">Some other dude</p>
 	</li>
@@ -113,7 +113,19 @@
 
 		</div><!-- END .wrapper -->
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="../content/themes/gp3/js/src/unslider.js"></script>
+		<script>
+			$(function() {
+				$('#home-slide').unslider({
+					speed: 500,
+					delay: 3000,
+					keys:  true,
+					dots:  true,
+					fluid: true
+				});
+			});
+		</script>
 
 	</body>
 
