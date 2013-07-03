@@ -30,3 +30,21 @@ add_action('after_setup_theme', 'gp3_setup');
 
 $theme = wp_get_theme();
 $theme_version_number = $theme->Version;
+
+
+
+/*
+ * Language Switcher
+ */
+
+function gp3_language_selector() {
+	$languages = icl_get_languages('skip_missing=1');
+	if (1 < count($languages)) : ?>
+		<li data-icon="lang" class="language-selector">
+			<a href="#"><?php _e('Language', 'gp3') ?></a>
+			<ul class="language-submenu">
+				<?php foreach($languages as $lang) : ?><li><a href="<?php echo $lang['url']; ?>" title="<?php echo $lang['native name']; ?>"><?php echo $lang['language code']; ?></a></li><?php endforeach; ?>
+			</ul>
+		</li>
+	<?php endif;
+}

@@ -10,6 +10,29 @@ License: Proprietary - © 2013 Guillem Andreu
 
 
 /*
+ * Reorder items on the admin menu
+ */
+
+function gp3_menu_order($menu_ord) {
+	if (!$menu_ord) return true;
+	return array(
+		'index.php',                  // Dashboard Link
+		'separator1',                 // Separator
+		'edit.php?post_type=project', // Projects
+		'edit.php?post_type=page',    // Pages
+		'edit.php',                   // Posts
+		'upload.php',                 // Media
+		'edit-comments.php'           // Comments
+		'admin.php?page=acf-options'  // Options Page
+	);
+}
+
+add_filter('custom_menu_order', 'gp3_menu_order');
+add_filter('menu_order', 'gp3_menu_order');
+
+
+
+/*
  * Modifying the visual editor (simplify by removing icons I don't really use and reordering)
  */
 
@@ -96,3 +119,15 @@ function gp3_admin_bar() {
 }
 
 add_action('wp_before_admin_bar_render', 'gp3_admin_bar');
+
+
+
+/*
+ * Removing “Screen Options” tab
+ */
+
+function gp3_remove_screen_options_tab() {
+	return false;
+}
+
+add_filter('screen_options_show_screen', 'gp3_remove_screen_options_tab');

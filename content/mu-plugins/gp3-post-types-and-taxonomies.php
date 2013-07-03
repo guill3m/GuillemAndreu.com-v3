@@ -146,28 +146,6 @@ add_action('init', 'gp3_custom_taxonomies');
 
 
 /*
- * Reorder items on the admin menu
- */
-
-function gp3_menu_order($menu_ord) {
-	if (!$menu_ord) return true;
-	return array(
-		'index.php',                  // Dashboard Link
-		'separator1',                 // Separator
-		'edit.php?post_type=project', // Projects
-		'edit.php?post_type=page',    // Pages
-		'edit.php',                   // Posts
-		'upload.php',                 // Media
-		'edit-comments.php'           // Comments
-	);
-}
-
-add_filter('custom_menu_order', 'gp3_menu_order');
-add_filter('menu_order', 'gp3_menu_order');
-
-
-
-/*
  * Add custom post types and custom taxonomies to the “right now” dashboard widget
  */
 
