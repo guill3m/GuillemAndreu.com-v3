@@ -9,9 +9,8 @@ License: Proprietary - © 2013 Guillem Andreu
 */
 
 
-
 /*
- * Removing the unwanted crap from the head
+ * Removing unwanted crap from the head
  */
 
 remove_action('wp_head', 'wp_generator');

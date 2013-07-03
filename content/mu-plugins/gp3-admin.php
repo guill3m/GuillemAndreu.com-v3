@@ -23,7 +23,6 @@ function gp3_menu_order($menu_ord) {
 		'edit.php',                   // Posts
 		'upload.php',                 // Media
 		'edit-comments.php'           // Comments
-		'admin.php?page=acf-options'  // Options Page
 	);
 }
 
@@ -131,3 +130,11 @@ function gp3_remove_screen_options_tab() {
 }
 
 add_filter('screen_options_show_screen', 'gp3_remove_screen_options_tab');
+
+
+
+/*
+ * Hability to use HTML on user descriptions
+ */
+
+remove_filter('pre_user_description', 'wp_filter_kses');
