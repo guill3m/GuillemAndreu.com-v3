@@ -28,16 +28,16 @@ textarea {
 	}
 	line-height: 28px;
 	padding: 0 5px;
-	@include transition(border-color .3s ease, box-shadow .3s ease);
 	width: 100%;
+	@include transition(border-color .3s ease, box-shadow .3s ease);
 	&:hover {
 		@include box-shadow(0 0 2px $color-txt2);
 	}
 	&:focus,
 	&:active {
 		border-color: $color;
-		@include box-shadow(0 0 2px $color);
 		outline: 0;
+		@include box-shadow(0 0 2px $color);
 	}
 }
 

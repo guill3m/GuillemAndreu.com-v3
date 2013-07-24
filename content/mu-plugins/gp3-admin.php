@@ -32,6 +32,22 @@ add_filter('menu_order', 'gp3_menu_order');
 
 
 /*
+ * Hide the default “post” post type and comments from the menu, as well as the tools
+ *
+ * This just hides the menu item, there are still there if you use the correct url
+ * And this does not remove the posts from the “right now” dashboard widget, I still need to figure out how to do that
+ */
+
+function gp3_remove_from_admin_menu() {
+	remove_menu_page('edit.php');          // Hide default Posts
+	remove_menu_page('edit-comments.php'); // Hide Comments
+}
+
+add_action('admin_menu','gp3_remove_from_admin_menu');
+
+
+
+/*
  * Modifying the visual editor (simplify by removing icons I don't really use and reordering)
  */
 

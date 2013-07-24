@@ -14,9 +14,12 @@
 function gp3_setup(){
 	// Localization
 	load_theme_textdomain('gp3', get_template_directory() . '/lang');
-	// Images
+	// Enable post thumbnails
 	add_theme_support('post-thumbnails', 'project');
+	// Image sizes
 	add_image_size('project-frontpage', 1440, 500, true);
+	add_image_size('project-content', 1078, 9999);
+	add_image_size('project-content-half', 539, 9999);
 	add_image_size('project-thumbnail', 300, 200, true); // Remember to change to the final size when defined !!!
 }
 
@@ -29,7 +32,7 @@ add_action('after_setup_theme', 'gp3_setup');
  */
 
 $theme = wp_get_theme();
-$theme_version_number = $theme->Version;
+$theme_version_number = $theme['Version'];
 
 
 

@@ -16,8 +16,8 @@
 		letter-spacing: 1px;
 		line-height: 35px;
 		text-transform: uppercase;
-		@include transition(background .3s ease, color .3s ease);
 		white-space: pre;
+		@include transition(background .3s ease, color .3s ease);
 		&:hover {
 			background: rgba(255,255,255,.4);
 			color: $color-txt;
@@ -37,7 +37,6 @@
 }
 
 a.menu-switch {
-	@include linear-gradient(0, darken($color-bg, 5%), $color-bg, $color-bg);
 	border: {
 		bottom: 1px solid darken($color-bg2, 10%);
 		right: 1px solid darken($color-bg2, 10%);
@@ -47,8 +46,9 @@ a.menu-switch {
 	line-height: 40px;
 	margin: 5px 7% 0 0;
 	text-align: center;
-	@include transition(color .3s ease);
 	width: 35%;
+	@include linear-gradient(0, darken($color-bg, 5%), $color-bg, $color-bg);
+	@include transition(color .3s ease);
 	@media (min-width: 650px) {
 		display: none;
 	}

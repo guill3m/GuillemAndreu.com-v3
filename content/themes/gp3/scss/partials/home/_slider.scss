@@ -26,8 +26,8 @@
 		margin: 0 5px;
 		opacity: .5;
 		text-indent: -999em;
-		@include transition(all .3s ease);
 		width: 10px;
+		@include transition(all .3s ease);
 		&.active,
 		&:hover {
 			opacity: .9;

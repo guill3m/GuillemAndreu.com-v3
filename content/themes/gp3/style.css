@@ -287,10 +287,10 @@ small {
 [data-icon]:before {
   content: attr(data-icon) " ";
   font-family: "GP3 Icons";
-  -webkit-font-feature-settings: '"liga", "dlig"';
-  -moz-font-feature-settings: '"liga", "dlig"';
-  -ms-font-feature-settings: '"liga", "dlig"';
-  text-rendering: '"liga", "dlig"'; }
+  -webkit-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga", "dlig";
+  text-rendering: "liga", "dlig"; }
   .no-icons [data-icon]:before {
     content: ""; }
 

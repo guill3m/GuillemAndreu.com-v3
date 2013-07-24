@@ -20,7 +20,7 @@ remove_action('wp_head', 'wlwmanifest_link');
 
 
 /*
- * Removing ‘width’ & ‘height’ attributes from images
+ * Removing “width” & “height” attributes from images
  */
 
 function gp3_remove_width_and_height_attribute($html) {
@@ -35,7 +35,7 @@ add_filter('post_thumbnail_html',  'gp3_remove_width_and_height_attribute', 10);
 
 
 /*
- * Removing the ‘read more’ link jump, I find it anoying and confusing
+ * Removing the “read more” link jump, I find it anoying and confusing
  */
 
 function gp3_remove_more_jump_link($link) {
@@ -44,19 +44,3 @@ function gp3_remove_more_jump_link($link) {
 }
 
 add_filter('the_content_more_link', 'gp3_remove_more_jump_link');
-
-
-
-/*
- * Hide the default 'post' post type and comments from the menu, as well as the tools
- *
- * This just hides the menu item, there are still there if you use the correct url
- * And this does not remove the posts from the “right now” dashboard widget, I still need to figure out how to do that
- */
-
-function gp3_remove_from_admin_menu() {
-	remove_menu_page('edit.php');          // Hide default Posts
-	remove_menu_page('edit-comments.php'); // Hide Comments
-}
-
-add_action('admin_menu','gp3_remove_from_admin_menu');
