@@ -58,19 +58,19 @@
 							<iframe src="http://player.vimeo.com/video/<?php the_field('project_video_id'); ?>?portrait=0&color=a0220d" class="project-video" width="1078" height="<?php echo $video_height; ?>" frameborder="0" seamless webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 							<?php break;
 
-							case 'issuu' : ?>
-								<iframe width="1078" height="600" src="//e.issuu.com/embed.html#<?php the_field('project_issuu_id'); ?>" class="project-issuu" frameborder="0" seamless webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-								<?php break;
+						case 'issuu' : ?>
+							<iframe width="1078" height="600" src="//e.issuu.com/embed.html#<?php the_field('project_issuu_id'); ?>" class="project-issuu" frameborder="0" seamless webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							<?php break;
 
-							case 'flash' :
-								$flash_id = get_field('project_flash');
-								$aspect_ratio = get_field('project_flash_aspectratio');
-								$flash_height = round(1078/$aspect_ratio); ?>
-								<object type="application/x-shockwave-flash" data="<?php wp_get_attachment_url($flash_id); ?>" width="1078" height="<?php echo $flash_height; ?>">
-									<param name="movie" value="<?php wp_get_attachment_url($flash_id); ?>" />
-									<param name="quality" value="high">
-								</object>
-								<?php break;
+						case 'flash' :
+							$flash_id = get_field('project_flash');
+							$aspect_ratio = get_field('project_flash_aspectratio');
+							$flash_height = round(1078/$aspect_ratio); ?>
+							<object type="application/x-shockwave-flash" data="<?php wp_get_attachment_url($flash_id); ?>" width="1078" height="<?php echo $flash_height; ?>">
+								<param name="movie" value="<?php wp_get_attachment_url($flash_id); ?>" />
+								<param name="quality" value="high">
+							</object>
+							<?php break;
 
 					endswitch; ?>
 
