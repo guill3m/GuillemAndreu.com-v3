@@ -3,16 +3,7 @@ content/backups
 content/cache
 content/lang
 content/mu-plugins/index.php
-content/plugins/acf-flexible-content
-content/plugins/acf-options-page
-content/plugins/acf-repeater
-content/plugins/advanced-custom-fields
-content/plugins/akismet
-content/plugins/mp6
-content/plugins/multisite-language-switcher
-content/plugins/wordpress-seo
-content/plugins/wp-retina-2x
-content/plugins/index.php
+content/plugins
 content/themes/gp3/fonts
 content/themes/twentythirteen
 content/themes/index.php

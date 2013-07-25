@@ -211,7 +211,7 @@
 	padding-top: 10px;
 }
 
-.bio-job-position {
+.bio-job-title {
 	font-weight: 600;
 }
 
@@ -268,7 +268,7 @@
 .bio-skill {
 	background: url(img/bio-skill.svg) 0 100% no-repeat;
 	background-size: 62px 100px;
-	line-height: 20px;
+	line-height: 22px;
 	&.level1 {
 		background-position: 100% 0;
 	}
@@ -284,4 +284,10 @@
 	&.level5 {
 		background-position: 100% -80px;
 	}
+}
+
+.bio-language-level {
+	color: $color-txt2;
+	font-size: .714285714em; // 9/14
+	margin-bottom: 5px;
 }

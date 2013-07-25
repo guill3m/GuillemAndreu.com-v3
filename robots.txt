@@ -1,10 +1,11 @@
 User-agent: *
 
-Disallow: /cms
 Disallow: /content/cache
 Disallow: /content/plugins
 Disallow: /content/upgrade
 Disallow: /static
+Disallow: /wp-admin
+Disallow: /wp-includes
 
 Allow: /
 

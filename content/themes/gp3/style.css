@@ -346,11 +346,11 @@ small {
   letter-spacing: 1px;
   line-height: 35px;
   text-transform: uppercase;
+  white-space: pre;
   -webkit-transition: background 0.3s ease, color 0.3s ease;
   -moz-transition: background 0.3s ease, color 0.3s ease;
   -o-transition: background 0.3s ease, color 0.3s ease;
-  transition: background 0.3s ease, color 0.3s ease;
-  white-space: pre; }
+  transition: background 0.3s ease, color 0.3s ease; }
   .menu a:hover {
     background: rgba(255, 255, 255, 0.4);
     color: #222222; }
@@ -366,11 +366,6 @@ small {
     display: none; } }
 
 a.menu-switch {
-  background: white;
-  background: -webkit-linear-gradient(90deg, #f2f2f2, white);
-  background: -moz-linear-gradient(90deg, #f2f2f2, white);
-  background: -o-linear-gradient(90deg, #f2f2f2, white);
-  background: linear-gradient(0, #f2f2f2, white);
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
   border-radius: 3px;
@@ -378,11 +373,16 @@ a.menu-switch {
   line-height: 40px;
   margin: 5px 7% 0 0;
   text-align: center;
+  width: 35%;
+  background: white;
+  background: -webkit-linear-gradient(90deg, #f2f2f2, white);
+  background: -moz-linear-gradient(90deg, #f2f2f2, white);
+  background: -o-linear-gradient(90deg, #f2f2f2, white);
+  background: linear-gradient(0, #f2f2f2, white);
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  width: 35%; }
+  transition: color 0.3s ease; }
   @media (min-width: 650px) {
     a.menu-switch {
       display: none; } }
@@ -466,11 +466,11 @@ a.menu-switch {
     margin: 0 5px;
     opacity: .5;
     text-indent: -999em;
+    width: 10px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    width: 10px; }
+    transition: all 0.3s ease; }
     .slide .dot.active, .slide .dot:hover {
       opacity: .9; }
 
@@ -785,7 +785,7 @@ a.menu-switch {
 .bio-other {
   padding-top: 10px; }
 
-.bio-job-position {
+.bio-job-title {
   font-weight: 600; }
 
 .bio-company,
@@ -832,7 +832,7 @@ a.menu-switch {
 .bio-skill {
   background: url(img/bio-skill.svg) 0 100% no-repeat;
   background-size: 62px 100px;
-  line-height: 20px; }
+  line-height: 22px; }
   .bio-skill.level1 {
     background-position: 100% 0; }
   .bio-skill.level2 {
@@ -843,6 +843,11 @@ a.menu-switch {
     background-position: 100% -60px; }
   .bio-skill.level5 {
     background-position: 100% -80px; }
+
+.bio-language-level {
+  color: #999999;
+  font-size: .714285714em;
+  margin-bottom: 5px; }
 
 .contact-form {
   padding: 15px 15px 0; }
@@ -864,11 +869,11 @@ textarea {
     border-radius: 3px;
   line-height: 28px;
   padding: 0 5px;
+  width: 100%;
   -webkit-transition: border-color 0.3s ease, box-shadow 0.3s ease;
   -moz-transition: border-color 0.3s ease, box-shadow 0.3s ease;
   -o-transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  width: 100%; }
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; }
   input[type="text"]:hover,
   input[type="tel"]:hover,
   input[type="mail"]:hover,
@@ -883,9 +888,9 @@ textarea {
   textarea:focus,
   textarea:active {
     border-color: #a0220d;
+    outline: 0;
     -webkit-box-shadow: 0 0 2px #a0220d;
-    box-shadow: 0 0 2px #a0220d;
-    outline: 0; }
+    box-shadow: 0 0 2px #a0220d; }
 
 textarea {
   height: 100px;
