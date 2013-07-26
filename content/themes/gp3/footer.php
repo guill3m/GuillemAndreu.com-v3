@@ -8,7 +8,7 @@
 
 
 			<footer id="footer" class="footer">
-				<p><small>© 2010–<?php date('Y'); ?>, Guillem Andreu</small></p>
+				<p><small>© 2010–<?php echo date('Y'); ?>, Guillem Andreu</small></p>
 			</footer>
 
 		</div><!-- END .wrapper -->
