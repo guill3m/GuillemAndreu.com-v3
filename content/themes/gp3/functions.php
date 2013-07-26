@@ -37,6 +37,59 @@ $theme_version_number = $theme['Version'];
 
 
 /*
+ * Load CSS, before the JS
+ */
+
+function gp3_css_enqueue() {
+	global $theme_version_number;
+	// Generic styles
+	wp_register_style('style', get_template_directory_uri() . "/style.css", false, $theme_version_number, 'all');
+	// Load generic styles
+	wp_enqueue_style('style');
+}
+
+add_action('wp_enqueue_scripts', 'gp3_css_enqueue', 11);
+
+
+
+/*
+ * Loading jQuery from Google Hosted Libraries, on the footer, and not in the admin panel
+ */
+
+function gp3_jquery_enqueue() {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", false, null, true);
+	wp_enqueue_script('jquery');
+}
+
+if (!is_admin()) add_action('wp_enqueue_scripts', 'gp3_jquery_enqueue', 12);
+
+
+
+/*
+ * Loading the rest of the JS, after jQuery and CSS
+ * (this will actually be compressed and minified on production, but I keep it separated for development)
+ */
+
+function gp3_js_enqueue() {
+	global $theme_version_number;
+	// Generic scripts
+	// wp_register_script('footer', get_template_directory_uri() . "/js/footer.min.js", array('jquery'), $theme_version_number, true);
+	// Page specific scripts
+	wp_register_script('unslider', get_template_directory_uri() . "/js/src/unslider.js", array('jquery'), $theme_version_number, true);
+	// Load generic scripts
+	// wp_enqueue_script('footer');
+	// Load page specific scripts
+	if (is_front_page()) {
+		wp_enqueue_script('unslider');
+	}
+}
+
+add_action('wp_enqueue_scripts', 'gp3_js_enqueue', 13);
+
+
+
+/*
  * Language Switcher
  */
 
