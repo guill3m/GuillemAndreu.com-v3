@@ -43,14 +43,14 @@
 					</a>
 				</div>
 				<nav id="menu" class="menu">
-					<a href="#" data-icon="menu" class="menu-switch"><?php _e('Menu', 'gp3') ?></a>
-					<ul class="menu-list"><!--
+					<a href="#" data-icon="menu" id="menu-switch" class="menu-switch"><?php _e('Menu', 'gp3') ?></a>
+					<ul id="menu-list" class="menu-list"><!--
 						--><li data-icon="work"><a href="<?php echo home_url('/') . __('portfolio', 'gp3') . '/'; ?>"><?php _e('Work', 'gp3') ?></a></li><!--
 						--><li data-icon="bio"><a href="<?php echo home_url('/') . __('bio', 'gp3') . '/'; ?>"><?php _e('Bio', 'gp3') ?></a></li><!--
 						--><li data-icon="contact"><a href="<?php echo home_url('/') . __('contact', 'gp3') . '/'; ?>"><?php _e('Contact', 'gp3') ?></a></li><!--
 						--><li data-icon="lang" class="language-selector">
 							<a href="#" id="language-selector"><?php _e('Language'); ?></a>
-							<ul class="language-submenu"><?php the_msls(); ?></ul>
+							<ul id="language-submenu" class="language-submenu"><?php the_msls(); ?></ul>
 						</li>
 					</ul>
 				</nav>
