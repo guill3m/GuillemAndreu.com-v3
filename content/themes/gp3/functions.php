@@ -94,12 +94,18 @@ add_action('wp_enqueue_scripts', 'gp3_js_enqueue', 13);
  */
 
 function gp3_msls_output_get( $url, $link, $current ) {
-	return sprintf(
-		'<li><a href="%s"%s>%s</a></li>',
-		$url,
-		( $current ? ' class="current"' : '' ),
-		$link->txt
-	);
+	if($current) {
+		return sprintf(
+			'<li class="current">%s</li>',
+			$link->txt
+		);
+	} else {
+		return sprintf(
+			'<li><a href="%s">%s</a></li>',
+			$url,
+			$link->txt
+		);
+	}
 }
 
 add_filter( 'msls_output_get', 'gp3_msls_output_get', 10, 3 );

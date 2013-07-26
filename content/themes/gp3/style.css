@@ -419,10 +419,11 @@ a.menu-switch {
   width: 90%; }
   .language-submenu > li {
     width: 33.3333333333%; }
+  .language-submenu .current {
+    color: #a0220d;
+    font-weight: 800; }
   .language-submenu a {
     color: #222222; }
-    .language-submenu a.current {
-      color: #a0220d; }
     .language-submenu a:hover, .language-submenu a:focus {
       color: #a0220d; }
     .language-submenu a:active {

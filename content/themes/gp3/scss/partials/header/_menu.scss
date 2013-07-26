@@ -95,11 +95,12 @@ a.menu-switch {
 	> li {
 		width: 33.3333333333%;
 	}
+	.current {
+		color: $color;
+		font-weight: 800;
+	}
 	a {
 		color: $color-txt;
-		&.current {
-			color: $color;
-		}
 		&:hover,
 		&:focus {
 			color: $color;
