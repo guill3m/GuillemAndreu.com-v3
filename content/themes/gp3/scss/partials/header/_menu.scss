@@ -97,6 +97,9 @@ a.menu-switch {
 	}
 	a {
 		color: $color-txt;
+		&.current {
+			color: $color;
+		}
 		&:hover,
 		&:focus {
 			color: $color;

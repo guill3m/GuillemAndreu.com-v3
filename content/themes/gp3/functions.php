@@ -90,17 +90,16 @@ add_action('wp_enqueue_scripts', 'gp3_js_enqueue', 13);
 
 
 /*
- * Language Switcher
+ * Language Switcher Output
  */
 
-function gp3_language_selector() {
-	$languages = icl_get_languages('skip_missing=1');
-	if (1 < count($languages)) : ?>
-		<li data-icon="lang" class="language-selector">
-			<a href="#"><?php _e('Language', 'gp3') ?></a>
-			<ul class="language-submenu">
-				<?php foreach($languages as $lang) : ?><li><a href="<?php echo $lang['url']; ?>" title="<?php echo $lang['native name']; ?>"><?php echo $lang['language code']; ?></a></li><?php endforeach; ?>
-			</ul>
-		</li>
-	<?php endif;
+function gp3_msls_output_get( $url, $link, $current ) {
+	return sprintf(
+		'<li><a href="%s"%s>%s</a></li>',
+		$url,
+		( $current ? ' class="current"' : '' ),
+		$link->txt
+	);
 }
+
+add_filter( 'msls_output_get', 'gp3_msls_output_get', 10, 3 );

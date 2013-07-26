@@ -48,7 +48,10 @@
 						--><li data-icon="work"><a href="<?php echo home_url('/') . __('portfolio', 'gp3') . '/'; ?>"><?php _e('Work', 'gp3') ?></a></li><!--
 						--><li data-icon="bio"><a href="<?php echo home_url('/') . __('bio', 'gp3') . '/'; ?>"><?php _e('Bio', 'gp3') ?></a></li><!--
 						--><li data-icon="contact"><a href="<?php echo home_url('/') . __('contact', 'gp3') . '/'; ?>"><?php _e('Contact', 'gp3') ?></a></li><!--
-						--><?php gp3_language_selector(); ?>
+						--><li data-icon="lang" class="language-selector">
+							<a href="#" id="language-selector"><?php _e('Language'); ?></a>
+							<ul class="language-submenu"><?php the_msls(); ?></ul>
+						</li>
 					</ul>
 				</nav>
 			</div>
