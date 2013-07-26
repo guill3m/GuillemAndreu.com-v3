@@ -727,6 +727,9 @@ a.menu-switch {
   .bio-right ul {
     list-style: none; }
 
+#bio-skills {
+  display: none; }
+
 @media (min-width: 650px), print {
   .bio-left,
   .bio-right {
@@ -739,7 +742,10 @@ a.menu-switch {
   .bio-right {
     background: #ebebeb;
     padding: 0 25px 25px;
-    width: 35%; } }
+    width: 35%; }
+
+  #bio-skills {
+    display: block; } }
 @media (min-width: 900px) {
   .bio-left {
     width: 70%; }

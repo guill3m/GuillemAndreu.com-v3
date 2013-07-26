@@ -138,6 +138,10 @@
 	}
 }
 
+#bio-skills {
+	display: none;
+}
+
 @media (min-width: 650px),
        print {
 	.bio-left,
@@ -152,6 +156,9 @@
 		background: $color-bg2;
 		padding: 0 25px 25px;
 		width: 35%;
+	}
+	#bio-skills {
+		display: block;
 	}
 }
 
