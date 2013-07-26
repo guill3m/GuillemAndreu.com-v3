@@ -26,30 +26,22 @@
 			color: $color2;
 		}
 	}
+	.menu-switch {
+		float: right;
+		line-height: 40px;
+		margin: 5px 7% 0 0;
+		text-align: center;
+		width: 35%;
+		@media (min-width: 650px) {
+			display: none;
+		}
+	}
 	@media (min-width: 650px) {
 		float: left;
 		margin: 0 5% 0 0;
 		width: 65%;
 	}
 	@media print {
-		display: none;
-	}
-}
-
-a.menu-switch {
-	border: {
-		bottom: 1px solid darken($color-bg2, 10%);
-		right: 1px solid darken($color-bg2, 10%);
-		radius: 3px;
-	};
-	float: right;
-	line-height: 40px;
-	margin: 5px 7% 0 0;
-	text-align: center;
-	width: 35%;
-	@include linear-gradient(0, darken($color-bg, 5%), $color-bg, $color-bg);
-	@include transition(color .3s ease);
-	@media (min-width: 650px) {
 		display: none;
 	}
 }
