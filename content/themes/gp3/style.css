@@ -284,16 +284,6 @@ small {
     .header + .wrapper {
       padding-top: 85px; } }
 
-[data-icon]:before {
-  content: attr(data-icon) " ";
-  font-family: "GP3 Icons";
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga", "dlig";
-  -ms-font-feature-settings: "liga", "dlig";
-  text-rendering: "liga", "dlig"; }
-  .no-icons [data-icon]:before {
-    content: ""; }
-
 .post {
   border-top: 1px solid #ebebeb;
   padding: 15px 15px 20px; }
@@ -510,6 +500,53 @@ small {
       height: 70px; }
       .slide-txt p + p {
         display: block; } }
+
+.portfolio {
+  padding: 0 10px; }
+
+.portfolio-item {
+  display: block;
+  float: left;
+  position: relative;
+  padding: 20px 10px 0;
+  width: 100%; }
+  .portfolio-item img {
+    height: auto;
+    width: 100%; }
+    @media (min-width: 900px) {
+      .portfolio-item img {
+        opacity: .75;
+        -webkit-transition: opacity 0.3s ease;
+        -moz-transition: opacity 0.3s ease;
+        -o-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease; }
+        .portfolio-item img:hover {
+          opacity: 1; } }
+  .portfolio-item a {
+    color: white; }
+  @media (min-width: 375px) {
+    .portfolio-item {
+      width: 50%; } }
+  @media (min-width: 650px) {
+    .portfolio-item {
+      width: 33.3333333333%; } }
+  @media (min-width: 900px) {
+    .portfolio-item {
+      width: 25%; } }
+
+.portfolio-item-txt {
+  background: rgba(0, 0, 0, 0.75);
+  bottom: 0;
+  height: 35px;
+  padding: 0 15px;
+  position: absolute;
+  width: -webkit-calc(100% - 20px);
+  width: calc(100% - 20px); }
+  .portfolio-item-txt p {
+    line-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .project-title,
 .project-subtitle {

@@ -4,3 +4,53 @@
 // @since GuillemAndreu.com 3.0.0
 
 
+.portfolio {
+	padding: 0 10px;
+}
+
+.portfolio-item {
+	display: block;
+	float: left;
+	position: relative;
+	padding: 20px 10px 0;
+	width: 100%;
+	img {
+		height: auto;
+		width: 100%;
+		@media (min-width: 900px) {
+			opacity: .75;
+			@include transition(opacity .3s ease);
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	a {
+		color: $color-bg;
+	}
+	@media (min-width: 375px) {
+		width: 50%;
+	}
+	@media (min-width: 650px) {
+		width: 33.3333333333%;
+	}
+	@media (min-width: 900px) {
+		width: 25%;
+	}
+}
+
+.portfolio-item-txt {
+	background: rgba(0,0,0,.75);
+	bottom: 0;
+	height: 35px;
+	padding: 0 15px;
+	position: absolute;
+	width: -webkit-calc(100% - 20px);
+	width: calc(100% - 20px);
+	p {
+		line-height: 35px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}

@@ -20,7 +20,7 @@ function gp3_setup(){
 	add_image_size('project-frontpage', 1440, 500, true);
 	add_image_size('project-content', 1078, 9999);
 	add_image_size('project-content-half', 539, 9999);
-	add_image_size('project-thumbnail', 300, 200, true); // Remember to change to the final size when defined !!!
+	add_image_size('project-thumbnail', 335, 175, true);
 }
 
 add_action('after_setup_theme', 'gp3_setup');
@@ -93,7 +93,7 @@ add_action('wp_enqueue_scripts', 'gp3_js_enqueue', 13);
  * Language Switcher Output
  */
 
-function gp3_msls_output_get( $url, $link, $current ) {
+function gp3_multisite_language_switcher_output($url, $link, $current) {
 	if($current) {
 		return sprintf(
 			'<li class="current">%s</li>',
@@ -108,4 +108,18 @@ function gp3_msls_output_get( $url, $link, $current ) {
 	}
 }
 
-add_filter( 'msls_output_get', 'gp3_msls_output_get', 10, 3 );
+add_filter('msls_output_get', 'gp3_multisite_language_switcher_output', 10, 3);
+
+
+
+/*
+ * Archive page for ‘portfolio’ post type shows all posts in one page
+ */
+
+function gp3_show_all_projects_on_portfolio_archive($query) {
+	if ($query->is_post_type_archive('portfolio') && $query->is_main_query()) {
+		$query->set( 'posts_per_page', '-1' );
+	}
+}
+
+add_action('pre_get_posts', 'gp3_show_all_projects_on_portfolio_archive');

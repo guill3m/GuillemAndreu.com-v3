@@ -93,14 +93,14 @@ small {
 	}
 }
 
-[data-icon]:before {
-	content: attr(data-icon) " ";
-	font-family: "GP3 Icons";
-	@include font-feature-settings("liga", "dlig");
-	.no-icons & {
-		content: "";
-	}
-}
+// [data-icon]:before {
+// 	content: attr(data-icon) " ";
+// 	font-family: "GP3 Icons";
+// 	@include font-feature-settings("liga", "dlig");
+// 	.no-icons & {
+// 		content: "";
+// 	}
+// }
 
 .post {
 	border-top: 1px solid $color-bg2;
