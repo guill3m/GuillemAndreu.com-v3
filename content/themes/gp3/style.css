@@ -294,6 +294,22 @@ small {
   .no-icons [data-icon]:before {
     content: ""; }
 
+.post {
+  border-top: 1px solid #ebebeb;
+  padding: 15px 15px 20px; }
+  @media print {
+    .post {
+      padding: 0 15px; } }
+
+.post-title {
+  padding: 0 0 15px 0; }
+  @media print {
+    .post-title {
+      padding: 0; } }
+
+.post-content p + p {
+  padding-top: 10px; }
+
 ::-moz-selection {
   background: #bada55;
   color: #222222;

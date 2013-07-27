@@ -17,15 +17,17 @@
 
 		<?php if(is_front_page()) : ?>
 			<script>
-				$(function() {
-					$('#home-slide').unslider({
-						speed: 500,
-						delay: 3000,
-						keys:  true,
-						dots:  true,
-						fluid: true
+				(function($) {
+					$(function() {
+						$('#home-slide').unslider({
+							speed: 500,
+							delay: 3000,
+							keys:  true,
+							dots:  true,
+							fluid: true
+						});
 					});
-				});
+				})(jQuery);
 			</script>
 		<?php endif; ?>
 

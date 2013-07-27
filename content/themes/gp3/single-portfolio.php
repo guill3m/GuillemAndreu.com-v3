@@ -9,7 +9,7 @@
 
 <?php get_header(); ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<?php while(have_posts()) : the_post(); ?>
 
 	<article id="project-<?php the_ID(); ?>" class="project">
 
