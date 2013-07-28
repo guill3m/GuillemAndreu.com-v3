@@ -113,13 +113,13 @@ add_filter('msls_output_get', 'gp3_multisite_language_switcher_output', 10, 3);
 
 
 /*
- * Archive page for ‘portfolio’ post type shows all posts in one page
+ * Archive page for project post type shows all posts in one page
  */
 
-function gp3_show_all_projects_on_portfolio_archive($query) {
-	if ($query->is_post_type_archive('portfolio') && $query->is_main_query()) {
+function gp3_show_all_projects_on_project_archive($query) {
+	if ($query->is_post_type_archive('project') && $query->is_main_query()) {
 		$query->set( 'posts_per_page', '-1' );
 	}
 }
 
-add_action('pre_get_posts', 'gp3_show_all_projects_on_portfolio_archive');
+add_action('pre_get_posts', 'gp3_show_all_projects_on_project_archive');
