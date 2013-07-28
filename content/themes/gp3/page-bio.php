@@ -21,7 +21,7 @@
 			</div>
 			<ul class="bio-details"><!--
 				--><li class="bio-birthday" data-icon="calendar"><?php the_field('bio_birthday'); ?></li><!--
-				--><li class="bio-location" data-icon="location"><?php the_field('bio_location'); ?>, <span class="bio-country"><?php the_field('bio_Country'); ?></span></li>
+				--><li class="bio-location" data-icon="location"><?php the_field('bio_location'); ?>, <span class="bio-country"><?php the_field('bio_country'); ?></span></li>
 			</ul>
 		</header>
 
@@ -82,7 +82,7 @@
 						<section id="bio-others">
 							<h2 class="bio-title"><?php _e('Others', 'gp3'); ?></h2>
 							<ul>
-								<?php while(has_sub_field('bio_courses')) : ?>
+								<?php while(has_sub_field('bio_others')) : ?>
 									<li class="bio-other">
 										<p class="bio-other-name"><?php the_field('bio_other_name'); ?></p>
 										<p class="bio-other-description"><?php the_field('bio_other_description'); ?></p>
@@ -97,7 +97,7 @@
 
 		</div>
 
-		<?php if(has_sub_field('bio_languages') || has_sub_field('bio_skills') : ?>
+		<?php if(has_sub_field('bio_languages') || has_sub_field('bio_skillset') : ?>
 			<div class="bio-right">
 
 				<?php if(has_sub_field('bio_languages') : ?>
@@ -114,7 +114,7 @@
 					</section>
 				<?php endif; ?>
 
-				<?php if(has_sub_field('bio_skills') : ?>
+				<?php if(has_sub_field('bio_skillset') : ?>
 					<section id="bio-skills">
 						<h2 class="bio-title"><?php _e('Skills', 'gp3'); ?></h2>
 						<?php while(has_sub_field('bio_skillset') : ?>

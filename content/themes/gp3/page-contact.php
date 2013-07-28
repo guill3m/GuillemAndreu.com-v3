@@ -31,50 +31,15 @@
 
 <?php endwhile; ?>
 
-
+<?php if(has_sub_field('social_links')) : ?>
 <aside id="contact-social" class="contact-social">
 	<h2><?php _e('Where to find me'); ?></h2>
 	<ul>
-		<?php if (get_field('social_adcv_show', 'option')) : ?>
-			<li data-icon="ADCV"><a href="<?php the_field('social_adcv_url', 'option'); ?>"><?php gthe_field('social_adcv_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_behance_show', 'option')) : ?>
-			<li data-icon="Behance"><a href="<?php the_field('social_behance_url', 'option'); ?>"><?php the_field('social_behance_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_dribble_show', 'option')) : ?>
-			<li data-icon="Dribble"><a href="<?php the_field('social_dribble_url', 'option'); ?>"><?php gthe_field('social_dribble_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_facebook_show', 'option')) : ?>
-			<li data-icon="Facebook"><a href="<?php the_field('social_facebook_url', 'option'); ?>"><?php gthe_field('social_facebook_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_flickr_show', 'option')) : ?>
-			<li data-icon="Flickr"><a href="<?php the_field('social_flickr_url', 'option'); ?>"><?php gthe_field('social_flickr_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_github_show', 'option')) : ?>
-			<li data-icon="GitHub"><a href="<?php the_field('social_github_url', 'option'); ?>"><?php gthe_field('social_github_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_googleplus_show', 'option')) : ?>
-			<li data-icon="Google+"><a href="<?php the_field('social_googleplus_url', 'option'); ?>"><?php gthe_field('social_googleplus_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_instagram_show', 'option')) : ?>
-			<li data-icon="Instagram"><a href="<?php the_field('social_instagram_url', 'option'); ?>"><?php gthe_field('social_instagram_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_lastfm_show', 'option')) : ?>
-			<li data-icon="Last.fm"><a href="<?php the_field('social_lastfm_url', 'option'); ?>"><?php gthe_field('social_lastfm_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_linkedin_show', 'option')) : ?>
-			<li data-icon="LinkedIn"><a href="<?php the_field('social_linkedin_url', 'option'); ?>"><?php gthe_field('social_linkedin_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_skype_show', 'option')) : ?>
-			<li data-icon="Skype"><a href="<?php the_field('social_skype_url', 'option'); ?>"><?php gthe_field('social_skype_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_twitter_show', 'option')) : ?>
-			<li data-icon="Twitter"><a href="<?php the_field('social_twitter_url', 'option'); ?>"><?php gthe_field('social_twitter_name', 'option'); ?></a></li>
-		<?php endif; ?>
-		<?php if (get_field('social_vimeo_show', 'option')) : ?>
-			<li data-icon="Vimeo"><a href="<?php the_field('social_vimeo_url', 'option'); ?>"><?php gthe_field('social_vimeo_name', 'option'); ?></a></li>
-		<?php endif; ?>
+		<?php while(has_sub_field('social_links', 'option')) : ?>
+			<li data-icon="<?php the_field('social_icon', 'option'); ?>"><a href="<?php the_field('social_url', 'option'); ?>"><?php the_field('social_name', 'option'); ?></a></li>
+		<?php endwhile; ?>
 	</ul>
 </aside>
+<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -26,6 +26,13 @@ function gp3_setup(){
 add_action('after_setup_theme', 'gp3_setup');
 
 
+/*
+ * Custom Fields
+ */
+
+require_once('custom-fields.php');
+
+
 
 /*
  * Theme version number

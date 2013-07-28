@@ -22,7 +22,7 @@
 		<section class="project-charact">
 			<ul class="project-charact-list">
 				<li data-icon="date"><span class="project-charact-title"><?php _e('Date'); ?>:</span> <?php the_field('project_date'); ?></li>
-				<li data-icon="client"><span class="project-charact-title"><?php _e('Client'); ?>:</span> <?php the_field('project_client'); ?></li>
+				<li data-icon="client"><span class="project-charact-title"><?php _e('Client'); ?>:</span> <?php if(get_field('project_client_url')) : ?><a href="<?php the_field('project_client_url'); ?>" target="_blank"><?php endif; the_field('project_client'); if(get_field('project_client_url')) : ?></a><?php endif; ?></li>
 				<li data-icon="type"><span class="project-charact-title"><?php _e('Project type'); ?>:</span> <?php echo get_the_term_list( $post->ID, 'project-type', '<b>Camps:</b> ', ', ', '.' ); ?></li>
 				<?php if (get_field('project_extra')) : ?><li data-icon="<?php the_field('project_extra_icon'); ?>"><span class="project-charact-title"><?php the_field('project_extra_title'); ?>:</span> <?php the_field('project_extra'); ?></li><?php endif; ?>
 				<?php if (get_field('project_extra_2')) : ?><li data-icon="<?php the_field('project_extra_2_icon'); ?>"><span class="project-charact-title"><?php the_field('project_extra_2_title'); ?>:</span> <?php the_field('project_extra_2'); ?></li><?php endif; ?>
