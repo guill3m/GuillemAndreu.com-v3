@@ -47,7 +47,8 @@ function gp3_custom_post_types() {
 		'title',
 		'editor',
 		'thumbnail',
-		'custom-fields'
+		'custom-fields',
+		'comments'
 	);
 	$project_rewrite = array(
 		'slug'       => __('portfolio', 'gp3-ptt'),

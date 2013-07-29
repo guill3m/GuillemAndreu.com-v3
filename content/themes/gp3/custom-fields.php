@@ -11,8 +11,8 @@
  * Options Page Title
  */
 
-acf_set_options_page_title(__('Theme Options'));
-acf_set_options_page_menu(__('Theme Options'));
+acf_set_options_page_title(__('Global Content', 'gp3'));
+acf_set_options_page_menu(__('Global Content', 'gp3'));
 
 
 
@@ -20,21 +20,21 @@ acf_set_options_page_menu(__('Theme Options'));
  *  Register Field Groups
  */
 
-// Theme Options
+// Global Content
 
 register_field_group(array (
 	'id' => 'acf_home-slide',
-	'title' => 'Home Slide',
+	'title' => __('Home Slide', 'gp3'),
 	'fields' => array (
 		array (
 			'key' => 'field_51f48e6017897',
-			'label' => 'Slide Items',
+			'label' => __('Slide Items', 'gp3'),
 			'name' => 'home_slide',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f48e6f17898',
-					'label' => 'Project',
+					'label' => __('Project', 'gp3'),
 					'name' => 'home_slide_item',
 					'type' => 'post_object',
 					'column_width' => '',
@@ -51,7 +51,7 @@ register_field_group(array (
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Item',
+			'button_label' => __('Add Item', 'gp3'),
 		),
 	),
 	'location' => array (
@@ -75,47 +75,38 @@ register_field_group(array (
 ));
 
 register_field_group(array (
-	'id' => 'acf_social',
-	'title' => 'Social',
+	'id' => 'acf_home-quotes',
+	'title' => __('Home Quotes', 'gp3'),
 	'fields' => array (
 		array (
-			'key' => 'field_51f4978eebbc1',
-			'label' => 'Social Links',
-			'name' => 'social_links',
+			'key' => 'field_51f5620fb294b',
+			'label' => __('Quotes', 'gp3'),
+			'name' => 'home_quotes',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
-					'key' => 'field_51f4979febbc2',
-					'label' => 'Icon',
-					'name' => 'social_icon',
-					'type' => 'text',
-					'column_width' => '',
+					'key' => 'field_51f56222b294c',
+					'label' => __('Quote', 'gp3'),
+					'name' => 'home_quote',
+					'type' => 'textarea',
+					'column_width' => 65,
 					'default_value' => '',
-					'formatting' => 'none',
+					'formatting' => 'html',
 				),
 				array (
-					'key' => 'field_51f497aaebbc3',
-					'label' => 'Name',
-					'name' => 'social_name',
+					'key' => 'field_51f56236b294d',
+					'label' => __('Quote Author', 'gp3'),
+					'name' => 'home_quote_author',
 					'type' => 'text',
-					'column_width' => '',
-					'default_value' => '',
-					'formatting' => 'none',
-				),
-				array (
-					'key' => 'field_51f497b1ebbc4',
-					'label' => 'URL',
-					'name' => 'social_url',
-					'type' => 'text',
-					'column_width' => '',
+					'column_width' => 35,
 					'default_value' => '',
 					'formatting' => 'none',
 				),
 			),
 			'row_min' => 0,
-			'row_limit' => '',
-			'layout' => 'row',
-			'button_label' => 'Add Link',
+			'row_limit' => 2,
+			'layout' => 'table',
+			'button_label' => __('Add Quote', 'gp3'),
 		),
 	),
 	'location' => array (
@@ -138,15 +129,79 @@ register_field_group(array (
 	'menu_order' => 1,
 ));
 
+register_field_group(array (
+	'id' => 'acf_social',
+	'title' => __('Social', 'gp3'),
+	'fields' => array (
+		array (
+			'key' => 'field_51f4978eebbc1',
+			'label' => __('Social Links', 'gp3'),
+			'name' => 'social_links',
+			'type' => 'repeater',
+			'sub_fields' => array (
+				array (
+					'key' => 'field_51f4979febbc2',
+					'label' => __('Icon', 'gp3'),
+					'name' => 'social_icon',
+					'type' => 'text',
+					'column_width' => '',
+					'default_value' => '',
+					'formatting' => 'none',
+				),
+				array (
+					'key' => 'field_51f497aaebbc3',
+					'label' => __('Name', 'gp3'),
+					'name' => 'social_name',
+					'type' => 'text',
+					'column_width' => '',
+					'default_value' => '',
+					'formatting' => 'none',
+				),
+				array (
+					'key' => 'field_51f497b1ebbc4',
+					'label' => __('URL', 'gp3'),
+					'name' => 'social_url',
+					'type' => 'text',
+					'column_width' => '',
+					'default_value' => '',
+					'formatting' => 'none',
+				),
+			),
+			'row_min' => 0,
+			'row_limit' => '',
+			'layout' => 'row',
+			'button_label' => __('Add Social Link', 'gp3'),
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'options_page',
+				'operator' => '==',
+				'value' => 'acf-options',
+				'order_no' => 0,
+				'group_no' => 0,
+			),
+		),
+	),
+	'options' => array (
+		'position' => 'normal',
+		'layout' => 'default',
+		'hide_on_screen' => array (
+		),
+	),
+	'menu_order' => 2,
+));
+
 // Bio
 
 register_field_group(array (
 	'id' => 'acf_bio-basic-info',
-	'title' => 'Bio Basic Info',
+	'title' => __('Bio Basic Info', 'gp3'),
 	'fields' => array (
 		array (
 			'key' => 'field_51f482d677524',
-			'label' => 'Name',
+			'label' => __('Name', 'gp3'),
 			'name' => 'bio_name',
 			'type' => 'text',
 			'default_value' => '',
@@ -154,7 +209,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f482e177525',
-			'label' => 'Lastname',
+			'label' => __('Lastname', 'gp3'),
 			'name' => 'bio_lastname',
 			'type' => 'text',
 			'default_value' => '',
@@ -162,7 +217,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f482e977526',
-			'label' => 'Picture',
+			'label' => __('Picture', 'gp3'),
 			'name' => 'bio_picture',
 			'type' => 'image',
 			'save_format' => 'url',
@@ -171,7 +226,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f482fb77527',
-			'label' => 'Birthday',
+			'label' => __('Birthday', 'gp3'),
 			'name' => 'bio_birthday',
 			'type' => 'text',
 			'default_value' => '',
@@ -179,7 +234,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f4830f77528',
-			'label' => 'Location',
+			'label' => __('Location', 'gp3'),
 			'name' => 'bio_location',
 			'type' => 'text',
 			'default_value' => '',
@@ -187,7 +242,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f4832177529',
-			'label' => 'Country',
+			'label' => __('Country', 'gp3'),
 			'name' => 'bio_country',
 			'type' => 'text',
 			'default_value' => '',
@@ -216,17 +271,17 @@ register_field_group(array (
 
 register_field_group(array (
 	'id' => 'acf_bio-cv',
-	'title' => 'Bio CV',
+	'title' => __('Bio CV', 'gp3'),
 	'fields' => array (
 		array (
 			'key' => 'field_51f4838e2bd86',
-			'label' => 'Experience',
+			'label' => __('Experience', 'gp3'),
 			'name' => 'bio_experience',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f483bb2bd87',
-					'label' => 'Company',
+					'label' => __('Company', 'gp3'),
 					'name' => 'bio_job_company',
 					'type' => 'text',
 					'column_width' => '',
@@ -235,7 +290,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f483c82bd88',
-					'label' => 'Company URL',
+					'label' => __('Company URL', 'gp3'),
 					'name' => 'bio_job_company_url',
 					'type' => 'text',
 					'column_width' => '',
@@ -244,7 +299,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f483de2bd89',
-					'label' => 'Job Title',
+					'label' => __('Job Title', 'gp3'),
 					'name' => 'bio_job_title',
 					'type' => 'text',
 					'column_width' => '',
@@ -253,7 +308,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f483ed2bd8a',
-					'label' => 'Job Description',
+					'label' => __('Job Description', 'gp3'),
 					'name' => 'bio_job_description',
 					'type' => 'textarea',
 					'column_width' => '',
@@ -262,7 +317,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4843bcb27a',
-					'label' => 'Started',
+					'label' => __('Started', 'gp3'),
 					'name' => 'bio_job_lenght_from',
 					'type' => 'text',
 					'column_width' => '',
@@ -271,7 +326,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f48442cb27b',
-					'label' => 'Ended',
+					'label' => __('Ended', 'gp3'),
 					'name' => 'bio_job_lenght_ended',
 					'type' => 'text',
 					'column_width' => '',
@@ -282,17 +337,17 @@ register_field_group(array (
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Job',
+			'button_label' => __('Add Job', 'gp3'),
 		),
 		array (
 			'key' => 'field_51f484b886052',
-			'label' => 'Studies',
+			'label' => __('Studies', 'gp3'),
 			'name' => 'bio_studies',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f484b886055',
-					'label' => 'Career',
+					'label' => __('Career', 'gp3'),
 					'name' => 'bio_career_name',
 					'type' => 'text',
 					'column_width' => '',
@@ -301,7 +356,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f484b886057',
-					'label' => 'Career Center',
+					'label' => __('Career Center', 'gp3'),
 					'name' => 'bio_career_center',
 					'type' => 'text',
 					'column_width' => '',
@@ -310,7 +365,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4852886059',
-					'label' => 'Career Center URL',
+					'label' => __('Career Center URL', 'gp3'),
 					'name' => 'bio_career_center_url',
 					'type' => 'text',
 					'column_width' => '',
@@ -319,7 +374,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f484b886058',
-					'label' => 'Year Ended',
+					'label' => __('Year Ended', 'gp3'),
 					'name' => 'bio_career_ended',
 					'type' => 'text',
 					'column_width' => '',
@@ -330,17 +385,17 @@ register_field_group(array (
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Studies',
+			'button_label' => __('Add Studies', 'gp3'),
 		),
 		array (
 			'key' => 'field_51f4856e8605a',
-			'label' => 'Courses',
+			'label' => __('Courses', 'gp3'),
 			'name' => 'bio_courses',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f4856e8605b',
-					'label' => 'Course',
+					'label' => __('Course', 'gp3'),
 					'name' => 'bio_course_name',
 					'type' => 'text',
 					'column_width' => '',
@@ -349,7 +404,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4856e8605c',
-					'label' => 'Course Center',
+					'label' => __('Course Center', 'gp3'),
 					'name' => 'bio_course_center',
 					'type' => 'text',
 					'column_width' => '',
@@ -358,7 +413,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4856e8605d',
-					'label' => 'Course Center URL',
+					'label' => __('Course Center URL', 'gp3'),
 					'name' => 'bio_course_center_url',
 					'type' => 'text',
 					'column_width' => '',
@@ -367,7 +422,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4856e8605e',
-					'label' => 'Course Lenght',
+					'label' => __('Course Lenght', 'gp3'),
 					'name' => 'bio_course_lenght',
 					'type' => 'text',
 					'column_width' => '',
@@ -376,7 +431,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f485ca8605f',
-					'label' => 'Course Date',
+					'label' => __('Course Date', 'gp3'),
 					'name' => 'bio_course_date',
 					'type' => 'text',
 					'column_width' => '',
@@ -387,17 +442,17 @@ register_field_group(array (
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Course',
+			'button_label' => __('Add Course', 'gp3'),
 		),
 		array (
 			'key' => 'field_51f486a540ab2',
-			'label' => 'Others',
+			'label' => __('Others', 'gp3'),
 			'name' => 'bio_others',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f486a540ab3',
-					'label' => 'Name',
+					'label' => __('Name', 'gp3'),
 					'name' => 'bio_other_name',
 					'type' => 'text',
 					'column_width' => '',
@@ -406,7 +461,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f486a540ab7',
-					'label' => 'Description',
+					'label' => __('Description', 'gp3'),
 					'name' => 'bio_other_description',
 					'type' => 'text',
 					'column_width' => '',
@@ -417,7 +472,7 @@ register_field_group(array (
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Other',
+			'button_label' => __('Add Other', 'gp3'),
 		),
 	),
 	'location' => array (
@@ -442,17 +497,17 @@ register_field_group(array (
 
 register_field_group(array (
 	'id' => 'acf_bio-skills',
-	'title' => 'Bio Skills',
+	'title' => __('Bio Skills', 'gp3'),
 	'fields' => array (
 		array (
 			'key' => 'field_51f487335716f',
-			'label' => 'Languages',
+			'label' => __('Languages', 'gp3'),
 			'name' => 'bio_languages',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f4874d57170',
-					'label' => 'Language',
+					'label' => __('Language', 'gp3'),
 					'name' => 'bio_language',
 					'type' => 'text',
 					'column_width' => '',
@@ -461,7 +516,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4876657171',
-					'label' => 'Language Level',
+					'label' => __('Language Level', 'gp3'),
 					'name' => 'bio_language_level',
 					'type' => 'radio',
 					'column_width' => '',
@@ -479,7 +534,7 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f4878557172',
-					'label' => 'Language Level (Title)',
+					'label' => __('Language Level (Title)', 'gp3'),
 					'name' => 'bio_language_level_txt',
 					'type' => 'text',
 					'column_width' => '',
@@ -490,17 +545,17 @@ register_field_group(array (
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Language',
+			'button_label' => __('Add Language', 'gp3'),
 		),
 		array (
 			'key' => 'field_51f488c3979dd',
-			'label' => 'Skillset',
+			'label' => __('Skillset', 'gp3'),
 			'name' => 'bio_skillset',
 			'type' => 'repeater',
 			'sub_fields' => array (
 				array (
 					'key' => 'field_51f488c3979de',
-					'label' => 'Title',
+					'label' => __('Title', 'gp3'),
 					'name' => 'bio_skillset_title',
 					'type' => 'text',
 					'column_width' => '',
@@ -509,14 +564,14 @@ register_field_group(array (
 				),
 				array (
 					'key' => 'field_51f48903979e1',
-					'label' => 'Skills',
+					'label' => __('Skills', 'gp3'),
 					'name' => 'bio_skillset_skills',
 					'type' => 'repeater',
 					'column_width' => '',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_51f4892a979e2',
-							'label' => 'Skill',
+							'label' => __('Skill', 'gp3'),
 							'name' => 'bio_skill',
 							'type' => 'text',
 							'column_width' => 50,
@@ -525,7 +580,7 @@ register_field_group(array (
 						),
 						array (
 							'key' => 'field_51f4894f979e3',
-							'label' => 'Skill Level',
+							'label' => __('Skill Level', 'gp3'),
 							'name' => 'bio_skill_level',
 							'type' => 'radio',
 							'column_width' => 50,
@@ -545,13 +600,13 @@ register_field_group(array (
 					'row_min' => 0,
 					'row_limit' => '',
 					'layout' => 'table',
-					'button_label' => 'Add Skill',
+					'button_label' => __('Add Skill', 'gp3'),
 				),
 			),
 			'row_min' => 0,
 			'row_limit' => '',
 			'layout' => 'row',
-			'button_label' => 'Add Skillset',
+			'button_label' => __('Add Skillset', 'gp3'),
 		),
 	),
 	'location' => array (
@@ -578,11 +633,11 @@ register_field_group(array (
 
 register_field_group(array (
 	'id' => 'acf_project-info',
-	'title' => 'Project Info',
+	'title' => __('Project Info', 'gp3'),
 	'fields' => array (
 		array (
 			'key' => 'field_51f4794d407b1',
-			'label' => 'Subtitle',
+			'label' => __('Subtitle', 'gp3'),
 			'name' => 'project_subtitle',
 			'type' => 'text',
 			'default_value' => '',
@@ -590,7 +645,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f4797e407b2',
-			'label' => 'Date',
+			'label' => __('Date', 'gp3'),
 			'name' => 'project_date',
 			'type' => 'text',
 			'default_value' => '',
@@ -598,7 +653,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47c9e33841',
-			'label' => 'Client',
+			'label' => __('Client', 'gp3'),
 			'name' => 'project_client',
 			'type' => 'text',
 			'default_value' => '',
@@ -606,7 +661,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47cca33842',
-			'label' => 'Client URL',
+			'label' => __('Client URL', 'gp3'),
 			'name' => 'project_client_url',
 			'type' => 'text',
 			'default_value' => '',
@@ -614,7 +669,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47d6a57b8b',
-			'label' => 'Collaborator/s',
+			'label' => __('Collaborator/s', 'gp3'),
 			'name' => 'project_collab',
 			'type' => 'text',
 			'default_value' => '',
@@ -622,15 +677,15 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47d8d57b8c',
-			'label' => 'Collaborators plural',
+			'label' => __('Collaborators plural', 'gp3'),
 			'name' => 'project_collab_plural',
 			'type' => 'true_false',
-			'message' => 'Are there more than one collaborators on this project?',
+			'message' => __('Are there more than one collaborators for this project?', 'gp3'),
 			'default_value' => 0,
 		),
 		array (
 			'key' => 'field_51f47ced33843',
-			'label' => 'Extra',
+			'label' => __('Extra', 'gp3'),
 			'name' => 'project_extra',
 			'type' => 'text',
 			'default_value' => '',
@@ -638,7 +693,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47cfc33844',
-			'label' => 'Extra Icon',
+			'label' => __('Extra Icon', 'gp3'),
 			'name' => 'project_extra_icon',
 			'type' => 'text',
 			'default_value' => '',
@@ -646,7 +701,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47d3957b89',
-			'label' => 'Extra 2',
+			'label' => __('Extra 2', 'gp3'),
 			'name' => 'project_extra_2',
 			'type' => 'text',
 			'default_value' => '',
@@ -654,7 +709,7 @@ register_field_group(array (
 		),
 		array (
 			'key' => 'field_51f47d5257b8a',
-			'label' => 'Extra 2 Icon',
+			'label' => __('Extra 2 Icon', 'gp3'),
 			'name' => 'project_extra_2_icon',
 			'type' => 'text',
 			'default_value' => '',
@@ -683,22 +738,22 @@ register_field_group(array (
 
 register_field_group(array (
 	'id' => 'acf_project-content',
-	'title' => 'Project Content',
+	'title' => __('Project Content', 'gp3'),
 	'fields' => array (
 		array (
 			'key' => 'field_51f47df623860',
-			'label' => 'Content',
+			'label' => __('Content', 'gp3'),
 			'name' => 'project_content',
 			'type' => 'flexible_content',
 			'layouts' => array (
 				array (
-					'label' => 'IMG Full',
+					'label' => __('IMG Full', 'gp3'),
 					'name' => 'img_full',
 					'display' => 'table',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_51f47e1d23861',
-							'label' => 'IMG',
+							'label' => __('IMG', 'gp3'),
 							'name' => 'project_img',
 							'type' => 'image',
 							'column_width' => 50,
@@ -708,7 +763,7 @@ register_field_group(array (
 						),
 						array (
 							'key' => 'field_51f47e5e23862',
-							'label' => 'IMG Alt',
+							'label' => __('IMG Alt', 'gp3'),
 							'name' => 'project_img_alt',
 							'type' => 'text',
 							'column_width' => 50,
@@ -718,13 +773,13 @@ register_field_group(array (
 					),
 				),
 				array (
-					'label' => 'IMG Half',
+					'label' => __('IMG Half', 'gp3'),
 					'name' => 'img_half',
 					'display' => 'table',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_51f47e8523864',
-							'label' => 'IMG',
+							'label' => __('IMG', 'gp3'),
 							'name' => 'project_img',
 							'type' => 'image',
 							'column_width' => 50,
@@ -734,7 +789,7 @@ register_field_group(array (
 						),
 						array (
 							'key' => 'field_51f47e9723865',
-							'label' => 'IMG Alt',
+							'label' => __('IMG Alt', 'gp3'),
 							'name' => 'project_img_alt',
 							'type' => 'text',
 							'column_width' => 50,
@@ -744,13 +799,13 @@ register_field_group(array (
 					),
 				),
 				array (
-					'label' => 'Video',
+					'label' => __('Video', 'gp3'),
 					'name' => 'video',
 					'display' => 'table',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_51f47eb923867',
-							'label' => 'Video ID (Vimeo)',
+							'label' => __('Video ID (Vimeo)', 'gp3'),
 							'name' => 'project_video_id',
 							'type' => 'text',
 							'column_width' => 50,
@@ -759,28 +814,28 @@ register_field_group(array (
 						),
 						array (
 							'key' => 'field_51f47ed523868',
-							'label' => 'Aspect Ratio',
+							'label' => __('Aspect Ratio', 'gp3'),
 							'name' => 'project_video_aspectratio',
 							'type' => 'select',
 							'column_width' => 50,
 							'choices' => array (
-								'16:9' => 'Widescreen (16:9)',
-								'5:4' => 'PAL (5:4)',
+								'16:9' => __('Widescreen (16:9)', 'gp3'),
+								'5:4' => __('PAL (5:4)', 'gp3'),
 							),
-							'default_value' => '16:9 : Widescreen (16:9)',
+							'default_value' => __('16:9 : Widescreen (16:9)', 'gp3'),
 							'allow_null' => 0,
 							'multiple' => 0,
 						),
 					),
 				),
 				array (
-					'label' => 'ISSUU',
+					'label' => __('ISSUU', 'gp3'),
 					'name' => 'issuu',
 					'display' => 'table',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_51f47f382386a',
-							'label' => 'ISSUU ID',
+							'label' => __('ISSUU ID', 'gp3'),
 							'name' => 'project_issuu_id',
 							'type' => 'text',
 							'column_width' => '',
@@ -790,13 +845,13 @@ register_field_group(array (
 					),
 				),
 				array (
-					'label' => 'Flash',
+					'label' => __('Flash', 'gp3'),
 					'name' => 'flash',
 					'display' => 'table',
 					'sub_fields' => array (
 						array (
 							'key' => 'field_51f47f5b2386c',
-							'label' => 'File',
+							'label' => __('File', 'gp3'),
 							'name' => 'project_flash',
 							'type' => 'file',
 							'column_width' => 50,
@@ -805,10 +860,10 @@ register_field_group(array (
 						),
 						array (
 							'key' => 'field_51f47f9c2386f',
-							'label' => 'Aspect Ratio',
+							'label' => __('Aspect Ratio', 'gp3'),
 							'name' => 'project_flash_aspectratio',
 							'type' => 'text',
-							'instructions' => 'Aspect Ratio in number (Eg.: 16:9 would be 1.77778)',
+							'instructions' => __('Aspect Ratio, number (Eg.: 16:9 is 1.77778)', 'gp3'),
 							'column_width' => 50,
 							'default_value' => '',
 							'formatting' => 'none',
@@ -816,7 +871,7 @@ register_field_group(array (
 					),
 				),
 			),
-			'button_label' => 'Add Content',
+			'button_label' => __('Add Content', 'gp3'),
 		),
 	),
 	'location' => array (
