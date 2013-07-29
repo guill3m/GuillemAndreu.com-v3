@@ -41,8 +41,8 @@
 
 				<?php while(has_sub_field('home_quotes', 'option')) : ?>
 					<li class="quote">
-						<p><?php the_field('home_quote'); ?></p>
-						<p class="quote-author"><?php the_field('home_quote_author'); ?></p>
+						<p><?php the_field('home_quote', 'option'); ?></p>
+						<p class="quote-author"><?php the_field('home_quote_author', 'option'); ?></p>
 					</li>
 				<?php endwhile; ?>
 

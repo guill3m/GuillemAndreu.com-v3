@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Guillem Portfolio 3\n"
-"POT-Creation-Date: 2013-07-29 05:08+0100\n"
-"PO-Revision-Date: 2013-07-29 05:08+0100\n"
+"POT-Creation-Date: 2013-07-29 20:38+0100\n"
+"PO-Revision-Date: 2013-07-29 20:53+0100\n"
 "Last-Translator: Guillem Andreu <hola@guillemandreu.com>\n"
 "Language-Team: \n"
 "Language: ca\n"
@@ -14,364 +14,356 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: custom-fields.php:14 custom-fields.php:15
+#: custom-fields.php:15 custom-fields.php:16
 msgid "Global Content"
 msgstr "Contingut global"
 
-#: custom-fields.php:27
+#: custom-fields.php:29
 msgid "Home Slide"
 msgstr "Slide inici"
 
-#: custom-fields.php:31
+#: custom-fields.php:33
 msgid "Slide Items"
 msgstr "Ítems slide"
 
-#: custom-fields.php:37
+#: custom-fields.php:39
 msgid "Project"
 msgstr "Projecte"
 
-#: custom-fields.php:54
+#: custom-fields.php:56
 msgid "Add Item"
 msgstr "Afegir ítem"
 
-#: custom-fields.php:79
+#: custom-fields.php:81
 msgid "Home Quotes"
 msgstr "Cites inici"
 
-#: custom-fields.php:83
+#: custom-fields.php:85
 msgid "Quotes"
 msgstr "Cites"
 
-#: custom-fields.php:89
+#: custom-fields.php:91
 msgid "Quote"
 msgstr "Cita"
 
-#: custom-fields.php:98
+#: custom-fields.php:100
 msgid "Quote Author"
 msgstr "Autor de la cita"
 
-#: custom-fields.php:109
+#: custom-fields.php:111
 msgid "Add Quote"
 msgstr "Afegir cita"
 
-#: custom-fields.php:134
+#: custom-fields.php:136
 msgid "Social"
 msgstr "Social"
 
-#: custom-fields.php:138
+#: custom-fields.php:140
 msgid "Social Links"
 msgstr "Enllaços socials"
 
-#: custom-fields.php:144
+#: custom-fields.php:146 custom-fields.php:705
 msgid "Icon"
 msgstr "Icona"
 
-#: custom-fields.php:153 custom-fields.php:204 custom-fields.php:455
+#: custom-fields.php:155 custom-fields.php:206 custom-fields.php:457
 #: page-contact.php:19
 msgid "Name"
 msgstr "Nom"
 
-#: custom-fields.php:162
+#: custom-fields.php:164
 msgid "URL"
 msgstr "URL"
 
-#: custom-fields.php:173
+#: custom-fields.php:175
 msgid "Add Social Link"
 msgstr "Afegir enllaç social"
 
-#: custom-fields.php:200
+#: custom-fields.php:202
 msgid "Bio Basic Info"
 msgstr "Bio, informació bàsica"
 
-#: custom-fields.php:212
+#: custom-fields.php:214
 msgid "Lastname"
 msgstr "Cognom"
 
-#: custom-fields.php:220 page-bio.php:20
+#: custom-fields.php:222 page-bio.php:20
 msgid "Picture"
 msgstr "Foto"
 
-#: custom-fields.php:229
+#: custom-fields.php:231
 msgid "Birthday"
 msgstr "Data de naixement"
 
-#: custom-fields.php:237
+#: custom-fields.php:239
 msgid "Location"
 msgstr "Ciutat"
 
-#: custom-fields.php:245
+#: custom-fields.php:247
 msgid "Country"
 msgstr "País"
 
-#: custom-fields.php:274
+#: custom-fields.php:276
 msgid "Bio CV"
 msgstr "Bio, CV"
 
-#: custom-fields.php:278 page-bio.php:36
+#: custom-fields.php:280 page-bio.php:36
 msgid "Experience"
 msgstr "Experiència"
 
-#: custom-fields.php:284
+#: custom-fields.php:286
 msgid "Company"
 msgstr "Companyía"
 
-#: custom-fields.php:293
+#: custom-fields.php:295
 msgid "Company URL"
 msgstr "URL de la companyía"
 
-#: custom-fields.php:302
+#: custom-fields.php:304
 msgid "Job Title"
 msgstr "Possició"
 
-#: custom-fields.php:311
+#: custom-fields.php:313
 msgid "Job Description"
 msgstr "Descripció del treball"
 
-#: custom-fields.php:320
+#: custom-fields.php:322
 msgid "Started"
 msgstr "Començat"
 
-#: custom-fields.php:329
+#: custom-fields.php:331
 msgid "Ended"
 msgstr "Acabat"
 
-#: custom-fields.php:340
+#: custom-fields.php:342
 msgid "Add Job"
 msgstr "Afegir treball"
 
-#: custom-fields.php:344 page-bio.php:55
+#: custom-fields.php:346 page-bio.php:55
 msgid "Studies"
 msgstr "Estudis"
 
-#: custom-fields.php:350
+#: custom-fields.php:352
 msgid "Career"
 msgstr "Carrera"
 
-#: custom-fields.php:359
+#: custom-fields.php:361
 msgid "Career Center"
 msgstr "Centre d'estudis"
 
-#: custom-fields.php:368
+#: custom-fields.php:370
 msgid "Career Center URL"
 msgstr "URL del centre d'estudis"
 
-#: custom-fields.php:377
+#: custom-fields.php:379
 msgid "Year Ended"
 msgstr "Any d'acabament"
 
-#: custom-fields.php:388
+#: custom-fields.php:390
 msgid "Add Studies"
 msgstr "Afegir estudis"
 
-#: custom-fields.php:392 page-bio.php:69
+#: custom-fields.php:394 page-bio.php:69
 msgid "Courses"
 msgstr "Cursos"
 
-#: custom-fields.php:398
+#: custom-fields.php:400
 msgid "Course"
 msgstr "Curs"
 
-#: custom-fields.php:407
+#: custom-fields.php:409
 msgid "Course Center"
 msgstr "Centre del curs"
 
-#: custom-fields.php:416
+#: custom-fields.php:418
 msgid "Course Center URL"
 msgstr "URL del centre del curs"
 
-#: custom-fields.php:425
+#: custom-fields.php:427
 msgid "Course Lenght"
 msgstr "Durada del curs"
 
-#: custom-fields.php:434
+#: custom-fields.php:436
 msgid "Course Date"
 msgstr "Data del curs"
 
-#: custom-fields.php:445
+#: custom-fields.php:447
 msgid "Add Course"
 msgstr "Afegir curs"
 
-#: custom-fields.php:449 page-bio.php:83
+#: custom-fields.php:451 page-bio.php:83
 msgid "Others"
 msgstr "Altres"
 
-#: custom-fields.php:464
+#: custom-fields.php:466
 msgid "Description"
 msgstr "Descripció"
 
-#: custom-fields.php:475
+#: custom-fields.php:477
 msgid "Add Other"
 msgstr "Afegir altres"
 
-#: custom-fields.php:500
+#: custom-fields.php:502
 msgid "Bio Skills"
 msgstr "Bio, habilitats"
 
-#: custom-fields.php:504 page-bio.php:105
+#: custom-fields.php:506 page-bio.php:105
 msgid "Languages"
 msgstr "Idiomes"
 
-#: custom-fields.php:510 header.php:52
+#: custom-fields.php:512
 msgid "Language"
 msgstr "Idioma"
 
-#: custom-fields.php:519
+#: custom-fields.php:521
 msgid "Language Level"
 msgstr "Nivell de l'idioma"
 
-#: custom-fields.php:537
+#: custom-fields.php:539
 msgid "Language Level (Title)"
 msgstr "Nivel de l'idioma (titulació)"
 
-#: custom-fields.php:548
+#: custom-fields.php:550
 msgid "Add Language"
 msgstr "Afegir idioma"
 
-#: custom-fields.php:552
+#: custom-fields.php:554
 msgid "Skillset"
 msgstr "Conjunt d'habilitats"
 
-#: custom-fields.php:558
+#: custom-fields.php:560 custom-fields.php:696
 msgid "Title"
 msgstr "Titol"
 
-#: custom-fields.php:567 page-bio.php:119
+#: custom-fields.php:569 page-bio.php:119
 msgid "Skills"
 msgstr "Habilitats"
 
-#: custom-fields.php:574
+#: custom-fields.php:576
 msgid "Skill"
 msgstr "Habilitat"
 
-#: custom-fields.php:583
+#: custom-fields.php:585
 msgid "Skill Level"
 msgstr "Nivell de l'hablitat"
 
-#: custom-fields.php:603
+#: custom-fields.php:605
 msgid "Add Skill"
 msgstr "Afegir habilitat"
 
-#: custom-fields.php:609
+#: custom-fields.php:611
 msgid "Add Skillset"
 msgstr "Afegir conjunt d'habilitats"
 
-#: custom-fields.php:636
+#: custom-fields.php:638
 msgid "Project Info"
 msgstr "Informació del projecte"
 
-#: custom-fields.php:640
+#: custom-fields.php:642
 msgid "Subtitle"
 msgstr "Subtitol"
 
-#: custom-fields.php:648 single-project.php:24
+#: custom-fields.php:650 single-project.php:24
 msgid "Date"
-msgstr "Data del curs"
+msgstr "Data"
 
-#: custom-fields.php:656 single-project.php:25
+#: custom-fields.php:658 single-project.php:25
 msgid "Client"
 msgstr "Client"
 
-#: custom-fields.php:664
+#: custom-fields.php:666
 msgid "Client URL"
 msgstr "URL del client"
 
-#: custom-fields.php:672
+#: custom-fields.php:674
 msgid "Collaborator/s"
 msgstr "Colaborador/s"
 
-#: custom-fields.php:680
+#: custom-fields.php:682
 msgid "Collaborators plural"
 msgstr "Colaboradors en plural"
 
-#: custom-fields.php:683
+#: custom-fields.php:685
 msgid "Are there more than one collaborators for this project?"
 msgstr "Hi ha més d'un colaborador per a aquest projecte?"
 
-#: custom-fields.php:688
+#: custom-fields.php:690
 msgid "Extra"
 msgstr "Extra"
 
-#: custom-fields.php:696
-msgid "Extra Icon"
-msgstr "Extra, icona"
-
-#: custom-fields.php:704
-msgid "Extra 2"
-msgstr "Extra 2"
-
-#: custom-fields.php:712
-msgid "Extra 2 Icon"
-msgstr "Extra 2, icona"
-
-#: custom-fields.php:741
-msgid "Project Content"
-msgstr "Contingut del projecte"
-
-#: custom-fields.php:745
+#: custom-fields.php:714 custom-fields.php:754
 msgid "Content"
 msgstr "Contingut"
 
+#: custom-fields.php:725
+msgid "Add Extra"
+msgstr "Afegir extra"
+
 #: custom-fields.php:750
+msgid "Project Content"
+msgstr "Contingut del projecte"
+
+#: custom-fields.php:759
 msgid "IMG Full"
 msgstr "Imatge completa"
 
-#: custom-fields.php:756 custom-fields.php:782
+#: custom-fields.php:765 custom-fields.php:791
 msgid "IMG"
 msgstr "Imatge"
 
-#: custom-fields.php:766 custom-fields.php:792
+#: custom-fields.php:775 custom-fields.php:801
 msgid "IMG Alt"
 msgstr "Atribut ‘alt’ de la imatge"
 
-#: custom-fields.php:776
+#: custom-fields.php:785
 msgid "IMG Half"
 msgstr "Imatge, meitat"
 
-#: custom-fields.php:802
+#: custom-fields.php:811
 msgid "Video"
 msgstr "Vídeo"
 
-#: custom-fields.php:808
+#: custom-fields.php:817
 msgid "Video ID (Vimeo)"
 msgstr "ID del vídeo (Vimeo)"
 
-#: custom-fields.php:817 custom-fields.php:863
+#: custom-fields.php:826 custom-fields.php:872
 msgid "Aspect Ratio"
 msgstr "Relació d'aspecte"
 
-#: custom-fields.php:822
+#: custom-fields.php:831
 msgid "Widescreen (16:9)"
 msgstr "Panoràmic (16:9)"
 
-#: custom-fields.php:823
+#: custom-fields.php:832
 msgid "PAL (5:4)"
 msgstr "PAL (5:4)"
 
-#: custom-fields.php:825
+#: custom-fields.php:834
 msgid "16:9 : Widescreen (16:9)"
 msgstr "16:9 : Panoràmic (16:9)"
 
-#: custom-fields.php:832
+#: custom-fields.php:841
 msgid "ISSUU"
 msgstr "ISSUU"
 
-#: custom-fields.php:838
+#: custom-fields.php:847
 msgid "ISSUU ID"
 msgstr "ID d'ISSUU"
 
-#: custom-fields.php:848
+#: custom-fields.php:857
 msgid "Flash"
 msgstr "Flash"
 
-#: custom-fields.php:854
+#: custom-fields.php:863
 msgid "File"
 msgstr "Arxiu"
 
-#: custom-fields.php:866
+#: custom-fields.php:875
 msgid "Aspect Ratio, number (Eg.: 16:9 is 1.77778)"
 msgstr "Relació d'aspecte, número (Ex.: 16:9 es 1,77778)"
 
-#: custom-fields.php:874
+#: custom-fields.php:883
 msgid "Add Content"
 msgstr "Afegir contingut"
 
@@ -443,7 +435,7 @@ msgstr "Tema"
 
 #: page-contact.php:26
 msgid "What about or why are you contacting me?"
-msgstr "Sobre què o perquè estàs contactant-me?"
+msgstr "Quin es el motiu del teu contacte?"
 
 #: page-contact.php:27
 msgid "Message"
@@ -464,3 +456,12 @@ msgstr "Més"
 #: single-project.php:26
 msgid "Project type"
 msgstr "Tipus de projecte"
+
+#~ msgid "Extra Icon"
+#~ msgstr "Extra, icona"
+
+#~ msgid "Extra 2"
+#~ msgstr "Extra 2"
+
+#~ msgid "Extra 2 Icon"
+#~ msgstr "Extra 2, icona"

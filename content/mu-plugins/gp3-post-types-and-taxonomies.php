@@ -14,11 +14,11 @@ Text Domain: gp3ptt
  * Plugin localization
  */
 
-function gp3_post_types_and_taxonomies_lang() {
+//function gp3_post_types_and_taxonomies_lang() {
 	load_plugin_textdomain('gp3ptt', false, basename(dirname(__FILE__)) . '/lang');
-}
+//}
 
-add_action('plugins_loaded', 'gp3_post_types_and_taxonomies_lang');
+//add_action('init', 'gp3_post_types_and_taxonomies_lang');
 
 
 

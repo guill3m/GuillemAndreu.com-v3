@@ -133,7 +133,20 @@
 	}
 }
 
+.project-content-item + .project-content-item {
+	margin-top: 10px;
+}
+
+.project-content-item.half + .project-content-item.half {
+	margin-top: 0;
+}
+
+.project-content-item.half + .project-content-item.half + .project-content-item.half {
+	margin-top: 10px;
+}
+
 .project-img {
+	height: auto;
 	width: 100%;
 	@media (min-width: 650px),
 	       print {
@@ -142,4 +155,21 @@
 			width: 50%;
 		}
 	}
+}
+
+.project-issuu,
+.project-video {
+	height: 0;
+	position: relative;
+	iframe {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.project-issuu {
+	padding-bottom: 65%;
 }

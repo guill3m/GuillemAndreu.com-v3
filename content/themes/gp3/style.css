@@ -350,7 +350,7 @@ small {
   display: block;
   font-weight: 800;
   letter-spacing: 1px;
-  line-height: 35px;
+  line-height: 40px;
   text-transform: uppercase;
   white-space: pre;
   -webkit-transition: background 0.3s ease, color 0.3s ease;
@@ -364,7 +364,6 @@ small {
     color: #bada55; }
 .menu .menu-switch {
   float: right;
-  line-height: 40px;
   margin: 5px 7% 0 0;
   text-align: center;
   width: 35%; }
@@ -386,9 +385,9 @@ small {
   padding-top: 5px;
   width: 100%; }
   .menu-list > li {
-    margin: 10px 5% 0;
+    margin: 10px 2.5% 0;
     vertical-align: top;
-    width: 40%; }
+    width: 45%; }
     .menu-list > li:nth-child(3), .menu-list > li:nth-child(4) {
       margin-top: 5px; }
   @media (min-width: 480px) {
@@ -407,20 +406,16 @@ small {
         line-height: 50px; } }
 
 .language-submenu {
-  display: none;
-  margin: 5px 5% -5px;
-  width: 90%; }
+  width: 100%; }
   .language-submenu > li {
+    margin: 0;
     width: 33.3333333333%; }
+    @media (min-width: 650px) {
+      .language-submenu > li > a {
+        line-height: 50px; } }
   .language-submenu .current {
-    color: #a0220d;
+    color: #222222;
     font-weight: 800; }
-  .language-submenu a {
-    color: #222222; }
-    .language-submenu a:hover, .language-submenu a:focus {
-      color: #a0220d; }
-    .language-submenu a:active {
-      color: #bada55; }
 
 .home-quotes {
   margin-top: 10px; }
@@ -653,12 +648,37 @@ small {
   .project-content {
     width: 75%; } }
 
+.project-content-item + .project-content-item {
+  margin-top: 10px; }
+
+.project-content-item.half + .project-content-item.half {
+  margin-top: 0; }
+
+.project-content-item.half + .project-content-item.half + .project-content-item.half {
+  margin-top: 10px; }
+
 .project-img {
+  height: auto;
   width: 100%; }
   @media (min-width: 650px), print {
     .project-img.half {
       float: left;
       width: 50%; } }
+
+.project-issuu,
+.project-video {
+  height: 0;
+  position: relative; }
+  .project-issuu iframe,
+  .project-video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.project-issuu {
+  padding-bottom: 65%; }
 
 .bio small {
   font-weight: 300; }
