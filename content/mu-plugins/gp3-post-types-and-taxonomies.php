@@ -127,7 +127,7 @@ function gp3_custom_taxonomies() {
 		'not_found'             => __('No project types found', 'gp3-ptt')
 	);
 	$type_rewrite = array(
-		'slug'         => __('type', 'gp3-ptt'),
+		'slug'         => __('project-type', 'gp3-ptt'),
 		'with_front'   => false,
 		'hierarchical' => true
 	);

@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Guillem Portfolio 3\n"
+"POT-Creation-Date: 2013-07-29 04:30+0100\n"
+"PO-Revision-Date: 2013-07-29 04:30+0100\n"
+"Last-Translator: Guillem Andreu <hola@guillemandreu.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: custom-fields.php:14 custom-fields.php:15
+msgid "Global Content"
+msgstr "Contenido global"
+
+#: custom-fields.php:27
+msgid "Home Slide"
+msgstr "Slide inicio"
+
+#: custom-fields.php:31
+msgid "Slide Items"
+msgstr "Ítems slide"
+
+#: custom-fields.php:37
+msgid "Project"
+msgstr "Proyecto"
+
+#: custom-fields.php:54
+msgid "Add Item"
+msgstr "Añadir ítem"
+
+#: custom-fields.php:79
+msgid "Home Quotes"
+msgstr "Citas inicio"
+
+#: custom-fields.php:83
+msgid "Quotes"
+msgstr "Citas"
+
+#: custom-fields.php:89
+msgid "Quote"
+msgstr "Cita"
+
+#: custom-fields.php:98
+msgid "Quote Author"
+msgstr "Autor de la cita"
+
+#: custom-fields.php:109
+msgid "Add Quote"
+msgstr "Añadir cita"
+
+#: custom-fields.php:134
+msgid "Social"
+msgstr "Social"
+
+#: custom-fields.php:138
+msgid "Social Links"
+msgstr "Enlaces sociales"
+
+#: custom-fields.php:144
+msgid "Icon"
+msgstr "Icono"
+
+#: custom-fields.php:153 custom-fields.php:204 custom-fields.php:455
+#: page-contact.php:19
+msgid "Name"
+msgstr "Nombre"
+
+#: custom-fields.php:162
+msgid "URL"
+msgstr "URL"
+
+#: custom-fields.php:173
+msgid "Add Social Link"
+msgstr "Añadir enlace social"
+
+#: custom-fields.php:200
+msgid "Bio Basic Info"
+msgstr "Bio, información básica"
+
+#: custom-fields.php:212
+msgid "Lastname"
+msgstr "Apellido"
+
+#: custom-fields.php:220 page-bio.php:20
+msgid "Picture"
+msgstr "Foto"
+
+#: custom-fields.php:229
+msgid "Birthday"
+msgstr "Fecha de nacimiento"
+
+#: custom-fields.php:237
+msgid "Location"
+msgstr "Ciudad"
+
+#: custom-fields.php:245
+msgid "Country"
+msgstr "País"
+
+#: custom-fields.php:274
+msgid "Bio CV"
+msgstr "Bio, CV"
+
+#: custom-fields.php:278 page-bio.php:36
+msgid "Experience"
+msgstr "Experiencia"
+
+#: custom-fields.php:284
+msgid "Company"
+msgstr "Companyía"
+
+#: custom-fields.php:293
+msgid "Company URL"
+msgstr "URL de la companyía"
+
+#: custom-fields.php:302
+msgid "Job Title"
+msgstr "Posición"
+
+#: custom-fields.php:311
+msgid "Job Description"
+msgstr "Descripción del trabajo"
+
+#: custom-fields.php:320
+msgid "Started"
+msgstr "Empezado"
+
+#: custom-fields.php:329
+msgid "Ended"
+msgstr "Acabado"
+
+#: custom-fields.php:340
+msgid "Add Job"
+msgstr "Añadir trabajo"
+
+#: custom-fields.php:344 page-bio.php:55
+msgid "Studies"
+msgstr "Estudios"
+
+#: custom-fields.php:350
+msgid "Career"
+msgstr "Carrera"
+
+#: custom-fields.php:359
+msgid "Career Center"
+msgstr "Centro de estudios"
+
+#: custom-fields.php:368
+msgid "Career Center URL"
+msgstr "URL del centro de estudios"
+
+#: custom-fields.php:377
+msgid "Year Ended"
+msgstr "Año de finalización"
+
+#: custom-fields.php:388
+msgid "Add Studies"
+msgstr "Añadir estudios"
+
+#: custom-fields.php:392 page-bio.php:69
+msgid "Courses"
+msgstr "Cursos"
+
+#: custom-fields.php:398
+msgid "Course"
+msgstr "Curso"
+
+#: custom-fields.php:407
+msgid "Course Center"
+msgstr "Centro del curso"
+
+#: custom-fields.php:416
+msgid "Course Center URL"
+msgstr "URL del centreo del curso"
+
+#: custom-fields.php:425
+msgid "Course Lenght"
+msgstr "Duración del curso"
+
+#: custom-fields.php:434
+msgid "Course Date"
+msgstr "Fecha del curso"
+
+#: custom-fields.php:445
+msgid "Add Course"
+msgstr "Añadir curso"
+
+#: custom-fields.php:449 page-bio.php:83
+msgid "Others"
+msgstr "Otros"
+
+#: custom-fields.php:464
+msgid "Description"
+msgstr "Descripción"
+
+#: custom-fields.php:475
+msgid "Add Other"
+msgstr "Añadir otros"
+
+#: custom-fields.php:500
+msgid "Bio Skills"
+msgstr "Bio, habilidades"
+
+#: custom-fields.php:504 page-bio.php:105
+msgid "Languages"
+msgstr "Idiomas"
+
+#: custom-fields.php:510 header.php:52
+msgid "Language"
+msgstr "Idioma"
+
+#: custom-fields.php:519
+msgid "Language Level"
+msgstr "Nivel del idioma"
+
+#: custom-fields.php:537
+msgid "Language Level (Title)"
+msgstr "Nivel del idioma (titulación)"
+
+#: custom-fields.php:548
+msgid "Add Language"
+msgstr "Añadir idioma"
+
+#: custom-fields.php:552
+msgid "Skillset"
+msgstr "Conjunto de habilidades"
+
+#: custom-fields.php:558
+msgid "Title"
+msgstr "Título"
+
+#: custom-fields.php:567 page-bio.php:119
+msgid "Skills"
+msgstr "Habilidades"
+
+#: custom-fields.php:574
+msgid "Skill"
+msgstr "Habilidad"
+
+#: custom-fields.php:583
+msgid "Skill Level"
+msgstr "Nivel de la hablidad"
+
+#: custom-fields.php:603
+msgid "Add Skill"
+msgstr "Añadir habilidad"
+
+#: custom-fields.php:609
+msgid "Add Skillset"
+msgstr "Añadir conjunto de habilidades"
+
+#: custom-fields.php:636
+msgid "Project Info"
+msgstr "Información del proyecto"
+
+#: custom-fields.php:640
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#: custom-fields.php:648 single-project.php:24
+msgid "Date"
+msgstr "Fecha del curs"
+
+#: custom-fields.php:656 single-project.php:25
+msgid "Client"
+msgstr "Cliente"
+
+#: custom-fields.php:664
+msgid "Client URL"
+msgstr "URL del cliente"
+
+#: custom-fields.php:672
+msgid "Collaborator/s"
+msgstr "Colaborador/es"
+
+#: custom-fields.php:680
+msgid "Collaborators plural"
+msgstr "Colaboradores en plural"
+
+#: custom-fields.php:683
+msgid "Are there more than one collaborators for this project?"
+msgstr "¿Hay más de un colaborador en este proyecto?"
+
+#: custom-fields.php:688
+msgid "Extra"
+msgstr "Extra"
+
+#: custom-fields.php:696
+msgid "Extra Icon"
+msgstr "Extra, icono"
+
+#: custom-fields.php:704
+msgid "Extra 2"
+msgstr "Extra 2"
+
+#: custom-fields.php:712
+msgid "Extra 2 Icon"
+msgstr "Extra 2, icono"
+
+#: custom-fields.php:741
+msgid "Project Content"
+msgstr "Contenido del proyecto"
+
+#: custom-fields.php:745
+msgid "Content"
+msgstr "Contenido"
+
+#: custom-fields.php:750
+msgid "IMG Full"
+msgstr "Imagen completa"
+
+#: custom-fields.php:756 custom-fields.php:782
+msgid "IMG"
+msgstr "Imagen"
+
+#: custom-fields.php:766 custom-fields.php:792
+msgid "IMG Alt"
+msgstr "Atributo ‘alt’ de la imatgen"
+
+#: custom-fields.php:776
+msgid "IMG Half"
+msgstr "Imagen, media"
+
+#: custom-fields.php:802
+msgid "Video"
+msgstr "Vídeo"
+
+#: custom-fields.php:808
+msgid "Video ID (Vimeo)"
+msgstr "ID del vídeo (Vimeo)"
+
+#: custom-fields.php:817 custom-fields.php:863
+msgid "Aspect Ratio"
+msgstr "Relación de aspecto"
+
+#: custom-fields.php:822
+msgid "Widescreen (16:9)"
+msgstr "Panorámico (16:9)"
+
+#: custom-fields.php:823
+msgid "PAL (5:4)"
+msgstr "PAL (5:4)"
+
+#: custom-fields.php:825
+msgid "16:9 : Widescreen (16:9)"
+msgstr "16:9 : Panorámico (16:9)"
+
+#: custom-fields.php:832
+msgid "ISSUU"
+msgstr "ISSUU"
+
+#: custom-fields.php:838
+msgid "ISSUU ID"
+msgstr "ID de ISSUU"
+
+#: custom-fields.php:848
+msgid "Flash"
+msgstr "Flash"
+
+#: custom-fields.php:854
+msgid "File"
+msgstr "Archivo"
+
+#: custom-fields.php:866
+msgid "Aspect Ratio, number (Eg.: 16:9 is 1.77778)"
+msgstr "Relación de aspecto, número (Ej.: 16:9 es 1,77778)"
+
+#: custom-fields.php:874
+msgid "Add Content"
+msgstr "Añadir contenido"
+
+#: header.php:46
+msgid "Menu"
+msgstr "Menú"
+
+#: header.php:48
+msgid "portfolio"
+msgstr "portfolio"
+
+#: header.php:48
+msgid "Work"
+msgstr "Trabajos"
+
+#: header.php:49
+msgid "bio"
+msgstr "bio"
+
+#: header.php:49
+msgid "Bio"
+msgstr "Bio"
+
+#: header.php:50
+msgid "contact"
+msgstr "contacto"
+
+#: header.php:50
+msgid "Contact"
+msgstr "Contacto"
+
+#: page-bio.php:42
+msgid "From"
+msgstr "Desde"
+
+#: page-bio.php:42
+msgid "to"
+msgstr "hasta"
+
+#: page-contact.php:20
+msgid "Your name goes here"
+msgstr "Tu nombre va aquí"
+
+#: page-contact.php:21
+msgid "Email"
+msgstr "Email"
+
+#: page-contact.php:22
+msgid "This way I can reply you, if necessary"
+msgstr "Así puedo responderte"
+
+#: page-contact.php:23
+msgid "Phone"
+msgstr "Teléfono"
+
+#: page-contact.php:23
+msgid "optional"
+msgstr "opcional"
+
+#: page-contact.php:24
+#, php-format
+msgid "110% optional, just if you want to give me other way to contact you"
+msgstr ""
+"110% opcional, sólo por si quieres darme otra manera de contactar contigo"
+
+#: page-contact.php:25
+msgid "Subject"
+msgstr "Tema"
+
+#: page-contact.php:26
+msgid "What about or why are you contacting me?"
+msgstr "Sobre qué o porqué me estás contactando?"
+
+#: page-contact.php:27
+msgid "Message"
+msgstr "Mensaje"
+
+#: page-contact.php:28
+msgid "Finally, here is where you write the actual message, thank you"
+msgstr "Ya era hora, aquí es donde escribes tu mensaje, gracias"
+
+#: page-contact.php:36
+msgid "Where to find me"
+msgstr "Dónde encontrarme"
+
+#: single-project.php:19
+msgid "More"
+msgstr "Más"
+
+#: single-project.php:26
+msgid "Project type"
+msgstr "Tipo de proyecto"

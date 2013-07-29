@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GP3 Post Types & Taxonomies\n"
+"POT-Creation-Date: 2013-07-29 04:55+0100\n"
+"PO-Revision-Date: 2013-07-29 05:03+0100\n"
+"Last-Translator: Guillem Andreu <hola@guillemandreu.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../gp3-post-types-and-taxonomies.php:31
+#: ../gp3-post-types-and-taxonomies.php:33
+msgid "Projects"
+msgstr "Proyectos"
+
+#: ../gp3-post-types-and-taxonomies.php:32
+msgid "Project"
+msgstr "Proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:34
+msgid "All projects"
+msgstr "Todos los proyectos"
+
+#: ../gp3-post-types-and-taxonomies.php:35
+msgid "Add new"
+msgstr "Añadir nuevo"
+
+#: ../gp3-post-types-and-taxonomies.php:36
+msgid "Add new project"
+msgstr "Añadir nuevo proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:37
+msgid "Edit"
+msgstr "Editar"
+
+#: ../gp3-post-types-and-taxonomies.php:38
+msgid "Edit project"
+msgstr "Editar proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:39
+msgid "New project"
+msgstr "Nuevo proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:40
+msgid "View project"
+msgstr "Ver proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:41
+msgid "Projects archive"
+msgstr "Archivo de proyectos"
+
+#: ../gp3-post-types-and-taxonomies.php:42
+msgid "Search projects"
+msgstr "Buscar proyectos"
+
+#: ../gp3-post-types-and-taxonomies.php:43
+msgid "No projects found"
+msgstr "No se han encontrado proyectos"
+
+#: ../gp3-post-types-and-taxonomies.php:44
+msgid "No projects found in the trash"
+msgstr "No se han encontrado proyectos en la papelera"
+
+#: ../gp3-post-types-and-taxonomies.php:54
+msgid "portfolio"
+msgstr "portfolio"
+
+#: ../gp3-post-types-and-taxonomies.php:60
+msgid "Portfolio items"
+msgstr "Ítems del portfolio"
+
+#: ../gp3-post-types-and-taxonomies.php:85
+#, php-format
+msgid "Project updated. <a href=\"%s\">View project</a>"
+msgstr "Proyecto actualizado. <a href=\"%s\">Ver proyecto</a>"
+
+#: ../gp3-post-types-and-taxonomies.php:86
+msgid "Custom field updated."
+msgstr "Campo prsonalizado actualizado."
+
+#: ../gp3-post-types-and-taxonomies.php:87
+msgid "Custom field deleted."
+msgstr "Campo personalizado eliminado."
+
+#: ../gp3-post-types-and-taxonomies.php:88
+msgid "Project updated."
+msgstr "Proyecto actualizado."
+
+#: ../gp3-post-types-and-taxonomies.php:90
+#, php-format
+msgid "Project restored to revision from %s"
+msgstr "Proyecto restaurado a la versión de %s"
+
+#: ../gp3-post-types-and-taxonomies.php:91
+#, php-format
+msgid "Project published. <a href=\"%s\">View project</a>"
+msgstr "Proyecto publicado. <a href=\"%s\">Ver proyecto</a>"
+
+#: ../gp3-post-types-and-taxonomies.php:92
+msgid "Project saved."
+msgstr "Proyecto guardado."
+
+#: ../gp3-post-types-and-taxonomies.php:93
+#, php-format
+msgid "Project submitted. <a target=\"_blank\" href=\"%s\">Preview project</a>"
+msgstr ""
+"Proyecto enviado. <a target=\"_blank\" href=\"%s\">Previsualizar proyecto</a>"
+
+#: ../gp3-post-types-and-taxonomies.php:94
+#, php-format
+msgid ""
+"Project scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview project</a>"
+msgstr ""
+"Proyecto programado para: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Previsualizar proyecto</a>"
+
+#: ../gp3-post-types-and-taxonomies.php:96
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: ../gp3-post-types-and-taxonomies.php:97
+#, php-format
+msgid ""
+"Project draft updated. <a target=\"_blank\" href=\"%s\">Preview project</a>"
+msgstr ""
+"Borrador del proyecto actualizado. <a target=\"_blank\" href=\"%s"
+"\">Previsualizar proyecto</a>"
+
+#: ../gp3-post-types-and-taxonomies.php:112
+#: ../gp3-post-types-and-taxonomies.php:114
+msgid "Project types"
+msgstr "Tipos de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:113
+msgid "Project type"
+msgstr "Tipo de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:115
+msgid "All project types"
+msgstr "Todos los tipos de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:116
+msgid "Edit project type"
+msgstr "Editar tipo de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:117
+msgid "View project type"
+msgstr "Ver tipo de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:118
+msgid "Update project type"
+msgstr "Actualizar tipo de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:119
+msgid "Add new project type"
+msgstr "Añadir nuevo tipo de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:120
+msgid "New project type name"
+msgstr "Nuevo nombre de tipo de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:121
+msgid "Parent project type"
+msgstr "Tipo de proyecto padre"
+
+#: ../gp3-post-types-and-taxonomies.php:122
+msgid "Parent project type:"
+msgstr "Tipo de proyecto padre:"
+
+#: ../gp3-post-types-and-taxonomies.php:123
+msgid "Search project types"
+msgstr "Buscar tipos de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:124
+msgid "Popular project types"
+msgstr "Tipos de proyecto populares"
+
+#: ../gp3-post-types-and-taxonomies.php:125
+msgid "Add or remove project types"
+msgstr "Añadir o quitar tipos de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:126
+msgid "Choose from most used project types"
+msgstr "Seleccionar de los tipos de proyecto más usados"
+
+#: ../gp3-post-types-and-taxonomies.php:127
+msgid "No project types found"
+msgstr "No se han encontrado tipos de proyecto"
+
+#: ../gp3-post-types-and-taxonomies.php:130
+msgid "project-type"
+msgstr "tipo-de-proyecto"
