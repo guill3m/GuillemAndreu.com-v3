@@ -5,8 +5,9 @@
 
 
 .slide {
-	position: relative;
+	height: auto !important;
 	overflow: auto;
+	position: relative;
 	.dots {
 		bottom: 50px;
 		left: 0;
@@ -46,6 +47,7 @@
 	}
 	a {
 		color: $color-bg;
+		display: block;
 	}
 }
 
@@ -70,5 +72,19 @@
 		p + p {
 			display: block;
 		}
+	}
+}
+
+.slide-title {
+	font: {
+		size: 1.071428571em; // 15/14
+		weight: 700;
+	}
+}
+
+.slide-subtitle {
+	font: {
+		size: .866666667em; // 13/15
+		weight: 300;
 	}
 }

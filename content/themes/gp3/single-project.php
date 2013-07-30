@@ -23,7 +23,7 @@
 			<ul class="project-charact-list">
 				<li data-icon="date"><span class="project-charact-title"><?php _e('Date', 'gp3'); ?>:</span> <?php the_field('project_date'); ?></li>
 				<li data-icon="client"><span class="project-charact-title"><?php _e('Client', 'gp3'); ?>:</span> <?php if(get_field('project_client_url')) : ?><a href="<?php the_field('project_client_url'); ?>" target="_blank"><?php endif; the_field('project_client'); if(get_field('project_client_url')) : ?></a><?php endif; ?></li>
-				<li data-icon="type"><span class="project-charact-title"><?php _e('Project type', 'gp3'); ?>:</span> <?php $the_terms = get_the_term_list( $post->ID, 'project-type', '', ', ', '' ); echo strip_tags($the_terms); ?></li>
+				<li data-icon="type"><span class="project-charact-title"><?php _e('Project type', 'gp3'); ?>:</span> <?php echo get_the_term_list( $post->ID, 'project-type', '', ', ', '' ); ?></li>
 				<?php if(get_field('project_extra')) : ?>
 					<?php while(has_sub_field('project_extra')) : ?>
 						<li data-icon="<?php the_sub_field('project_extra_icon'); ?>"><span class="project-charact-title"><?php the_sub_field('project_extra_title'); ?>:</span> <?php the_sub_field('project_extra_content'); ?></li>

@@ -9,13 +9,13 @@
 
 <?php get_header(); ?>
 
-	<?php if(has_sub_field('home_slide', 'option')) : ?>
+	<?php if(get_field('home_slide', 'option')) : ?>
 
 		<div id="home-slide" class="slide">
 			<ul>
 
 				<?php while(has_sub_field('home_slide', 'option')) : ?>
-					<?php $post = get_field('home_slide_item');
+					<?php $post = get_sub_field('home_slide_item');
 					setup_postdata($post); ?>
 					<li class="slide-item">
 						<a href="<?php the_permalink(); ?>">
@@ -35,16 +35,14 @@
 	<?php endif; ?>
 
 
-	<?php if(has_sub_field('home_quotes', 'option')) : ?>
+	<?php if(get_field('home_quotes', 'option')) : ?>
 
 			<ul class="home-quotes">
 
-				<?php while(has_sub_field('home_quotes', 'option')) : ?>
-					<li class="quote">
-						<p><?php the_field('home_quote', 'option'); ?></p>
-						<p class="quote-author"><?php the_field('home_quote_author', 'option'); ?></p>
-					</li>
-				<?php endwhile; ?>
+				<?php while(has_sub_field('home_quotes', 'option')) : ?><li class="quote">
+						<p><?php the_sub_field('home_quote', 'option'); ?></p>
+						<p class="quote-author"><?php the_sub_field('home_quote_author', 'option'); ?></p>
+					</li><?php endwhile; ?>
 
 			</ul>
 

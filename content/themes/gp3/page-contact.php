@@ -31,12 +31,12 @@
 
 <?php endwhile; ?>
 
-<?php if(get_field('social_links')) : ?>
+<?php if(get_field('social_links', 'option')) : ?>
 <aside id="contact-social" class="contact-social">
 	<h2><?php _e('Where to find me', 'gp3'); ?></h2>
 	<ul>
 		<?php while(has_sub_field('social_links', 'option')) : ?>
-			<li data-icon="<?php the_sub_field('social_icon', 'option'); ?>"><a href="<?php the_sub_field('social_url', 'option'); ?>"><?php the_sub_field('social_name', 'option'); ?></a></li>
+			<li data-icon="<?php the_sub_field('social_icon'); ?>"><a href="<?php the_sub_field('social_url'); ?>"><?php the_sub_field('social_name'); ?></a></li>
 		<?php endwhile; ?>
 	</ul>
 </aside>

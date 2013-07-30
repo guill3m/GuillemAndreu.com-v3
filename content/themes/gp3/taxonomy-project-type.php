@@ -13,6 +13,8 @@
 
 	<div class="portfolio">
 
+		<h1 class="taxonomy-title">Test</h1>
+
 		<?php while(have_posts()) : the_post(); ?>
 
 			<article id="project-<?php the_ID(); ?>" class="portfolio-item">

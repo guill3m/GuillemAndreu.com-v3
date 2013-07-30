@@ -14,11 +14,9 @@ Text Domain: gp3ptt
  * Plugin localization
  */
 
-//function gp3_post_types_and_taxonomies_lang() {
-	load_plugin_textdomain('gp3ptt', false, basename(dirname(__FILE__)) . '/lang');
-//}
-
-//add_action('init', 'gp3_post_types_and_taxonomies_lang');
+	$path = dirname(plugin_basename( __FILE__ )) . '/lang';
+	load_plugin_textdomain('gp3ptt', false, $path);
+echo $path;
 
 
 

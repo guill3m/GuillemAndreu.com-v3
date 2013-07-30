@@ -437,8 +437,9 @@ small {
     content: "— "; }
 
 .slide {
-  position: relative;
-  overflow: auto; }
+  height: auto !important;
+  overflow: auto;
+  position: relative; }
   .slide .dots {
     bottom: 50px;
     left: 0;
@@ -474,7 +475,8 @@ small {
     height: auto;
     width: 100%; }
   .slide-item a {
-    color: white; }
+    color: white;
+    display: block; }
 
 .slide-txt {
   background: rgba(0, 0, 0, 0.75);
@@ -495,6 +497,14 @@ small {
       height: 70px; }
       .slide-txt p + p {
         display: block; } }
+
+.slide-title {
+  font-size: 1.071428571em;
+  font-weight: 700; }
+
+.slide-subtitle {
+  font-size: .866666667em;
+  font-weight: 300; }
 
 .portfolio {
   padding: 0 10px; }
@@ -543,6 +553,9 @@ small {
     text-overflow: ellipsis;
     white-space: nowrap; }
 
+.taxonomy-title {
+  padding: 15px 15px 0; }
+
 .project-title,
 .project-subtitle {
   padding: 0 15px; }
@@ -552,7 +565,6 @@ small {
       padding: 0; } }
 
 .project-title {
-  color: #a0220d;
   padding-top: 10px; }
 
 .project-subtitle {
