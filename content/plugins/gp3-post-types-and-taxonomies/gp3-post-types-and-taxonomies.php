@@ -14,9 +14,9 @@ Text Domain: gp3ptt
  * Plugin localization
  */
 
-	$path = dirname(plugin_basename( __FILE__ )) . '/lang';
-	load_plugin_textdomain('gp3ptt', false, $path);
-echo $path;
+
+$plugin_path = dirname(plugin_basename( __FILE__ )) . '/lang';
+load_plugin_textdomain('gp3ptt', false, $plugin_path);
 
 
 
@@ -97,7 +97,7 @@ function gp3_custom_post_types_messages($messages) {
 	return $messages;
 }
 
-add_filter( 'post_updated_messages', 'gp3_custom_post_types_messages');
+add_filter('post_updated_messages', 'gp3_custom_post_types_messages');
 
 
 
