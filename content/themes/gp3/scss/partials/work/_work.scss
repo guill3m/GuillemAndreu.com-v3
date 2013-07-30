@@ -14,19 +14,22 @@
 	position: relative;
 	padding: 20px 10px 0;
 	width: 100%;
+	a {
+		color: $color-bg;
+	}
 	img {
 		height: auto;
 		width: 100%;
-		@media (min-width: 900px) {
-			opacity: .75;
-			@include transition(opacity .3s ease);
-			&:hover {
-				opacity: 1;
-			}
-		}
 	}
-	a {
-		color: $color-bg;
+	@media (min-width: 900px) {
+		img {
+			background: $color-bg;
+			opacity: .65;
+			@include transition(opacity .3s ease);
+		}
+		&:hover img {
+			opacity: 1;
+		}
 	}
 	@media (min-width: 375px) {
 		width: 50%;

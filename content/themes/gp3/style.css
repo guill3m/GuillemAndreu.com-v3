@@ -515,20 +515,21 @@ small {
   position: relative;
   padding: 20px 10px 0;
   width: 100%; }
+  .portfolio-item a {
+    color: white; }
   .portfolio-item img {
     height: auto;
     width: 100%; }
-    @media (min-width: 900px) {
-      .portfolio-item img {
-        opacity: .75;
-        -webkit-transition: opacity 0.3s ease;
-        -moz-transition: opacity 0.3s ease;
-        -o-transition: opacity 0.3s ease;
-        transition: opacity 0.3s ease; }
-        .portfolio-item img:hover {
-          opacity: 1; } }
-  .portfolio-item a {
-    color: white; }
+  @media (min-width: 900px) {
+    .portfolio-item img {
+      background: white;
+      opacity: .65;
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; }
+    .portfolio-item:hover img {
+      opacity: 1; } }
   @media (min-width: 375px) {
     .portfolio-item {
       width: 50%; } }
