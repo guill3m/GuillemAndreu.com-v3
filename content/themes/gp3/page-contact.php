@@ -14,7 +14,7 @@
 
 	<section id="contact-form" class="contact-form">
 		<h1><?php the_title(); ?></h1>
-		<?php the_content(); ?>
+		<div id="contact-content"><?php the_content(); ?></div>
 		<form action="#">
 			<p><label for="contact-name" data-icon="person"><?php _e('Name', 'gp3'); ?>:</label></p>
 			<p><input type="text" name="name" id="contact-name" class="contact-input" placeholder="<?php _e('Your name goes here', 'gp3'); ?>" required /></p>
@@ -26,6 +26,7 @@
 			<p><input type="text" name="subject" id="contact-subject" class="contact-input" placeholder="<?php _e('What about or why are you contacting me?', 'gp3'); ?>" /></p>
 			<p><label for="contact-message"><?php _e('Message', 'gp3'); ?>:</label></p>
 			<p><textarea name="message" id="contact-message" class="contact-textarea" placeholder="<?php _e('Finally, here is where you write the actual message, thank you', 'gp3'); ?>"></textarea></p>
+			<p><input type="submit" value="Submit" name="submit" id="submit-contact-form" /></p>
 		</form>
 	</section>
 

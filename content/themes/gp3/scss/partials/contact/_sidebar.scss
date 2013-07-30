@@ -7,7 +7,7 @@
 .contact-social {
 	padding: 0 15px;
 	h2 {
-		margin: 0 0 10px;
+		margin: 25px 0 10px;
 	}
 	ul {
 		list-style: none;
@@ -24,6 +24,9 @@
 		float: left;
 		padding-top: 20px;
 		width: 30%;
+		h2 {
+			margin: 0 0 10px;
+		}
 	}
 	@media (min-width: 1000px) {
 		width: 20%;

@@ -977,6 +977,7 @@ function gp3_js_enqueue() {
 	// Page specific scripts
 	wp_register_script('unslider', get_template_directory_uri() . "/js/src/unslider.js", array('jquery'), null, true);
 	wp_register_script('project', get_template_directory_uri() . "/js/src/project.js", array('jquery'), $theme_version_number, true);
+	wp_register_script('contact', get_template_directory_uri() . "/js/src/contact.js", array('jquery'), $theme_version_number, true);
 	// Load generic scripts
 	wp_enqueue_script('menu');
 	// Load page specific scripts
@@ -984,6 +985,8 @@ function gp3_js_enqueue() {
 		wp_enqueue_script('unslider');
 	} elseif (is_singular('project')) {
 		wp_enqueue_script('project');
+	} elseif (is_page_template('page-contact.php')) {
+		wp_enqueue_script('contact');
 	}
 }
 

@@ -14,6 +14,7 @@ As it is also an element of my porfolio I thought it could be interesting to sha
 All the custom plugins I made for this are on the repo. This is the list of plugins that are not in the repo since I haven’t made, neither modified, them:
 
 - [Advanced Custom Fields](http://www.advancedcustomfields.com) by [Elliot Condon](http://www.elliotcondon.com)
+	- With *Flexible Content Field*, *Repeater Field*, and *Options Page* extensions.
 - [Multisite Language Switcher](http://lloc.de/msls) by [Dennis Ploetner](http://lloc.de)
 - [Wordpress SEO](http://yoast.com/wordpress/seo) by [Joost de Valk](http://yoast.com)
 - [WP Retina 2x](http://www.meow.fr/wp-retina-2x-wordpress-plugin/) by [Jordy Meow](http://www.meow.fr/)

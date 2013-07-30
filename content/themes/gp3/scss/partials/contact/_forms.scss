@@ -29,7 +29,7 @@ textarea {
 	line-height: 28px;
 	padding: 0 5px;
 	width: 100%;
-	@include transition(border-color .3s ease, box-shadow .3s ease);
+	@include transition(box-shadow .3s ease);
 	&:hover {
 		@include box-shadow(0 0 2px $color-txt2);
 	}
@@ -55,5 +55,31 @@ label {
 .contact-form form {
 	p:nth-child(odd) {
 		padding-top: 10px;
+	}
+}
+
+input[type="submit"] {
+	background: $color;
+	border: 1px solid darken($color, 10%) {
+		radius: 3px;
+	}
+	color: $color-bg;
+	line-height: 28px;
+	margin-top: 5px;
+	padding: 0 5px;
+	text-shadow: 0 0 3px darken($color, 20%);
+	width: 100%;
+	@include transition(background .3s ease, border-color .3s ease, text-shadow .3s ease);
+	&:hover,
+	&:focus {
+		background: $color2;
+		border-color: darken($color2, 10%);
+		text-shadow: 0 0 3px darken($color2, 20%);
+		outline: 0;
+	}
+	&:active {
+		background: $color-txt;
+		border-color: $color-txt;
+		text-shadow: none;
 	}
 }
