@@ -973,21 +973,9 @@ if (!is_admin()) add_action('wp_enqueue_scripts', 'gp3_jquery_enqueue', 12);
 function gp3_js_enqueue() {
 	global $theme_version_number;
 	// Generic scripts
-	wp_register_script('menu', get_template_directory_uri() . "/js/src/menu.js", array('jquery'), $theme_version_number, true);
-	// Page specific scripts
-	wp_register_script('unslider', get_template_directory_uri() . "/js/src/unslider.js", array('jquery'), null, true);
-	wp_register_script('project', get_template_directory_uri() . "/js/src/project.js", array('jquery'), $theme_version_number, true);
-	wp_register_script('contact', get_template_directory_uri() . "/js/src/contact.js", array('jquery'), $theme_version_number, true);
+	wp_register_script('scripts', get_template_directory_uri() . "/js/scripts.min.js", array('jquery'), $theme_version_number, true);
 	// Load generic scripts
-	wp_enqueue_script('menu');
-	// Load page specific scripts
-	if (is_front_page()) {
-		wp_enqueue_script('unslider');
-	} elseif (is_singular('project')) {
-		wp_enqueue_script('project');
-	} elseif (is_page_template('page-contact.php')) {
-		wp_enqueue_script('contact');
-	}
+	wp_enqueue_script('scripts');
 }
 
 add_action('wp_enqueue_scripts', 'gp3_js_enqueue', 13);

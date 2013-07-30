@@ -7,9 +7,13 @@
 
 (function($) {
 
+	$.ajaxSetup({
+		cache: false
+	});
+
 	function contact() {
 
-		var $contactForm    = $('#contact-form'),
+		var $contactForm    = $('#the-contact-form'),
 		    $contactContent = $('#contact-content');
 
 		$contactForm.submit(function(event) {
@@ -18,13 +22,19 @@
 
 			$.ajax({
 				type: 'POST',
-				url: 'http://dev.guill3m.me/content/themes/gp3/send-contact-form.php',
+				url: 'http://dev.guill3m.me/content/themes/gp3/js/send-contact-form.php',
 				data: $contactForm.serialize(),
 				success: function(response) {
-					$contactContent.html(response);
+					console.log(response);
+					if (response === 'OK') {
+						$contactContent.html($contactForm.attr('data-success'));
+						$contactForm.slideUp(400);
+					} else {
+						$contactContent.html($contactForm.attr('data-error'));
+					}
 				},
 				error: function() {
-					alert('Error');
+					$contactContent.html($contactForm.attr('data-error'));
 				}
 			});
 

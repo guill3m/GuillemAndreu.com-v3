@@ -2,7 +2,7 @@
 /*
 Theme Name: GuillemAndreu.com
 Theme URI: http://guillemandreu.com
-Description: Guillem Andreu's Portfolio website. Third version. First one implementing Responsive Web Design. Translation Ready.
+Description: Guillem Andreu’s Portfolio website. Third version. First one implementing Responsive Web Design. Translation Ready.
 Author: Guillem Andreu
 Author URI: http://guillemandreu.com
 Version: 3.0.dev
@@ -945,7 +945,7 @@ small {
 
 input[type="text"],
 input[type="tel"],
-input[type="mail"],
+input[type="email"],
 textarea {
   border: 1px solid #999999;
     border-radius: 3px;
@@ -958,15 +958,15 @@ textarea {
   transition: box-shadow 0.3s ease; }
   input[type="text"]:hover,
   input[type="tel"]:hover,
-  input[type="mail"]:hover,
+  input[type="email"]:hover,
   textarea:hover {
     -webkit-box-shadow: 0 0 2px #999999;
     box-shadow: 0 0 2px #999999; }
   input[type="text"]:focus, input[type="text"]:active,
   input[type="tel"]:focus,
   input[type="tel"]:active,
-  input[type="mail"]:focus,
-  input[type="mail"]:active,
+  input[type="email"]:focus,
+  input[type="email"]:active,
   textarea:focus,
   textarea:active {
     border-color: #a0220d;
