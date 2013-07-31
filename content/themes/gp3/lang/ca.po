@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Guillem Portfolio 3\n"
-"POT-Creation-Date: 2013-07-30 22:30+0100\n"
-"PO-Revision-Date: 2013-07-30 22:31+0100\n"
+"POT-Creation-Date: 2013-07-31 23:26+0100\n"
+"PO-Revision-Date: 2013-07-31 23:26+0100\n"
 "Last-Translator: Guillem Andreu <hola@guillemandreu.com>\n"
 "Language-Team: \n"
 "Language: ca\n"
@@ -432,12 +432,11 @@ msgstr ""
 
 #: page-contact.php:12
 msgid ""
-"Please try again, or contact me directly at <a href='mailto:hi[at]"
-"guillemandreu[dot]com'>hi[at]guillemandreu[dot]com</a>."
+"Please try again, or contact me directly at <a href='mailto:hi@guillemandreu."
+"com'>hi@guillemandreu.com</a>."
 msgstr ""
 "Per favor, torna a provar-ho, o contacta directament amb mi a <a "
-"href='mailto:hola[arroba]guillemandreu[punt]com'>hola[arroba]guillemandreu"
-"[punt]com</a>."
+"href='mailto:hola@guillemandreu.com'>hola@guillemandreu.com</a>."
 
 #: page-contact.php:23
 msgid "Your name goes here"

@@ -9,7 +9,7 @@
 
 $success_response = '<h3>' . __('Everything is working fine', 'gp3') . '</h3><p><strong>' . __('Your message has been sent.', 'gp3') . '</strong></p><p>' . __('I\'ll contact you back, if applicable, as soon as I can.', 'gp3') . '</p><p>' . __('Thank you', 'gp3') . '.</p>';
 
-$error_response = '<h3>' . __('A wild error appeared!', 'gp3') . '</h3><p>' . __('Oh, no. It seems that <strong>something went wrong and your message wasn\'t delivered.</strong>', 'gp3') . '</p><p>' . __('Please try again, or contact me directly at <a href=\'mailto:hi[at]guillemandreu[dot]com\'>hi[at]guillemandreu[dot]com</a>.', 'gp3') . '</p><p>' . __('Thank you', 'gp3') . '.</p>';
+$error_response = '<h3>' . __('A wild error appeared!', 'gp3') . '</h3><p>' . __('Oh, no. It seems that <strong>something went wrong and your message wasn\'t delivered.</strong>', 'gp3') . '</p><p>' . __('Please try again, or contact me directly at <a href=\'mailto:hi@guillemandreu.com\'>hi@guillemandreu.com</a>.', 'gp3') . '</p><p>' . __('Thank you', 'gp3') . '.</p>';
 
 get_header(); ?>
 
