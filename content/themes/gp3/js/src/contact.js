@@ -22,10 +22,9 @@
 
 			$.ajax({
 				type: 'POST',
-				url: 'http://dev.guill3m.me/content/themes/gp3/js/send-contact-form.php',
+				url: 'http://guillemandreu.com/content/themes/gp3/js/send-contact-form.php',
 				data: $contactForm.serialize(),
 				success: function(response) {
-					console.log(response);
 					if (response === 'OK') {
 						$contactContent.html($contactForm.attr('data-success'));
 						$contactForm.slideUp(400);

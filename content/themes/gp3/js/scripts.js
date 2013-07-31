@@ -1,5 +1,4 @@
 /*
- * Project
  * @package WordPress
  * @subpackage GuillemAndreu.com
  * @since GuillemAndreu.com 3.0.0

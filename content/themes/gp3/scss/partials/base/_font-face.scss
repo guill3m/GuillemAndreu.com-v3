@@ -16,12 +16,12 @@
 
 
 @include font-face("Open Sans", "opensans-light", 300);
-@include font-face("Open Sans", "opensans-lightitalic", 300, italic);
+// @include font-face("Open Sans", "opensans-lightitalic", 300, italic);
 @include font-face("Open Sans", "opensans-regular", 400);
 @include font-face("Open Sans", "opensans-italic", 400, italic);
 @include font-face("Open Sans", "opensans-semibold", 600);
 @include font-face("Open Sans", "opensans-semibolditalic", 600, italic);
 @include font-face("Open Sans", "opensans-bold", 700);
-@include font-face("Open Sans", "opensans-bolditalic", 700, italic);
+// @include font-face("Open Sans", "opensans-bolditalic", 700, italic);
 @include font-face("Open Sans", "opensans-extrabold", 800);
-@include font-face("Open Sans", "opensans-extrabolditalic", 800, italic);
+// @include font-face("Open Sans", "opensans-extrabolditalic", 800, italic);
