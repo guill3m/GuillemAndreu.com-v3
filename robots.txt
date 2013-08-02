@@ -8,4 +8,6 @@ Disallow: /wp-includes
 
 Allow: /
 
-Sitemap: http://www.guillemandreu.com/sitemap_index.xml
+Sitemap: http://www.guillemandreu.com/ca/sitemap_index.xml
+Sitemap: http://www.guillemandreu.com/es/sitemap_index.xml
+Sitemap: http://www.guillemandreu.com/en/sitemap_index.xml

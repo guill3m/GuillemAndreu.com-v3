@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Guillem Portfolio 3\n"
-"POT-Creation-Date: 2013-07-31 23:26+0100\n"
-"PO-Revision-Date: 2013-07-31 23:27+0100\n"
+"POT-Creation-Date: 2013-08-02 05:16+0100\n"
+"PO-Revision-Date: 2013-08-02 05:16+0100\n"
 "Last-Translator: Guillem Andreu <hola@guillemandreu.com>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -480,7 +480,11 @@ msgstr "Mensaje"
 msgid "Finally, here is where you write the actual message, thank you"
 msgstr "Ya era hora, aquí es donde escribes tu mensaje, gracias"
 
-#: page-contact.php:41
+#: page-contact.php:32
+msgid "Submit"
+msgstr "Enviar"
+
+#: page-contact.php:40
 msgid "Where to find me"
 msgstr "Dónde encontrarme"
 

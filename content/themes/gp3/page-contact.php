@@ -29,8 +29,7 @@ get_header(); ?>
 			<p><input type="text" name="subject" id="contact-subject" class="contact-input" placeholder="<?php _e('What about or why are you contacting me?', 'gp3'); ?>" required /></p>
 			<p><label for="contact-message"><?php _e('Message', 'gp3'); ?>:</label></p>
 			<p><textarea name="message" id="contact-message" class="contact-textarea" placeholder="<?php _e('Finally, here is where you write the actual message, thank you', 'gp3'); ?>" required></textarea></p>
-			<p><input type="submit" value="Submit" name="submit" id="submit-contact-form" /></p>
-			<input type="hidden" name="blog" value="<?php echo get_current_blog_id(); ?>" />
+			<p><input type="submit" value="<?php _e('Submit', 'gp3'); ?>" name="submit" id="submit-contact-form" /></p>
 		</form>
 	</section>
 

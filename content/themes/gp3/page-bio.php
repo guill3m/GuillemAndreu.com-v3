@@ -17,7 +17,7 @@
 		<header id="bio-header" class="bio-header">
 			<h1 class="bio-name"><?php the_field('bio_name'); ?> <span class="bio-lastname"><?php the_field('bio_lastname'); ?></span></h1>
 			<div class="bio-picture">
-				<img src="<?php the_field('bio_picture'); ?>" alt="<?php _e('Picture', 'gp3') . echo ': ' . the_field('bio_name') . echo ' ' . the_field('bio_lastname'); ?>" />
+				<img src="<?php the_field('bio_picture'); ?>" alt="<?php echo __('Picture', 'gp3') . ': ' . the_field('bio_name') . ' ' . the_field('bio_lastname'); ?>" />
 			</div>
 			<ul class="bio-details"><!--
 				--><li class="bio-birthday" data-icon="calendar"><?php the_field('bio_birthday'); ?></li><!--
@@ -39,7 +39,7 @@
 								<li class="bio-job">
 									<p class="bio-job-title"><span class="bio-company"><?php if(get_sub_field('bio_job_company_url')) : ?><a href="<?php the_sub_field('bio_job_company_url'); ?>" target="_blank"><?php endif; the_sub_field('bio_job_company'); if(get_sub_field('bio_job_company_url')) : ?></a><?php endif; ?></span> | <?php the_sub_field('bio_job_title'); ?></p>
 									<p class="bio-job-description"><?php the_sub_field('bio_job_description'); ?></p>
-									<p class="bio-job-lenght"><?php _e('From', 'gp3') . echo ' ' . the_sub_field('bio_job_lenght_from'); if(get_sub_field('bio_job_lenght_ended')) { _e('to', 'gp3') . echo ' ' . the_sub_field('bio_job_lenght_ended'); } ?></p>
+									<p class="bio-job-lenght"><?php _e('From', 'gp3'); echo ' '; the_sub_field('bio_job_lenght_from'); if(get_sub_field('bio_job_lenght_ended')) { echo ' '; _e('to', 'gp3'); echo ' '; the_sub_field('bio_job_lenght_ended'); } ?></p>
 								</li>
 							<?php endwhile; ?>
 						</ul>
@@ -97,14 +97,14 @@
 
 		</div>
 
-		<?php if(get_field('bio_languages') || get_field('bio_skillset') : ?>
+		<?php if(get_field('bio_languages') || get_field('bio_skillset')) : ?>
 			<div class="bio-right">
 
-				<?php if(get_field('bio_languages') : ?>
+				<?php if(get_field('bio_languages')) : ?>
 					<section id="bio-languages">
 						<h2 class="bio-title"><?php _e('Languages', 'gp3'); ?></h2>
 						<ul>
-							<?php while(has_sub_field('bio_languages') : ?>
+							<?php while(has_sub_field('bio_languages')) : ?>
 								<li>
 									<p class="bio-skill level<?php the_sub_field('bio_language_level'); ?>"><?php the_sub_field('bio_language'); ?></p>
 									<p class="bio-language-level"><?php the_sub_field('bio_language_level_txt'); ?></p>
@@ -114,14 +114,14 @@
 					</section>
 				<?php endif; ?>
 
-				<?php if(get_field('bio_skillset') : ?>
+				<?php if(get_field('bio_skillset')) : ?>
 					<section id="bio-skills">
 						<h2 class="bio-title"><?php _e('Skills', 'gp3'); ?></h2>
-						<?php while(has_sub_field('bio_skillset') : ?>
+						<?php while(has_sub_field('bio_skillset')) : ?>
 							<h3 class="bio-subtitle"><?php the_sub_field('bio_skillset_title'); ?></h3>
-							<?php if(get_field('bio_skillset_skills') : ?>
+							<?php if(get_sub_field('bio_skillset_skills')) : ?>
 								<ul>
-									<?php while(has_sub_field('bio_skillset_skills') : ?>
+									<?php while(has_sub_field('bio_skillset_skills')) : ?>
 										<li class="bio-skill level<?php the_sub_field('bio_skill_level'); ?>"><?php the_sub_field('bio_skill'); ?></li>
 									<?php endwhile; ?>
 								</ul>

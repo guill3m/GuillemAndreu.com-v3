@@ -144,6 +144,14 @@
 	margin-top: 10px;
 }
 
+.project-content-item.half:nth-child(odd) {
+	padding-right: 5px;
+}
+
+.project-content-item.half:nth-child(even) {
+	padding-left: 5px;
+}
+
 .project-img {
 	height: auto;
 	width: 100%;
@@ -154,6 +162,13 @@
 			width: 50%;
 		}
 	}
+}
+
+.project-flash,
+.project-img.full,
+.project-issuu,
+.project-video {
+	clear: both;
 }
 
 .project-issuu,

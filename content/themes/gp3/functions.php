@@ -20,7 +20,7 @@ function gp3_setup(){
 	// Image sizes
 	add_image_size('project-frontpage', 1440, 500, true);
 	add_image_size('project-content', 1078, 9999);
-	add_image_size('project-content-half', 539, 9999);
+	add_image_size('project-content-half', 534, 9999);
 	add_image_size('project-thumbnail', 335, 175, true);
 }
 
