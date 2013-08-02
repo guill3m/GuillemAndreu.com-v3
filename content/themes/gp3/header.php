@@ -18,8 +18,6 @@
 
 		<title><?php wp_title('-', true, 'right'); ?></title>
 
-		<link rel="author" href="http://guillemandreu.com/humans.txt" />
-
 		<?php wp_head(); ?>
 
 		<link rel="shortcut icon" href="http://guillemandreu.com/favicon.ico" sizes="16x16 32x32" type="image/x-icon" />
@@ -30,6 +28,17 @@
 		<meta name="application-name" content="<?php bloginfo('name'); ?>" />
 		<meta name="msapplication-TileColor" content="#fff" />
 		<meta name="msapplication-TileImage" content="http://guillemandreu.com/tile-image.png" />
+
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-375607-9']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
 
 	</head>
 
