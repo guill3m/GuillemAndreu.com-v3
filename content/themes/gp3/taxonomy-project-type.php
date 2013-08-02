@@ -7,13 +7,14 @@
 ?>
 
 
-<?php get_header(); ?>
+<?php get_header();
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?>
 
 <?php if(have_posts()) : ?>
 
 	<div class="portfolio">
 
-		<h1 class="taxonomy-title">Test</h1>
+		<h1 class="taxonomy-title"><?php echo $term->name; ?></h1>
 
 		<?php while(have_posts()) : the_post(); ?>
 
