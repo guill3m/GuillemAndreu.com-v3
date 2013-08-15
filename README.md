@@ -1,7 +1,5 @@
 # GuillemAndreu.com – V3
 
-## Work in progress
-
 My professional website where I showcase my work. So, basically, this is a **web portfolio**. The CMS I’m using is [Wordpress](http://wordpress.org), this is just the theme, and maybe some plugins.
 
 As it is also an element of my porfolio I thought it could be interesting to share the code and process.

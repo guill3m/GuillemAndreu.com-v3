@@ -67,7 +67,6 @@
     Illustrator
     SourceTree
     Transmit
-    Dropbox
     iTunes
 
   Hardware:

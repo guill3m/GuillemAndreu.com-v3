@@ -25,9 +25,9 @@ get_header(); ?>
 			<p><input type="email" name="email" id="contact-email" class="contact-input" placeholder="<?php _e('This way I can reply you, if necessary', 'gp3'); ?>" required /></p>
 			<p><label for="contact-phone" data-icon="phone"><?php _e('Phone', 'gp3'); ?> <small>(<?php _e('optional', 'gp3'); ?>)</small>:</label></p>
 			<p><input type="tel" name="phone" id="contact-phone" class="contact-input" placeholder="<?php _e('110% optional, just if you want to give me other way to contact you', 'gp3'); ?>" /></p>
-			<p><label for="contact-subject"><?php _e('Subject', 'gp3'); ?>:</label></p>
+			<p><label for="contact-subject" data-icon="subject"><?php _e('Subject', 'gp3'); ?>:</label></p>
 			<p><input type="text" name="subject" id="contact-subject" class="contact-input" placeholder="<?php _e('What about or why are you contacting me?', 'gp3'); ?>" required /></p>
-			<p><label for="contact-message"><?php _e('Message', 'gp3'); ?>:</label></p>
+			<p><label for="contact-message" data-icon="message"><?php _e('Message', 'gp3'); ?>:</label></p>
 			<p><textarea name="message" id="contact-message" class="contact-textarea" placeholder="<?php _e('Finally, here is where you write the actual message, thank you', 'gp3'); ?>" required></textarea></p>
 			<p><input type="submit" value="<?php _e('Submit', 'gp3'); ?>" name="submit" id="submit-contact-form" /></p>
 		</form>

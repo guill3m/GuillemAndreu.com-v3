@@ -57,7 +57,7 @@
 						--><li data-icon="work"><a href="<?php echo home_url('/') . __('portfolio', 'gp3') . '/'; ?>"><?php _e('Work', 'gp3') ?></a></li><!--
 						--><li data-icon="bio"><a href="<?php echo home_url('/') . __('bio', 'gp3') . '/'; ?>"><?php _e('Bio', 'gp3') ?></a></li><!--
 						--><li data-icon="contact"><a href="<?php echo home_url('/') . __('contact', 'gp3') . '/'; ?>"><?php _e('Contact', 'gp3') ?></a></li><!--
-						--><li data-icon="lang" class="language-selector">
+						--><li class="language-selector">
 							<ul id="language-submenu" class="language-submenu"><?php the_msls(); ?></ul>
 						</li>
 					</ul>
