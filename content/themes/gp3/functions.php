@@ -1016,3 +1016,15 @@ function gp3_show_all_projects_on_project_archive($query) {
 }
 
 add_action('pre_get_posts', 'gp3_show_all_projects_on_project_archive');
+
+
+
+/*
+ * Change the Twitter Cards type
+ */
+
+function gp3_change_card_type() {
+	return 'summary_large_image';
+}
+
+add_filter('wpseo_twitter_card_type', 'gp3_change_card_type', 20);
