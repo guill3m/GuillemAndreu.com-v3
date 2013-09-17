@@ -15,7 +15,6 @@ All the custom plugins I made for this are on the repo. This is the list of plug
 	- With *Flexible Content Field*, *Repeater Field*, and *Options Page* extensions.
 - [Multisite Language Switcher](http://lloc.de/msls) by [Dennis Ploetner](http://lloc.de)
 - [Wordpress SEO](http://yoast.com/wordpress/seo) by [Joost de Valk](http://yoast.com)
-- [WP Retina 2x](http://www.meow.fr/wp-retina-2x-wordpress-plugin/) by [Jordy Meow](http://www.meow.fr/)
 
 
 ## Things about this repo to be aware of

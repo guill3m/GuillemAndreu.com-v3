@@ -17,10 +17,59 @@ load_theme_textdomain('gp3', get_template_directory() . '/lang');
 function gp3_setup(){
 	// Enable post thumbnails
 	add_theme_support('post-thumbnails', array('project'));
-	// Image sizes
-	add_image_size('project-frontpage', 1440, 500, true);
-	add_image_size('project-content', 1078, 9999);
-	add_image_size('project-content-half', 534, 9999);
+	// Image sizes (yes, a lot of breakpoints, and with retina too)
+	// Front Page
+	add_image_size('project-frontpage-xxxl', 1440, 500, true);
+	add_image_size('project-frontpage-xxxl-2x', 2880, 1000, true);
+	add_image_size('project-frontpage-xxl', 1280, 450, true);
+	add_image_size('project-frontpage-xxl-2x', 2560, 900, true);
+	add_image_size('project-frontpage-xl', 1099, 400, true);
+	add_image_size('project-frontpage-xl-2x', 2198, 800, true);
+	add_image_size('project-frontpage-l', 1010, 400, true);
+	add_image_size('project-frontpage-l-2x', 2010, 800, true);
+	add_image_size('project-frontpage-m', 899, 350, true);
+	add_image_size('project-frontpage-m-2x', 1798, 700, true);
+	add_image_size('project-frontpage-s', 770, 350, true);
+	add_image_size('project-frontpage-s-2x', 1540, 700, true);
+	add_image_size('project-frontpage-xs', 650, 300, true);
+	add_image_size('project-frontpage-xs-2x', 1300, 600, true);
+	add_image_size('project-frontpage-xxs', 580, 300, true);
+	add_image_size('project-frontpage-xxs-2x', 1160, 600, true);
+	add_image_size('project-frontpage-xxxs', 320, 200, true);
+	add_image_size('project-frontpage-xxxs-2x', 640, 400, true);
+	// Content
+	add_image_size('project-content-xxxl', 1080, 9999);
+	add_image_size('project-content-xxxl-2x', 2160, 9999);
+	add_image_size('project-content-xxl', 959, 9999);
+	add_image_size('project-content-xxl-2x', 1918, 9999);
+	add_image_size('project-content-xl', 714, 9999);
+	add_image_size('project-content-xl-2x', 1428, 9999);
+	add_image_size('project-content-l', 657, 9999);
+	add_image_size('project-content-l-2x', 1080, 9999);
+	add_image_size('project-content-m', 899, 9999);
+	add_image_size('project-content-m-2x', 1798, 9999);
+	add_image_size('project-content-s', 770, 9999);
+	add_image_size('project-content-s-2x', 1540, 9999);
+	add_image_size('project-content-xs', 650, 9999);
+	add_image_size('project-content-xs-2x', 1300, 9999);
+	add_image_size('project-content-xxs', 580, 9999);
+	add_image_size('project-content-xxs-2x', 1160, 9999);
+	add_image_size('project-content-xxxs', 320, 9999);
+	add_image_size('project-content-xxxs-2x', 640, 9999);
+	// Content Half
+	add_image_size('project-content-half-xxxl', 534, 9999);
+	add_image_size('project-content-half-xxxl-2x', 1068, 9999);
+	add_image_size('project-content-half-xxl', 474, 9999);
+	add_image_size('project-content-half-xxl-2x', 948, 9999);
+	add_image_size('project-content-half-xl', 351, 9999);
+	add_image_size('project-content-half-xl-2x', 702, 9999);
+	add_image_size('project-content-half-l', 323, 9999);
+	add_image_size('project-content-half-l-2x', 646, 9999);
+	add_image_size('project-content-half-m', 444, 9999);
+	add_image_size('project-content-half-m-2x', 888, 9999);
+	add_image_size('project-content-half-s', 379, 9999);
+	add_image_size('project-content-half-s-2x', 758, 9999);
+	// Project Thumbnail (there is no need to make this responsive)
 	add_image_size('project-thumbnail', 335, 175, true);
 }
 
@@ -994,8 +1043,9 @@ function gp3_multisite_language_switcher_output($url, $link, $current) {
 		);
 	} else {
 		return sprintf(
-			'<li><a href="%s">%s</a></li>',
+			'<li><a href="%s" rel="alternate" hreflang="%s">%s</a></li>',
 			$url,
+			$link->txt,
 			$link->txt
 		);
 	}
@@ -1011,7 +1061,7 @@ add_filter('msls_output_get', 'gp3_multisite_language_switcher_output', 10, 3);
 
 function gp3_show_all_projects_on_project_archive($query) {
 	if ($query->is_post_type_archive('project') && $query->is_main_query()) {
-		$query->set( 'posts_per_page', '-1' );
+		$query->set('posts_per_page', '-1');
 	}
 }
 
@@ -1020,11 +1070,11 @@ add_action('pre_get_posts', 'gp3_show_all_projects_on_project_archive');
 
 
 /*
- * Change the Twitter Cards type
+ * Change the Twitter Cards type for Wordpress SEO plugin
  */
 
-function gp3_change_card_type() {
+function gp3_change_twitter_card_type() {
 	return 'summary_large_image';
 }
 
-add_filter('wpseo_twitter_card_type', 'gp3_change_card_type', 20);
+add_filter('wpseo_twitter_card_type', 'gp3_change_twitter_card_type', 20);

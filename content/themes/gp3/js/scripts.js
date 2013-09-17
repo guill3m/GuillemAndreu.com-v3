@@ -9,3 +9,4 @@
 // @codekit-append "src/unslider.js"
 // @codekit-append "src/project.js"
 // @codekit-append "src/contact.js"
+// @codekit-append "src/images.js"
