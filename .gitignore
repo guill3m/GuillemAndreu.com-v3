@@ -1,4 +1,5 @@
 *.log
+/index.php
 content/backups
 content/cache
 content/lang
