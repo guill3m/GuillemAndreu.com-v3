@@ -26,7 +26,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://guillemandreu.com/touch-icon-iphone-retina.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://guillemandreu.com/touch-icon-ipad-retina.png" />
 		<meta name="application-name" content="<?php bloginfo('name'); ?>" />
-		<meta name="msapplication-TileColor" content="#fff" />
+		<meta name="msapplication-TileColor" content="#a0220d" />
 		<meta name="msapplication-TileImage" content="http://guillemandreu.com/tile-image.png" />
 
 		<script>

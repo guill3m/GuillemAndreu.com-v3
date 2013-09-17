@@ -104,7 +104,7 @@ add_filter('tiny_mce_before_init', 'gp3_base_custom_mce_format');
  */
 
 function gp3_admin_favicon() {
-	echo '<link rel="Shortcut Icon" type="image/x-icon" href="'. get_site_url() . '/content/mu-plugins/img/favicon-admin.ico" />';
+	echo '<link rel="shortcut icon" href="http://guillemandreu.com/favicon-admin.ico" sizes="16x16 32x32" type="image/x-icon" />';
 }
 
 add_action('admin_head', 'gp3_admin_favicon');
