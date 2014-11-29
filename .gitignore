@@ -25,3 +25,4 @@ wp-admin
 wp-includes
 wp-*.php
 xmlrpc.php
+--static
