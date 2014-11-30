@@ -1,0 +1,10 @@
+{
+  "name": "GuillemAndreu.com",
+  "version": "3.2.0",
+  "dependencies": {
+    "jquery": "latest",
+    "unslider": "*"
+  },
+  "devDependencies": {},
+  "private": true
+}

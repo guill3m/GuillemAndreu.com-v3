@@ -59,7 +59,7 @@ p {
 a {
 	color: $color;
 	text-decoration: none;
-	@include transition(color .3s ease);
+	transition: color .3s ease;
 	&:hover {
 		color: $color2;
 	}

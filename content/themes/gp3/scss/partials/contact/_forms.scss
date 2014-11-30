@@ -28,16 +28,16 @@ textarea {
 	}
 	line-height: 28px;
 	padding: 0 5px;
+	transition: box-shadow .3s ease;
 	width: 100%;
-	@include transition(box-shadow .3s ease);
 	&:hover {
-		@include box-shadow(0 0 2px $color-txt2);
+		box-shadow: 0 0 2px $color-txt2;
 	}
 	&:focus,
 	&:active {
 		border-color: $color;
+		box-shadow: 0 0 2px $color;
 		outline: 0;
-		@include box-shadow(0 0 2px $color);
 	}
 }
 
@@ -68,8 +68,8 @@ input[type="submit"] {
 	margin-top: 5px;
 	padding: 0 5px;
 	text-shadow: 0 0 3px darken($color, 20%);
+	transition: background .3s ease, border-color .3s ease, text-shadow .3s ease;
 	width: 100%;
-	@include transition(background .3s ease, border-color .3s ease, text-shadow .3s ease);
 	&:hover,
 	&:focus {
 		background: $color2;

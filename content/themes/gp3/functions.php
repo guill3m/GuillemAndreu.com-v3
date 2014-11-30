@@ -1006,7 +1006,7 @@ add_action('wp_enqueue_scripts', 'gp3_css_enqueue', 11);
 
 function gp3_jquery_enqueue() {
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", false, null, true);
+	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", false, null, true);
 	wp_enqueue_script('jquery');
 }
 
@@ -1022,7 +1022,7 @@ if (!is_admin()) add_action('wp_enqueue_scripts', 'gp3_jquery_enqueue', 12);
 function gp3_js_enqueue() {
 	global $theme_version_number;
 	// Generic scripts
-	wp_register_script('scripts', get_template_directory_uri() . "/js/scripts.min.js", array('jquery'), $theme_version_number, true);
+	wp_register_script('scripts', get_template_directory_uri() . "/js/scripts.js", array('jquery'), $theme_version_number, true);
 	// Load generic scripts
 	wp_enqueue_script('scripts');
 }

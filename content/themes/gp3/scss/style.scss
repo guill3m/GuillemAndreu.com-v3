@@ -6,7 +6,7 @@ Theme URI: http://guillemandreu.com
 Description: Guillem Andreu’s Portfolio website. Third version. First one implementing Responsive Web Design. Translation Ready.
 Author: Guillem Andreu
 Author URI: http://guillemandreu.com
-Version: 3.1.0
+Version: 3.2.0
 Tags: responsive, rwd, mobile first, content first, portfolio, translation ready
 License: Proprietary - © 2013 Guillem Andreu
 Text Domain: gp3
@@ -20,7 +20,6 @@ Text Domain: gp3
 @import "partials/base/variables";
 
 // Mixins
-@import "partials/mixins/css3";
 @import "partials/mixins/mixins";
 
 // Reset
@@ -28,7 +27,6 @@ Text Domain: gp3
 
 // Base Styles
 @import "partials/base/base";
-// @import "partials/base/wordpress"; // Not needed for the moment
 
 // Header
 @import "partials/header/header";
@@ -51,4 +49,3 @@ Text Domain: gp3
 
 // Footer
 @import "partials/footer/footer";
-@import "partials/footer/breadcrumbs";
