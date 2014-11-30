@@ -1,3 +1,4 @@
+*.ai
 *.log
 /index.php
 /license.txt
