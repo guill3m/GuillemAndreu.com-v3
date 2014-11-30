@@ -1,5 +1,8 @@
 *.log
 /index.php
+/license.txt
+/readme.html
+.sass-cache/
 content/backups
 content/cache
 content/lang
@@ -15,11 +18,15 @@ content/plugins/network-plugin-auditor
 content/plugins/wordpress-seo
 content/plugins/wp-retina-2x
 content/plugins/index.php
+content/themes/gp3/bower_components
+content/themes/twentytwelve
 content/themes/twentythirteen
+content/themes/twentyfourteen
 content/themes/index.php
 content/index.php
 content/upgrade
 content/uploads
+node_modules
 IMG-Portfolio
 wp-admin
 wp-includes

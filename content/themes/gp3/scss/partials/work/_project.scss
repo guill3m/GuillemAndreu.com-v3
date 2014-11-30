@@ -26,11 +26,11 @@
 	display: block;
 	font-weight: 700;
 	line-height: 35px;
+	transition: background .3s ease, color .3s ease;
 	text: {
 		align: center;
 		transform: uppercase;
 	}
-	@include transition(background .3s ease, color .3s ease);
 	&:hover {
 		background: rgb(241, 241, 241);
 		color: $color-txt;
