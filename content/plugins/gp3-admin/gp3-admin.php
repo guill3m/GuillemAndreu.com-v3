@@ -138,18 +138,6 @@ add_action('wp_before_admin_bar_render', 'gp3_admin_bar');
 
 
 /*
- * Removing “Screen Options” tab
- */
-
-function gp3_remove_screen_options_tab() {
-	return false;
-}
-
-add_filter('screen_options_show_screen', 'gp3_remove_screen_options_tab');
-
-
-
-/*
  * Hability to use HTML on user descriptions
  */
 

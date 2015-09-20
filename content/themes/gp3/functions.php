@@ -91,6 +91,9 @@ $theme_version_number = $theme['Version'];
  */
 
 if(function_exists('acf_set_options_page_title')) {
+	acf_add_options_page();
+}
+if(function_exists('acf_set_options_page_title')) {
 	acf_set_options_page_title(__('Global Content', 'gp3'));
 	acf_set_options_page_menu(__('Global Content', 'gp3'));
 }
@@ -301,7 +304,7 @@ register_field_group(array (
 			'label' => __('Picture', 'gp3'),
 			'name' => 'bio_picture',
 			'type' => 'image',
-			'save_format' => 'url',
+			'return_format' => 'url',
 			'preview_size' => 'thumbnail',
 			'library' => 'all',
 		),
@@ -845,7 +848,7 @@ register_field_group(array (
 							'name' => 'project_img',
 							'type' => 'image',
 							'column_width' => 50,
-							'save_format' => 'id',
+							'return_format' => 'id',
 							'preview_size' => 'project-thumbnail',
 							'library' => 'all',
 						),
@@ -871,7 +874,7 @@ register_field_group(array (
 							'name' => 'project_img',
 							'type' => 'image',
 							'column_width' => 50,
-							'save_format' => 'id',
+							'return_format' => 'id',
 							'preview_size' => 'project-thumbnail',
 							'library' => 'all',
 						),
@@ -943,7 +946,7 @@ register_field_group(array (
 							'name' => 'project_flash',
 							'type' => 'file',
 							'column_width' => 50,
-							'save_format' => 'id',
+							'return_format' => 'id',
 							'library' => 'all',
 						),
 						array (
@@ -1006,7 +1009,7 @@ add_action('wp_enqueue_scripts', 'gp3_css_enqueue', 11);
 
 function gp3_jquery_enqueue() {
 	wp_deregister_script('jquery');
-	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js", false, null, true);
+	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", false, null, true);
 	wp_enqueue_script('jquery');
 }
 
