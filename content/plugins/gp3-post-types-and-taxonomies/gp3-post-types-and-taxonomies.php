@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: GP3 Post Types & Taxonomies
-Version: 1.0
+Version: 1.1
 Author: Guillem Andreu
 Author URI: http://guillemandreu.com
 Description: Custom post types and custom taxonomies
@@ -151,13 +151,15 @@ add_action('init', 'gp3_custom_taxonomies');
 function gp3_custom_post_types_to_at_a_glance_widget() {
 	$post_types = get_post_types(array('_builtin' => false), 'objects');
 	foreach ($post_types as $post_type) {
-		if ($post_type->name == 'acf') continue; // Don’t show the Advanced Custom Fields plugin’s custom type
+		if ($post_type->name == 'acf-field') continue; // Don’t show the Advanced Custom Fields plugin’s custom type
+		if ($post_type->name == 'acf-field-group') continue; // Don’t show the Advanced Custom Fields plugin’s custom type
 		$num_posts = wp_count_posts($post_type->name);
 		$num = number_format_i18n($num_posts->publish);
 		$text = _n($post_type->labels->singular_name, $post_type->labels->name, $num_posts->publish);
 		if (current_user_can('edit_posts')) {
 			echo '<li class="post-count"><a href="edit.php?post_type=' . $post_type->name . '">' . $num . ' ' . $text . '</a></li>';
 		}
+	}
 }
 
 add_action('dashboard_glance_items', 'gp3_custom_post_types_to_at_a_glance_widget');

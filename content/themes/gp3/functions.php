@@ -90,7 +90,7 @@ $theme_version_number = $theme['Version'];
  * Options Page Title
  */
 
-if(function_exists('acf_set_options_page_title')) {
+if(function_exists('acf_add_options_page')) {
 	acf_add_options_page();
 }
 if(function_exists('acf_set_options_page_title')) {
